@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arc Innovate — Creative Enrichment Programs for Curious Minds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --deep-blue:#2B6CB0;
+    --light-blue:#63B3ED;
+    --forest-green:#3A8A4A;
+    --fresh-green:#6BBF7A;
+    --ink:#1A1614;
+    --paper:#FAFAFA;
+    --section-alt:#EDF4FB;
+    --radius-lg:28px;
+    --radius-md:18px;
+    --radius-sm:10px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Poppins', sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Nunito', sans-serif;
+    font-weight:800;
+    line-height:1.1;
+    letter-spacing:-0.01em;
+  }
+  a{text-decoration:none; color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1140px; margin:0 auto; padding:0 32px;}
+
+  /* Doodle divider signature element */
+  .doodle-divider{
+    width:100%;
+    height:34px;
+    display:block;
+  }
+
+  /* NAV */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(251,250,246,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(26,22,20,0.08);
+  }
+  .nav-inner{
+    max-width:1140px; margin:0 auto; padding:16px 32px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Nunito'; font-weight:900; font-size:1.3rem; color:var(--deep-blue);
+  }
+  .logo .mark{
+    width:36px; height:36px; border-radius:12px;
+    background:linear-gradient(135deg, var(--deep-blue), var(--fresh-green));
+    display:flex; align-items:center; justify-content:center;
+    color:white; font-size:1.1rem; font-weight:900;
+    transform:rotate(-6deg);
+  }
+  nav.links{display:flex; gap:30px; font-weight:600; font-size:0.95rem;}
+  nav.links a{color:var(--ink); opacity:0.75; transition:opacity .2s;}
+  nav.links a:hover{opacity:1; color:var(--deep-blue);}
+  .nav-cta{
+    background:var(--forest-green); color:white; padding:10px 20px;
+    border-radius:999px; font-weight:700; font-size:0.9rem;
+    white-space:nowrap;
+  }
+  @media(max-width:800px){ nav.links{display:none;} }
+
+  /* HERO */
+  .hero{
+    position:relative;
+    padding:96px 0 80px;
+    background:
+      radial-gradient(circle at 85% 15%, rgba(107,191,122,0.28), transparent 45%),
+      radial-gradient(circle at 5% 80%, rgba(99,179,237,0.35), transparent 40%),
+      var(--paper);
+    overflow:hidden;
+  }
+  .hero-inner{
+    max-width:1140px; margin:0 auto; padding:0 32px;
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:center;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(43,108,176,0.1); color:var(--deep-blue);
+    font-weight:700; font-size:0.82rem; letter-spacing:0.04em;
+    padding:7px 16px; border-radius:999px; margin-bottom:22px;
+  }
+  .eyebrow::before{content:"✦"; font-size:0.8rem;}
+  .hero h1{
+    font-size:3.1rem; color:var(--ink); margin-bottom:22px;
+  }
+  .hero h1 span{color:var(--deep-blue);}
+  .hero p.lead{
+    font-size:1.13rem; color:#3f5468; max-width:480px; margin-bottom:32px;
+  }
+  .cta-row{display:flex; gap:14px; flex-wrap:wrap;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 26px; border-radius:999px; font-weight:700; font-size:0.98rem;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--deep-blue); color:white; box-shadow:0 10px 24px -8px rgba(43,108,176,0.55);}
+  .btn-secondary{background:white; color:var(--ink); border:2px solid rgba(26,22,20,0.12);}
+
+  .hero-art{
+    position:relative; aspect-ratio:1/1; border-radius:var(--radius-lg);
+    background:linear-gradient(160deg, var(--deep-blue), var(--forest-green));
+    display:flex; align-items:center; justify-content:center;
+    overflow:hidden;
+  }
+  .hero-art::before, .hero-art::after{
+    content:""; position:absolute; border-radius:50%;
+  }
+  .hero-art::before{
+    width:220px; height:220px; background:rgba(255,255,255,0.14);
+    top:-60px; right:-50px;
+  }
+  .hero-art::after{
+    width:140px; height:140px; background:var(--fresh-green); opacity:0.85;
+    bottom:-30px; left:-30px;
+  }
+  .hero-art .photo-grid{
+    position:relative; z-index:2; display:grid; grid-template-columns:repeat(2,1fr); gap:16px; padding:32px; width:100%;
+  }
+  .photo-slot{
+    background:rgba(255,255,255,0.14); border:2px dashed rgba(255,255,255,0.55);
+    border-radius:var(--radius-md); aspect-ratio:1/1;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;
+    color:rgba(255,255,255,0.85); font-family:'Nunito'; font-weight:700; font-size:0.78rem; text-align:center;
+  }
+  .photo-slot .cam{font-size:1.5rem;}
+
+  /* SECTION LABELS */
+  .section{padding:88px 0;}
+  .section-head{max-width:640px; margin-bottom:52px;}
+  .section-head .eyebrow{margin-bottom:14px;}
+  .section-head h2{font-size:2.1rem; color:var(--ink);}
+  .section-head p{color:#4a5c6d; margin-top:14px; font-size:1.02rem;}
+
+  /* PROGRAMS */
+  .programs-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .program-pillar{margin-bottom:44px;}
+  .program-pillar:last-child{margin-bottom:0;}
+  .pillar-label{
+    display:flex; align-items:center; gap:12px; margin-bottom:20px;
+  }
+  .pillar-label h3{
+    font-family:'Nunito'; font-weight:800; font-size:1.35rem; color:var(--ink);
+  }
+  .pillar-label .pillar-tag{
+    font-family:'Nunito'; font-weight:700; font-size:0.78rem; color:var(--deep-blue);
+    background:rgba(43,108,176,0.1); padding:5px 13px; border-radius:999px;
+  }
+  .subprograms-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+  @media(max-width:700px){ .subprograms-grid{grid-template-columns:1fr;} }
+  .pillars-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+  @media(max-width:800px){ .pillars-grid{grid-template-columns:1fr;} }
+  .program-card{
+    background:white; border-radius:var(--radius-lg); padding:34px 30px;
+    border:1px solid rgba(26,22,20,0.07);
+    box-shadow:0 20px 40px -28px rgba(26,22,20,0.25);
+    position:relative; overflow:hidden;
+    display:flex; flex-direction:column;
+  }
+  .program-card .age-badge{
+    display:inline-block; padding:6px 14px; border-radius:999px;
+    font-weight:700; font-size:0.8rem; margin-bottom:18px; align-self:flex-start;
+  }
+  .program-card.arts .age-badge{background:rgba(107,191,122,0.18); color:var(--forest-green);}
+  .program-card.lab .age-badge{background:rgba(99,179,237,0.22); color:var(--deep-blue);}
+  .program-card.kit .age-badge{background:rgba(107,191,122,0.22); color:var(--deep-blue);}
+  .program-card h3{font-size:1.3rem; margin-bottom:10px; color:var(--ink);}
+  .program-card p{color:#4a5c6d; margin-bottom:20px; font-size:0.95rem;}
+  .program-card ul{list-style:none; margin-top:auto;}
+  .program-card li{
+    padding-left:24px; position:relative; margin-bottom:9px; font-size:0.88rem; color:#33475a;
+  }
+  .program-card li::before{
+    content:"→"; position:absolute; left:0; font-weight:700;
+  }
+  .program-card.arts li::before{color:var(--forest-green);}
+  .program-card.lab li::before{color:var(--deep-blue);}
+  .program-card.kit li::before{color:var(--deep-blue);}
+  @media(max-width:960px){ .programs-grid{grid-template-columns:1fr;} }
+
+  /* GALLERY */
+  .gallery-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:170px; gap:18px;
+  }
+  .gallery-grid .photo-slot{
+    background:white; border:2px dashed rgba(26,22,20,0.18);
+    color:#7a8a99;
+  }
+  .gallery-grid .photo-slot .cam{color:rgba(26,22,20,0.35);}
+  .gallery-grid .g-tall{grid-row:span 2;}
+  .gallery-grid .g-wide{grid-column:span 2;}
+  @media(max-width:860px){
+    .gallery-grid{grid-template-columns:repeat(2,1fr); grid-auto-rows:150px;}
+    .gallery-grid .g-wide{grid-column:span 2;}
+  }
+
+  /* FORMATS */
+  .formats-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:16px;
+  }
+  .format-card{
+    background:white; border-radius:var(--radius-md); padding:22px 18px;
+    text-align:center; border:1px solid rgba(26,22,20,0.07);
+  }
+  .format-card .ic{
+    width:46px; height:46px; border-radius:14px; margin:0 auto 14px;
+    display:flex; align-items:center; justify-content:center; font-size:1.3rem;
+  }
+  .format-card:nth-child(1) .ic{background:rgba(107,191,122,0.25);}
+  .format-card:nth-child(2) .ic{background:rgba(99,179,237,0.25);}
+  .format-card:nth-child(3) .ic{background:rgba(58,138,74,0.18);}
+  .format-card h4{font-size:0.98rem; margin-bottom:6px;}
+  .format-card p{font-size:0.85rem; color:#5a6c7d;}
+  @media(max-width:700px){ .formats-grid{grid-template-columns:1fr;} }
+
+  /* PARTNERS BAND */
+  .partners-band{
+    background:var(--deep-blue); color:white; border-radius:var(--radius-lg);
+    padding:64px; display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center;
+  }
+  .partners-band .eyebrow{background:rgba(107,191,122,0.18); color:var(--fresh-green);}
+  .partners-band h2{font-size:2rem; color:white; margin-bottom:18px;}
+  .partners-band p.lead{color:rgba(255,255,255,0.75); margin-bottom:0;}
+  .partner-list{list-style:none; display:flex; flex-direction:column; gap:16px;}
+  .partner-list li{
+    background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1);
+    border-radius:var(--radius-sm); padding:16px 20px; font-size:0.95rem;
+  }
+  .partner-list li b{color:var(--fresh-green); font-family:'Nunito';}
+  @media(max-width:860px){ .partners-band{grid-template-columns:1fr; padding:40px;} }
+
+  /* FOUNDER */
+  .founder-card{
+    display:grid; grid-template-columns:180px 1fr; gap:40px; align-items:center;
+    background:var(--section-alt); border-radius:var(--radius-lg); padding:44px;
+  }
+  .founder-photo{
+    width:180px; height:180px; border-radius:50%;
+    background:linear-gradient(150deg, var(--light-blue), var(--forest-green));
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Nunito'; font-weight:900; font-size:2.4rem; color:white;
+  }
+  .founder-card h3{font-size:1.3rem; margin-bottom:4px;}
+  .founder-card .role{color:var(--deep-blue); font-weight:700; font-size:0.9rem; margin-bottom:14px;}
+  .founder-card p{color:#3f5468; font-size:0.96rem;}
+  @media(max-width:700px){ .founder-card{grid-template-columns:1fr; text-align:center; padding:32px;} .founder-photo{margin:0 auto;} }
+
+  /* CONTACT / FOOTER */
+  .contact-cta{
+    text-align:center; padding:90px 0 60px;
+  }
+  .contact-cta h2{font-size:2.3rem; margin-bottom:16px;}
+  .contact-cta p{color:var(--ink); max-width:560px; margin:0 auto 34px; font-size:1.3rem; font-family:'Nunito'; font-weight:700; line-height:1.35;}
+  footer{
+    background:var(--deep-blue); color:rgba(255,255,255,0.75);
+    padding:40px 0; font-size:0.86rem;
+  }
+  .footer-inner{
+    max-width:1140px; margin:0 auto; padding:0 32px;
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;
+  }
+  .footer-inner .logo{color:white;}
+
+  @media(max-width:900px){
+    .hero-inner{grid-template-columns:1fr;}
+    .hero h1{font-size:2.3rem;}
+    .programs-grid{grid-template-columns:1fr;}
+    .level-row{grid-template-columns:48px 1fr; }
+    .level-tag{grid-column:1/-1; justify-self:start;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap" style="padding:8px 32px 0; max-width:1140px; margin:0 auto;">
+    <a href="https://www.arc-consulting.com" style="font-size:0.78rem; font-weight:600; color:var(--deep-blue); opacity:0.7;">← Arc</a>
+  </div>
+  <div class="nav-inner">
+    <a href="#top" class="logo"><span class="mark">A</span>Arc Innovate</a>
+    <nav class="links">
+      <a href="#programs">Programs</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#formats">Formats</a>
+      <a href="#partners">For Partners</a>
+      <a href="#about">About</a>
+    </nav>
+    <a href="mailto:hello@arcinnovate.com" class="nav-cta">Get in Touch</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">Creative enrichment, built on design thinking</span>
+        <h1>Where curious kids learn to <span>think like designers.</span></h1>
+        <p class="lead">Arc Innovate brings hands-on design thinking programs to children ages 4–10 — through school partnerships, kids' cafés, and event spaces across Bangkok.</p>
+        <div class="cta-row">
+          <a href="#programs" class="btn btn-primary">Explore Programs</a>
+          <a href="#partners" class="btn btn-secondary">Partner With Us</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="photo-grid">
+          <div class="photo-slot"><span class="cam">📷</span>Add photo</div>
+          <div class="photo-slot"><span class="cam">📷</span>Add photo</div>
+          <div class="photo-slot"><span class="cam">📷</span>Add photo</div>
+          <div class="photo-slot"><span class="cam">📷</span>Add photo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="section" id="programs">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Our programs</span>
+        <h2>Three ways in, one way of thinking.</h2>
+        <p>Every Arc Innovate program is built around the same core idea: children learn best when they're given real problems to solve, real materials to shape, and real room to create.</p>
+      </div>
+      <div class="program-pillar">
+        <div class="pillar-label">
+          <h3>Weekend Creative Academy</h3>
+          <span class="pillar-tag">Ages 4–10 · Weekends</span>
+        </div>
+        <div class="subprograms-grid">
+          <div class="program-card arts">
+            <span class="age-badge">Ages 4–6</span>
+            <h3>Experimental Arts &amp; Design</h3>
+            <p>An early-years program that turns everyday materials into first design experiments — building colour sense, fine motor skill, and the confidence to try things out loud.</p>
+            <ul>
+              <li>Sensory-led art and making sessions</li>
+              <li>Foundational design vocabulary</li>
+              <li>Confidence-building group activities</li>
+            </ul>
+          </div>
+          <div class="program-card lab">
+            <span class="age-badge">Ages 7–10</span>
+            <h3>Design Lab</h3>
+            <p>A project-based program where kids run a full design process — from spotting a problem to prototyping and presenting a solution, in teams.</p>
+            <ul>
+              <li>Guided design thinking projects</li>
+              <li>Prototyping with real tools and materials</li>
+              <li>Presentation and pitch practice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="program-card lab">
+          <span class="age-badge">Ages 7–14 · In-School</span>
+          <h3>ECA at International Schools</h3>
+          <p>A menu of after-school ECA electives delivered on-site at partner schools, each one a hands-on design thinking experience wrapped around a subject kids already love.</p>
+          <ul>
+            <li>Fashion Design</li>
+            <li>Make Up Design</li>
+            <li>Young Innovator</li>
+            <li>Young Entrepreneur</li>
+            <li>Design Thinking</li>
+            <li>Creative Cooking</li>
+          </ul>
+        </div>
+        <div class="program-card kit">
+          <span class="age-badge">Ages 2.5–6 · Take-Home</span>
+          <h3>Brain Play Kit</h3>
+          <p>Guided, mission-based activity kits that bring design thinking and fine motor development home — for families who want the practice to continue between sessions.</p>
+          <ul>
+            <li>Mission-based Brain Play Guides</li>
+            <li>Little Hands &amp; Brain fine motor activities</li>
+            <li>Simple materials, ready in minutes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery" style="background:var(--section-alt);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">See it in action</span>
+        <h2>Moments from the studio.</h2>
+        <p>Photos from sessions, camps, and showcases — swap these placeholders for real shots of kids at work.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="photo-slot g-tall"><span class="cam">📷</span>Add photo</div>
+        <div class="photo-slot"><span class="cam">📷</span>Add photo</div>
+        <div class="photo-slot g-wide"><span class="cam">📷</span>Add photo</div>
+        <div class="photo-slot"><span class="cam">📷</span>Add photo</div>
+        <div class="photo-slot"><span class="cam">📷</span>Add photo</div>
+        <div class="photo-slot g-tall"><span class="cam">📷</span>Add photo</div>
+        <div class="photo-slot g-wide"><span class="cam">📷</span>Add photo</div>
+        <div class="photo-slot"><span class="cam">📷</span>Add photo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATS -->
+  <section class="section" id="formats">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Ways to join in</span>
+        <h2>Beyond the regular program.</h2>
+        <p>On top of Weekend Creative Academy, ECA, and Brain Play Kit, Arc Innovate shows up for one-off moments too — a celebration, a holiday, or a chance to show off what's been built.</p>
+      </div>
+      <div class="formats-grid">
+        <div class="format-card">
+          <div class="ic">🎉</div>
+          <h4>Birthday Parties</h4>
+          <p>Hands-on design workshops that make for a party guests remember.</p>
+        </div>
+        <div class="format-card">
+          <div class="ic">☀️</div>
+          <h4>Break Camps</h4>
+          <p>Multi-day creative camps that run through school holidays.</p>
+        </div>
+        <div class="format-card">
+          <div class="ic">🏆</div>
+          <h4>Showcase Events</h4>
+          <p>End-of-term exhibitions where kids present what they've built.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="section" id="partners">
+    <div class="wrap">
+      <div class="partners-band">
+        <div>
+          <span class="eyebrow">For schools, cafés &amp; venues</span>
+          <h2>An ECA program partner that fills the room.</h2>
+          <p class="lead">Arc Innovate partners with international schools, kids' cafés, and event spaces to bring a ready-made creative enrichment program to their space — curriculum, facilitation, and materials included.</p>
+        </div>
+        <ul class="partner-list">
+          <li><b>Turnkey delivery</b> — curriculum, trained facilitators, and materials, ready to run in your space.</li>
+          <li><b>Shared enrollment</b> — a simple revenue-share model for both school-sourced and Arc-sourced students.</li>
+          <li><b>Flexible formats</b> — from a weekly ECA slot to a one-off birthday or showcase event.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER / ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">About Arc Innovate</span>
+        <h2>Built from over a decade in design education.</h2>
+      </div>
+      <div class="founder-card">
+        <div class="founder-photo">A</div>
+        <div>
+          <h3>Teacher Anies</h3>
+          <div class="role">Founder, Arc Innovate and Arc Consulting</div>
+          <p>Arc Innovate is the children's creative enrichment arm of Arc — founded by Anies, a Bangkok-based educator and design teacher with over 12 years of experience in design thinking and education. With a background in Product Design and certification as an NLP Practitioner, she built Arc Innovate's curriculum around one belief: that design thinking is one of the most valuable habits of mind a child can develop, and it's best learned by doing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <a href="#top" class="logo"><span class="mark">A</span>Arc Innovate</a>
+    <span>© 2026 Arc Innovate, part of the Arc brand · Bangkok, Thailand</span>
+  </div>
+</footer>
+
+</body>
+</html>

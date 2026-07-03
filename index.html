@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arc — Arc Consulting &amp; Arc Innovate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,600&family=Jost:wght@300;400;500&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --gold:#C9A96E;
+    --cream:#F7F3EE;
+    --ink:#1A1614;
+    --deep-blue:#2B6CB0;
+    --light-blue:#63B3ED;
+    --forest-green:#3A8A4A;
+    --fresh-green:#6BBF7A;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Jost', sans-serif;
+    font-weight:400;
+    background:var(--ink);
+    color:var(--ink);
+    min-height:100vh;
+  }
+  a{text-decoration:none; color:inherit;}
+
+  /* TOP MARK */
+  .brand-mark{
+    position:absolute; top:36px; left:50%; transform:translateX(-50%);
+    text-align:center; z-index:5;
+  }
+  .brand-mark .arc{
+    font-family:'Playfair Display', serif; font-style:italic; font-weight:600;
+    font-size:1.7rem; color:#fff; letter-spacing:0.02em;
+    text-shadow:0 2px 14px rgba(0,0,0,0.35);
+  }
+  .brand-mark .sub{
+    font-family:'Jost'; font-weight:300; font-size:0.68rem; letter-spacing:0.3em;
+    text-transform:uppercase; color:var(--gold); margin-top:4px;
+  }
+
+  /* SPLIT LAYOUT */
+  .split{
+    display:grid; grid-template-columns:1fr 1fr;
+    min-height:100vh;
+  }
+  .panel{
+    position:relative;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:120px 56px 64px;
+    text-align:center;
+    overflow:hidden;
+  }
+
+  /* CONSULTING — black, gold, rectangular */
+  .panel-consulting{ background:var(--ink); }
+  .panel-consulting .panel-eyebrow{
+    font-family:'Jost'; font-weight:400; font-size:0.72rem; letter-spacing:0.32em;
+    text-transform:uppercase; margin-bottom:22px; color:var(--gold);
+  }
+  .panel-consulting .logo-mark{
+    width:112px; height:112px; border-radius:50%;
+    border:1px solid rgba(201,169,110,0.55);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:36px; transition:border-color 0.25s ease;
+  }
+  .panel-consulting .logo-mark span{
+    font-family:'Playfair Display', serif; font-style:italic; font-weight:600;
+    font-size:1.6rem; color:var(--gold);
+  }
+  .panel-consulting h2{
+    font-family:'Playfair Display', serif; font-style:italic; font-weight:500;
+    font-size:2.6rem; line-height:1.15; margin-bottom:18px; color:var(--cream);
+  }
+  .panel-consulting p{
+    max-width:360px; font-size:1rem; font-weight:300; line-height:1.7;
+    color:rgba(247,243,238,0.68); margin-bottom:34px;
+  }
+  .panel-consulting .panel-cta{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:15px 34px; font-size:0.82rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase;
+    background:var(--gold); color:var(--ink); border:1px solid var(--gold);
+    transition:all 0.25s ease;
+  }
+  .panel-consulting .panel-cta:hover{ background:transparent; color:var(--gold); }
+  .panel-consulting:hover .logo-mark{ border-color:var(--gold); }
+
+  /* INNOVATE — blue-green gradient, rounded, Nunito */
+  .panel-innovate{
+    background:linear-gradient(150deg, var(--deep-blue) 0%, var(--light-blue) 45%, var(--forest-green) 100%);
+  }
+  .panel-innovate .panel-eyebrow{
+    font-family:'Nunito', sans-serif; font-weight:800; font-size:0.75rem; letter-spacing:0.16em;
+    text-transform:uppercase; margin-bottom:22px; color:rgba(255,255,255,0.92);
+  }
+  .panel-innovate .logo-mark{
+    width:112px; height:112px; border-radius:50%;
+    background:rgba(255,255,255,0.14);
+    border:2px dashed rgba(255,255,255,0.6);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:36px; transition:background 0.25s ease;
+  }
+  .panel-innovate .logo-mark span{
+    font-family:'Nunito', sans-serif; font-weight:900; font-size:1.7rem; color:#fff;
+  }
+  .panel-innovate h2{
+    font-family:'Nunito', sans-serif; font-style:normal; font-weight:800;
+    font-size:2.6rem; line-height:1.1; margin-bottom:18px; color:#fff;
+  }
+  .panel-innovate p{
+    max-width:360px; font-size:1rem; font-weight:400; line-height:1.7;
+    color:rgba(255,255,255,0.88); margin-bottom:34px;
+  }
+  .panel-innovate .panel-cta{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:15px 34px; font-size:0.95rem; font-weight:700; letter-spacing:0.01em;
+    font-family:'Poppins', sans-serif;
+    border-radius:999px; border:none; background:#fff; color:var(--deep-blue);
+    transition:all 0.25s ease;
+  }
+  .panel-innovate .panel-cta:hover{ background:var(--fresh-green); color:#fff; }
+  .panel-innovate:hover .logo-mark{ background:rgba(255,255,255,0.22); }
+
+  .divider-word{
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    font-family:'Playfair Display', serif; font-style:italic; font-size:1rem;
+    color:var(--ink); background:var(--cream);
+    width:52px; height:52px; border-radius:50%; border:1px solid rgba(26,22,20,0.15);
+    display:flex; align-items:center; justify-content:center; z-index:4;
+    box-shadow:0 4px 20px rgba(0,0,0,0.25);
+  }
+
+  @media(max-width:860px){
+    .split{grid-template-columns:1fr;}
+    .panel{padding:100px 32px 64px;}
+    .divider-word{display:none;}
+    .brand-mark{top:26px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="brand-mark">
+  <div class="arc">Arc</div>
+  <div class="sub">Bangkok</div>
+</div>
+
+<div class="split">
+
+  <a class="panel panel-consulting" href="/consulting">
+    <span class="panel-eyebrow">Education Talent</span>
+    <div class="logo-mark"><span>AC</span></div>
+    <h2>Arc Consulting</h2>
+    <p>Placing Southeast Asian educators into international schools and EdTech platforms, with care and intention.</p>
+    <span class="panel-cta">Enter site</span>
+  </a>
+
+  <a class="panel panel-innovate" href="/arc-innovate">
+    <span class="panel-eyebrow">Creative Enrichment for Kids</span>
+    <div class="logo-mark"><span>AI</span></div>
+    <h2>Arc Innovate</h2>
+    <p>Design thinking programs, ECA electives, and creative kits for curious minds ages 4–14.</p>
+    <span class="panel-cta">Enter site</span>
+  </a>
+
+  <div class="divider-word">or</div>
+
+</div>
+
+</body>
+</html>
