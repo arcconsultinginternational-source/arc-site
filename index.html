@@ -66,6 +66,11 @@
     border:1px solid rgba(201,169,110,0.55);
     display:flex; align-items:center; justify-content:center;
     margin-bottom:36px; transition:border-color 0.25s ease;
+    background:rgba(255,255,255,0.08);
+    overflow:hidden;
+  }
+  .panel-consulting .logo-mark img{
+    width:100%; height:100%; object-fit:contain; padding:12px;
   }
   .panel-consulting .logo-mark span{
     font-family:'Playfair Display', serif; font-style:italic; font-weight:600;
@@ -102,6 +107,10 @@
     border:2px dashed rgba(255,255,255,0.6);
     display:flex; align-items:center; justify-content:center;
     margin-bottom:36px; transition:background 0.25s ease;
+    overflow:hidden;
+  }
+  .panel-innovate .logo-mark img{
+    width:100%; height:100%; object-fit:contain; padding:12px;
   }
   .panel-innovate .logo-mark span{
     font-family:'Nunito', sans-serif; font-weight:900; font-size:1.7rem; color:#fff;
@@ -150,17 +159,25 @@
 
 <div class="split">
 
-  <a class="panel panel-consulting" href="/consulting">
+  <a class="panel panel-consulting" href="#" onclick="return false;">
     <span class="panel-eyebrow">Education Talent</span>
-    <div class="logo-mark"><span>AC</span></div>
+    <div class="logo-mark">
+      <!-- Replace src with your actual Arc Consulting logo path -->
+      <img src="arc-consulting-logo.png" alt="Arc Consulting">
+      <span>AC</span>
+    </div>
     <h2>Arc Consulting</h2>
     <p>Placing Southeast Asian educators into international schools and EdTech platforms, with care and intention.</p>
-    <span class="panel-cta">Enter site</span>
+    <span class="panel-cta">Coming soon</span>
   </a>
 
   <a class="panel panel-innovate" href="/arc-innovate">
     <span class="panel-eyebrow">Creative Enrichment for Kids</span>
-    <div class="logo-mark"><span>AI</span></div>
+    <div class="logo-mark">
+      <!-- Replace src with your actual Arc Innovate logo path -->
+      <img src="arc-innovate-logo.png" alt="Arc Innovate">
+      <span>AI</span>
+    </div>
     <h2>Arc Innovate</h2>
     <p>Design thinking programs, ECA electives, and creative kits for curious minds ages 4–14.</p>
     <span class="panel-cta">Enter site</span>
