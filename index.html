@@ -62,15 +62,16 @@
     text-transform:uppercase; margin-bottom:22px; color:var(--gold);
   }
   .panel-consulting .logo-mark{
-    width:112px; height:112px; border-radius:50%;
-    border:1px solid rgba(201,169,110,0.55);
+    width:120px; height:120px; border-radius:50%;
+    border:2px solid var(--gold);
     display:flex; align-items:center; justify-content:center;
     margin-bottom:36px; transition:border-color 0.25s ease;
-    background:rgba(255,255,255,0.08);
+    background:#fff;
     overflow:hidden;
+    box-shadow:0 8px 24px rgba(0,0,0,0.35);
   }
   .panel-consulting .logo-mark img{
-    width:100%; height:100%; object-fit:contain; padding:12px;
+    width:100%; height:100%; object-fit:contain; padding:10px;
   }
   .panel-consulting .logo-mark span{
     font-family:'Playfair Display', serif; font-style:italic; font-weight:600;
@@ -102,15 +103,16 @@
     text-transform:uppercase; margin-bottom:22px; color:rgba(255,255,255,0.92);
   }
   .panel-innovate .logo-mark{
-    width:112px; height:112px; border-radius:50%;
-    background:rgba(255,255,255,0.14);
-    border:2px dashed rgba(255,255,255,0.6);
+    width:120px; height:120px; border-radius:50%;
+    background:#fff;
+    border:2px solid #fff;
     display:flex; align-items:center; justify-content:center;
-    margin-bottom:36px; transition:background 0.25s ease;
+    margin-bottom:36px; transition:transform 0.25s ease;
     overflow:hidden;
+    box-shadow:0 8px 24px rgba(0,0,0,0.25);
   }
   .panel-innovate .logo-mark img{
-    width:100%; height:100%; object-fit:contain; padding:12px;
+    width:100%; height:100%; object-fit:contain; padding:10px;
   }
   .panel-innovate .logo-mark span{
     font-family:'Nunito', sans-serif; font-weight:900; font-size:1.7rem; color:#fff;
@@ -131,7 +133,7 @@
     transition:all 0.25s ease;
   }
   .panel-innovate .panel-cta:hover{ background:var(--fresh-green); color:#fff; }
-  .panel-innovate:hover .logo-mark{ background:rgba(255,255,255,0.22); }
+  .panel-innovate:hover .logo-mark{ transform:scale(1.05); }
 
   .divider-word{
     position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
