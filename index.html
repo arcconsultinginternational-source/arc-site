@@ -195,3 +195,36 @@
 
 </body>
 </html>
+<style>
+.line-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #00B900 0%, #00D600 100%);
+  color: white;
+  padding: 16px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 185, 0, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  z-index: 999;
+}
+.line-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 185, 0, 0.5);
+}
+@media(max-width:768px) {
+  .line-button {
+    padding: 14px 20px;
+    font-size: 0.9rem;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+</style>
+<a href="https://lin.ee/TQPIVik" class="line-button" target="_blank">💬 Line@</a>
