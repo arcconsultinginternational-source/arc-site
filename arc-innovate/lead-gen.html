@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enroll in Arc Innovate | Lead Generation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--deep-blue:#2B6CB0;--light-blue:#63B3ED;--forest-green:#3A8A4A;--fresh-green:#6BBF7A;--ink:#1A1614;--paper:#FAFAFA;--radius-md:18px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--paper);}
+h1,h2,h3{font-family:'Nunito',sans-serif;font-weight:800;}
+.wrap{max-width:800px;margin:0 auto;padding:0 32px;}
+header{background:linear-gradient(135deg,var(--deep-blue) 0%,var(--light-blue) 100%);color:white;padding:40px 32px;text-align:center;}
+header h1{font-size:2.2rem;margin-bottom:8px;}
+header p{opacity:0.9;font-size:1rem;}
+.back-link{display:inline-block;color:white;text-decoration:none;margin-top:12px;opacity:0.8;font-size:0.9rem;}
+.back-link:hover{opacity:1;}
+.form-container{padding:48px 32px;max-width:800px;margin:0 auto;}
+.form-section{margin-bottom:36px;}
+.section-title{font-size:1.1rem;font-weight:700;color:var(--deep-blue);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--forest-green);}
+.form-group{margin-bottom:20px;}
+label{display:block;font-weight:600;margin-bottom:8px;color:var(--ink);font-size:0.95rem;}
+label .required{color:#e74c3c;}
+input[type="text"],input[type="email"],input[type="tel"],select,textarea{width:100%;padding:12px 14px;border:1px solid #ddd;border-radius:var(--radius-md);font-family:'Poppins',sans-serif;font-size:0.95rem;transition:border 0.2s;}
+input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus,select:focus,textarea:focus{outline:none;border:2px solid var(--deep-blue);}
+textarea{resize:vertical;min-height:100px;}
+.checkbox-group,.radio-group{display:flex;flex-direction:column;gap:12px;}
+.checkbox-item,.radio-item{display:flex;align-items:center;gap:10px;}
+input[type="checkbox"],input[type="radio"]{width:18px;height:18px;cursor:pointer;accent-color:var(--forest-green);}
+.checkbox-item label,.radio-item label{margin:0;font-weight:400;cursor:pointer;}
+.button-group{display:flex;gap:16px;margin-top:32px;justify-content:center;}
+button{padding:14px 32px;border:none;border-radius:999px;font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;cursor:pointer;transition:all 0.2s;}
+.btn-submit{background:var(--forest-green);color:white;min-width:200px;}
+.btn-submit:hover{background:#2d6f3a;transform:translateY(-2px);box-shadow:0 8px 20px rgba(58,138,74,0.3);}
+.btn-secondary{background:#e8e8e8;color:var(--ink);min-width:140px;}
+.btn-secondary:hover{background:#d0d0d0;}
+.consent{display:flex;align-items:flex-start;gap:10px;margin-top:24px;padding:16px;background:rgba(43,108,176,0.05);border-radius:var(--radius-md);}
+.consent input{width:20px;height:20px;margin-top:2px;flex-shrink:0;}
+.consent label{margin:0;font-size:0.9rem;color:#4a5c6d;}
+.success-message{display:none;background:#d4edda;border:1px solid #c3e6cb;color:#155724;padding:16px;border-radius:var(--radius-md);margin-bottom:20px;}
+footer{background:#f5f5f5;padding:24px 32px;text-align:center;font-size:0.9rem;color:#666;}
+@media(max-width:600px){header h1{font-size:1.8rem;}.form-container{padding:32px 16px;}.button-group{flex-direction:column;}}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/arc-innovate" class="back-link">← Back to Arc Innovate</a>
+  <h1>Enroll in Arc Innovate</h1>
+  <p>Tell us about your child and your interests — we'll be in touch within 24 hours!</p>
+</header>
+
+<div class="form-container">
+  <div class="success-message" id="successMsg">
+    ✅ Thank you! We've received your information. We'll contact you soon.
+  </div>
+
+  <form id="leadForm">
+    <!-- PARENT INFO -->
+    <div class="form-section">
+      <h3 class="section-title">Parent Information</h3>
+      
+      <div class="form-group">
+        <label>Parent/Guardian Name <span class="required">*</span></label>
+        <input type="text" name="parent_name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number <span class="required">*</span></label>
+        <input type="tel" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label>Line ID</label>
+        <input type="text" name="line_id">
+      </div>
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" name="email">
+      </div>
+    </div>
+
+    <!-- CHILD INFO -->
+    <div class="form-section">
+      <h3 class="section-title">Child Information</h3>
+      
+      <div class="form-group">
+        <label>Child's Name <span class="required">*</span></label>
+        <input type="text" name="child_name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Child's Age <span class="required">*</span></label>
+        <select name="age" required>
+          <option value="">-- Select Age --</option>
+          <option value="4-5">4-5 years old</option>
+          <option value="6-7">6-7 years old</option>
+          <option value="8-9">8-9 years old</option>
+          <option value="10-11">10-11 years old</option>
+          <option value="12-14">12-14 years old</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- PROGRAM INTEREST -->
+    <div class="form-section">
+      <h3 class="section-title">Which Program Interests You?</h3>
+      
+      <div class="checkbox-group">
+        <div class="checkbox-item">
+          <input type="checkbox" id="prog1" name="program" value="Young Innovator">
+          <label for="prog1">Young Innovator (Design Thinking + 3D Printing)</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="prog2" name="program" value="Young Entrepreneurs">
+          <label for="prog2">Young Entrepreneurs</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="prog3" name="program" value="UX UI for Kids">
+          <label for="prog3">UX UI for Kids</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="prog4" name="program" value="Experimental Arts">
+          <label for="prog4">Experimental Arts</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="prog5" name="program" value="Creative Cooking">
+          <label for="prog5">Creative Cooking</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="prog6" name="program" value="Fashion Design">
+          <label for="prog6">Fashion Design</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- PREFERRED FORMAT -->
+    <div class="form-section">
+      <h3 class="section-title">Preferred Format</h3>
+      
+      <div class="radio-group">
+        <div class="radio-item">
+          <input type="radio" id="format1" name="format" value="Weekend Class" required>
+          <label for="format1">Weekend Classes</label>
+        </div>
+        <div class="radio-item">
+          <input type="radio" id="format2" name="format" value="School Partnership">
+          <label for="format2">School Partnership (ECA)</label>
+        </div>
+        <div class="radio-item">
+          <input type="radio" id="format3" name="format" value="Holiday Camp">
+          <label for="format3">Holiday Camp</label>
+        </div>
+        <div class="radio-item">
+          <input type="radio" id="format4" name="format" value="Birthday Workshop">
+          <label for="format4">Birthday Party Workshop</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="form-section">
+      <h3 class="section-title">Has your child done design thinking before?</h3>
+      
+      <div class="radio-group">
+        <div class="radio-item">
+          <input type="radio" id="exp1" name="experience" value="Never" required>
+          <label for="exp1">Never</label>
+        </div>
+        <div class="radio-item">
+          <input type="radio" id="exp2" name="experience" value="A little">
+          <label for="exp2">A little</label>
+        </div>
+        <div class="radio-item">
+          <input type="radio" id="exp3" name="experience" value="Yes, experienced">
+          <label for="exp3">Yes, already experienced</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOALS -->
+    <div class="form-section">
+      <h3 class="section-title">What would you like your child to gain?</h3>
+      
+      <div class="checkbox-group">
+        <div class="checkbox-item">
+          <input type="checkbox" id="goal1" name="goals" value="Creativity">
+          <label for="goal1">Creativity & Imagination</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="goal2" name="goals" value="Design Skills">
+          <label for="goal2">Design & Thinking Skills</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="goal3" name="goals" value="Technology">
+          <label for="goal3">Technology & Technical Skills</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="goal4" name="goals" value="Problem-solving">
+          <label for="goal4">Problem-solving Ability</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="goal5" name="goals" value="Confidence">
+          <label for="goal5">Confidence & Self-expression</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADDITIONAL INFO -->
+    <div class="form-section">
+      <h3 class="section-title">Anything Else?</h3>
+      
+      <div class="form-group">
+        <label>Tell us more (optional)</label>
+        <textarea name="additional_info" placeholder="Questions, scheduling needs, or anything else we should know..."></textarea>
+      </div>
+    </div>
+
+    <!-- CONSENT -->
+    <div class="consent">
+      <input type="checkbox" id="consent" name="consent" required>
+      <label for="consent">I confirm the above information is accurate and authorize Arc Innovate to contact me with information about programs and updates.</label>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="button-group">
+      <button type="submit" class="btn-submit">Submit & Enroll</button>
+      <button type="reset" class="btn-secondary">Clear</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <p>Arc Innovate • Bangkok | <a href="mailto:arc-international-edu@gmail.com" style="color:#2B6CB0;text-decoration:none;">arc-international-edu@gmail.com</a> | Line: @arc.innovate</p>
+</footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Collect form data
+  const formData = new FormData(this);
+  const data = {
+    parent_name: formData.get('parent_name'),
+    phone: formData.get('phone'),
+    line_id: formData.get('line_id'),
+    email: formData.get('email'),
+    child_name: formData.get('child_name'),
+    age: formData.get('age'),
+    programs: formData.getAll('program'),
+    format: formData.get('format'),
+    experience: formData.get('experience'),
+    goals: formData.getAll('goals'),
+    additional_info: formData.get('additional_info'),
+    timestamp: new Date().toISOString()
+  };
+
+  // Send to email (using Formspree or EmailJS)
+  // For now, just show success message
+  fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(data)
+  }).then(response => {
+    document.getElementById('successMsg').style.display = 'block';
+    document.getElementById('leadForm').style.display = 'none';
+    window.scrollTo(0, 0);
+  }).catch(error => {
+    alert('Error submitting form. Please try again or contact us directly.');
+    console.error('Error:', error);
+  });
+});
+</script>
+
+</body>
+</html>
