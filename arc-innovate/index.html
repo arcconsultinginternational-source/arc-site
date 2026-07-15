@@ -99,6 +99,63 @@ footer{background:var(--ink);color:rgba(255,255,255,0.65);padding:32px;text-alig
 .line-button:hover{transform:translateY(-3px);}
 @media(max-width:900px){.subjects-grid{grid-template-columns:1fr 1fr;}.formats-grid{grid-template-columns:1fr 1fr;}.contact-band-inner{grid-template-columns:1fr;gap:36px;}.qr-placeholder{max-width:280px;margin:0 auto;}.contact-cta-buttons{flex-direction:column;}.contact-btn{min-width:unset;width:100%;}}
 @media(max-width:600px){.subjects-grid{grid-template-columns:1fr;}.formats-grid{grid-template-columns:1fr;}.gallery-grid{grid-template-columns:repeat(2,1fr);}.gallery-grid img:nth-child(1){grid-row:span 1;}.gallery-grid img:nth-child(3){grid-column:span 1;}.gallery-grid img:nth-child(6){grid-row:span 1;}.hero-band h1{font-size:2.2rem;}}
+
+/* PROGRAMS DROPDOWN */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.nav-dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(43,108,176,0.13);
+  min-width: 220px;
+  padding: 10px 0;
+  z-index: 999;
+  border: 1px solid rgba(43,108,176,0.08);
+}
+.nav-dropdown-menu a {
+  display: block;
+  padding: 11px 22px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #2B6CB0;
+  text-decoration: none;
+  transition: background 0.18s ease, color 0.18s ease;
+  border-radius: 8px;
+  margin: 2px 8px;
+}
+.nav-dropdown-menu a:hover {
+  background: linear-gradient(90deg, #2B6CB0 0%, #3A8A4A 100%);
+  color: #fff;
+}
+.nav-dropdown:hover .nav-dropdown-menu {
+  display: block;
+}
+/* Dropdown arrow indicator */
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+  filter: drop-shadow(0 -2px 2px rgba(43,108,176,0.08));
+}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-33TWWP2J6J"></script>
@@ -119,7 +176,17 @@ footer{background:var(--ink);color:rgba(255,255,255,0.65);padding:32px;text-alig
       Arc Innovate
     </a>
     <nav class="links">
-      <a href="#programs">Programs</a>
+      <div class="nav-dropdown">
+  <a href="#programs" class="nav-dropdown-toggle">Programs ▾</a>
+  <div class="nav-dropdown-menu">
+    <a href="/arc-innovate/subjects/young-innovator">Young Innovator</a>
+    <a href="/arc-innovate/subjects/young-entrepreneurs">Young Entrepreneurs</a>
+    <a href="/arc-innovate/subjects/ux-ui-for-kids">UX/UI for Kids</a>
+    <a href="/arc-innovate/subjects/experimental-arts">Experimental Arts</a>
+    <a href="/arc-innovate/subjects/creative-cooking">Creative Cooking</a>
+    <a href="/arc-innovate/subjects/fashion-design">Fashion Design</a>
+  </div>
+</div>
       <a href="#gallery">Gallery</a>
       <a href="#formats">Formats</a>
       <a href="#partners">For Partners</a>
