@@ -3,172 +3,297 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Bangkok's design thinking school for kids ages 4–14 — creativity, problem-solving, and future-ready skills through hands-on design, arts, STEAM, and 3D printing programs.">
-<meta name="keywords" content="design thinking for kids Bangkok, STEAM classes for kids Bangkok, creative classes for kids Bangkok, 3D printing for kids Bangkok, weekend classes for kids Bangkok, after school activities Bangkok">
-<meta property="og:title" content="Arc Innovate — Design Thinking & STEAM Education">
+<meta name="description" content="Arc Innovate — Bangkok's creative problem-solving academy for kids ages 4–14. Design Thinking, 3D Printing, STEAM & creative enrichment classes. The skills AI can't replace, from age 4. คอร์สเสริมทักษะเด็ก กรุงเทพ">
+<meta property="og:title" content="Arc Innovate — Creative Problem-Solving Academy for Kids Bangkok">
+<meta property="og:description" content="Kids learn to solve problems by solving real ones. Design Thinking, 3D Printing & STEAM classes for ages 4–14 in Bangkok.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.arc-international-edu.com/arc-innovate">
+<meta property="og:image" content="https://www.arc-international-edu.com/arc-innovate-logo.png">
+<title>Arc Innovate — Creative Problem-Solving Academy for Kids | Bangkok</title>
 <link rel="icon" type="image/png" href="/arc-innovate-logo.png">
-<title>Arc Innovate — Design Thinking & STEAM Education for Kids</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-33TWWP2J6J"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-33TWWP2J6J');</script>
 <style>
-:root{--deep-blue:#2B6CB0;--light-blue:#63B3ED;--forest-green:#3A8A4A;--fresh-green:#6BBF7A;--ink:#1A1614;--paper:#FAFAFA;--section-alt:#EDF4FB;--radius-lg:28px;--radius-md:18px;}
+:root{
+  --deep-blue:#2B6CB0;
+  --light-blue:#63B3ED;
+  --forest-green:#3A8A4A;
+  --fresh-green:#6BBF7A;
+  --ink:#1A1614;
+  --paper:#FAFAFA;
+  --section-alt:#EDF4FB;
+  --mid:#555;
+}
 *{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;}
-h1,h2,h3{font-family:'Nunito',sans-serif;font-weight:800;line-height:1.1;}
+body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--paper);}
+h1,h2,h3,h4{font-family:'Nunito',sans-serif;font-weight:800;}
 a{text-decoration:none;color:inherit;}
-.wrap{max-width:1100px;margin:0 auto;padding:0 32px;}
-header.site-nav{position:sticky;top:0;z-index:50;background:rgba(250,250,250,0.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(26,22,20,0.08);padding:14px 32px;}
-.nav-inner{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;}
-.logo{display:flex;align-items:center;gap:12px;font-weight:700;text-decoration:none;}
-.logo img{height:40px;width:40px;border-radius:50%;object-fit:cover;}
-nav.links{display:flex;gap:30px;}
-nav.links a{font-size:0.9rem;opacity:0.75;transition:opacity 0.2s;}
-nav.links a:hover{opacity:1;}
-.nav-cta{background:var(--forest-green);color:white;padding:10px 20px;border-radius:999px;font-weight:700;font-size:0.9rem;}
-.section{padding:72px 0;}
-.section-head{text-align:center;margin-bottom:48px;}
-.eyebrow{display:inline-block;background:rgba(43,108,176,0.1);color:var(--deep-blue);padding:6px 18px;border-radius:999px;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;}
-.section-head h2{font-size:2.2rem;margin-bottom:16px;}
-.section-head p{font-size:1rem;color:#4a5c6d;max-width:600px;margin:0 auto;}
-.hero-band{background:linear-gradient(135deg, var(--deep-blue) 0%, var(--light-blue) 100%);color:white;padding:100px 32px 80px;text-align:center;}
-.hero-band .eyebrow{background:rgba(255,255,255,0.2);color:white;}
-.hero-band h1{font-size:3.5rem;margin:20px 0;line-height:1.1;}
-.hero-band p{font-size:1.15rem;opacity:0.9;max-width:600px;margin:0 auto 32px;}
-.hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
-.hero-ctas a{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:50px;font-weight:700;transition:all 0.2s;}
-.cta-primary{background:var(--forest-green);color:white;}
-.cta-primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(58,138,74,0.3);}
-.cta-secondary{background:white;color:var(--deep-blue);}
-.cta-secondary:hover{transform:translateY(-2px);}
-.hero-art{position:relative;z-index:1;display:flex;justify-content:center;align-items:center;}
-.hero-art::before, .hero-art::after{content:'';position:absolute;border-radius:50%;opacity:0.15;}
-.hero-art::before{width:320px;height:320px;background:var(--deep-blue);top:-80px;right:-80px;}
-.hero-art::after{width:280px;height:280px;background:var(--forest-green);bottom:-60px;left:-60px;}
-.hero-art .photo-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;padding:32px;width:100%;}
-.photo-slot{background:rgba(255,255,255,0.14);border:2px dashed rgba(255,255,255,0.55);border-radius:var(--radius-md);aspect-ratio:1/1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:rgba(255,255,255,0.85);font-family:'Nunito';font-weight:700;font-size:0.78rem;text-align:center;}
-.photo-slot .cam{font-size:1.5rem;}
-.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px;max-width:1000px;}
-.gallery-grid .photo-slot{background:var(--section-alt);border:none;color:rgba(122,138,153,0.5);}
-.gallery-grid .photo-slot .cam{color:rgba(26,22,20,0.35);}
-.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);}
-.gallery-grid img:nth-child(1){grid-row:span 2;}
-.gallery-grid img:nth-child(3){grid-column:span 2;}
-.gallery-grid img:nth-child(6){grid-row:span 2;}
-.subjects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px;}
-.subject-card{border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 20px 40px -20px rgba(26,22,20,0.25);text-decoration:none;color:inherit;transition:transform 0.25s ease, box-shadow 0.25s ease;display:flex;flex-direction:column;}
-.subject-card:hover{transform:translateY(-6px);box-shadow:0 28px 48px -18px rgba(26,22,20,0.35);}
-.subject-card-header{padding:28px 24px 22px;color:white;text-align:center;}
-.subject-card-header.blue{background:var(--deep-blue);}
-.subject-card-header.green{background:var(--forest-green);}
-.subject-age{display:inline-block;background:rgba(255,255,255,0.2);padding:4px 14px;border-radius:999px;font-size:0.75rem;font-weight:700;letter-spacing:0.06em;margin-bottom:12px;}
-.subject-card-header h3{font-size:1.35rem;color:white;margin-bottom:6px;}
-.subject-sub{font-size:0.82rem;opacity:0.85;font-family:'Poppins';font-weight:400;}
-.subject-card-body{background:white;padding:0;flex:1;display:flex;flex-direction:column;border:1px solid rgba(26,22,20,0.07);border-top:none;}
-.subject-img-slot{width:100%;height:200px;background:var(--section-alt);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#7a8a99;font-size:0.8rem;}
-.subject-img-slot span{font-size:1.8rem;}
-.subject-img-slot img{width:100%;height:100%;object-fit:cover;}
-.subject-cta{display:block;padding:16px 24px;font-weight:700;font-size:0.9rem;color:var(--deep-blue);border-top:1px solid rgba(26,22,20,0.07);text-align:center;}
-.subject-card:hover .subject-cta{color:var(--forest-green);}
-.formats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px;}
-.format-card{background:white;padding:32px 24px;border-radius:var(--radius-md);border:1px solid rgba(26,22,20,0.07);box-shadow:0 4px 12px -6px rgba(26,22,20,0.15);}
-.format-card h3{font-size:1.15rem;margin-bottom:12px;color:var(--deep-blue);}
-.format-card p{font-size:0.95rem;color:#4a5c6d;line-height:1.7;}
-.partners-band{background:var(--section-alt);padding:48px;border-radius:var(--radius-lg);}
-.partners-band > div{margin-bottom:32px;}
-.partners-band h2{font-size:2rem;margin-bottom:16px;}
-.partners-band p{font-size:1rem;color:#4a5c6d;margin-bottom:24px;line-height:1.8;}
-.partner-list{list-style:none;}
-.partner-list li{padding:16px 0;padding-left:32px;position:relative;color:#3f5468;line-height:1.8;font-size:0.95rem;}
-.partner-list li:before{content:'✓';position:absolute;left:0;color:var(--forest-green);font-weight:700;font-size:1.2rem;}
-.contact-band-inner{display:grid;grid-template-columns:280px 1fr;gap:64px;align-items:center;padding:48px 0;}
-.qr-placeholder{background:white;border-radius:var(--radius-lg);padding:24px;display:flex;flex-direction:column;align-items:center;gap:14px;box-shadow:0 20px 40px -16px rgba(0,0,0,0.25);}
-.qr-inner{width:180px;height:180px;border:2px dashed rgba(43,108,176,0.3);border-radius:var(--radius-md);display:flex;flex-direction:column;align-items:center;justify-content:center;}
-.qr-label{display:flex;align-items:center;gap:8px;font-family:'Nunito';font-weight:800;font-size:0.9rem;color:var(--ink);}
-.contact-info-list{list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;}
-.contact-info-list li{display:flex;align-items:center;gap:14px;}
-.contact-icon{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem;}
-.contact-cta-buttons{display:flex;gap:14px;flex-wrap:wrap;}
-.contact-btn{display:flex;align-items:center;gap:14px;padding:16px 24px;border-radius:var(--radius-md);font-family:'Poppins';text-decoration:none;color:white;transition:transform 0.2s ease;min-width:200px;}
-.contact-btn:hover{transform:translateY(-3px);}
-.line-btn{background:#00B900;box-shadow:0 8px 24px rgba(0,185,0,0.35);}
-.email-btn{background:var(--deep-blue);box-shadow:0 8px 24px rgba(43,108,176,0.35);}
-.btn-icon{font-size:1.5rem;width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.2);border-radius:10px;flex-shrink:0;}
-footer{background:var(--ink);color:rgba(255,255,255,0.65);padding:32px;text-align:center;font-size:0.85rem;}
-.line-button{position:fixed;bottom:30px;right:30px;background:linear-gradient(135deg,#00B900,#00D600);color:white;padding:16px 24px;border-radius:50px;font-weight:700;font-size:0.95rem;text-decoration:none;box-shadow:0 8px 24px rgba(0,185,0,0.4);display:flex;align-items:center;gap:8px;transition:transform 0.25s ease;z-index:999;}
-.line-button:hover{transform:translateY(-3px);}
-@media(max-width:900px){.subjects-grid{grid-template-columns:1fr 1fr;}.formats-grid{grid-template-columns:1fr 1fr;}.contact-band-inner{grid-template-columns:1fr;gap:36px;}.qr-placeholder{max-width:280px;margin:0 auto;}.contact-cta-buttons{flex-direction:column;}.contact-btn{min-width:unset;width:100%;}}
-@media(max-width:600px){.subjects-grid{grid-template-columns:1fr;}.formats-grid{grid-template-columns:1fr;}.gallery-grid{grid-template-columns:repeat(2,1fr);}.gallery-grid img:nth-child(1){grid-row:span 1;}.gallery-grid img:nth-child(3){grid-column:span 1;}.gallery-grid img:nth-child(6){grid-row:span 1;}.hero-band h1{font-size:2.2rem;}}
 
-/* PROGRAMS DROPDOWN */
-.nav-dropdown {
-  position: relative;
-  display: inline-block;
+/* ── NAV ── */
+.site-nav{
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(12px);
+  padding:0 32px;
+  height:68px;
+  display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:100;
+  box-shadow:0 2px 16px rgba(0,0,0,0.07);
 }
-.nav-dropdown-toggle {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 4px;
+.nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Nunito',sans-serif;font-weight:900;font-size:1.1rem;color:var(--deep-blue);}
+.logo img{width:36px;height:36px;border-radius:50%;object-fit:cover;}
+.links{display:flex;align-items:center;gap:28px;}
+.links a{font-size:0.88rem;font-weight:500;color:var(--ink);transition:color 0.2s;}
+.links a:hover{color:var(--deep-blue);}
+.nav-dropdown{position:relative;}
+.nav-dropdown-toggle{cursor:pointer;display:flex;align-items:center;gap:4px;font-size:0.88rem;font-weight:500;color:var(--ink);}
+.nav-dropdown-menu{
+  display:none;position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%);
+  background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(43,108,176,0.15);
+  min-width:230px;padding:10px 0;z-index:999;
+  border:1px solid rgba(43,108,176,0.08);
 }
-.nav-dropdown-menu {
-  display: none;
-  position: absolute;
-  top: calc(100% + 12px);
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 8px 32px rgba(43,108,176,0.13);
-  min-width: 220px;
-  padding: 10px 0;
-  z-index: 999;
-  border: 1px solid rgba(43,108,176,0.08);
+.nav-dropdown-menu::before{
+  content:'';position:absolute;top:-7px;left:50%;transform:translateX(-50%);
+  border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #fff;
 }
-.nav-dropdown-menu a {
-  display: block;
-  padding: 11px 22px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.88rem;
-  font-weight: 500;
-  color: #2B6CB0;
-  text-decoration: none;
-  transition: background 0.18s ease, color 0.18s ease;
-  border-radius: 8px;
-  margin: 2px 8px;
+.nav-dropdown-menu a{
+  display:block;padding:11px 22px;font-size:0.88rem;font-weight:500;
+  color:var(--deep-blue);border-radius:8px;margin:2px 8px;transition:background 0.18s,color 0.18s;
 }
-.nav-dropdown-menu a:hover {
-  background: linear-gradient(90deg, #2B6CB0 0%, #3A8A4A 100%);
-  color: #fff;
+.nav-dropdown-menu a:hover{background:linear-gradient(90deg,var(--deep-blue),var(--forest-green));color:#fff;}
+.nav-dropdown:hover .nav-dropdown-menu{display:block;}
+.nav-cta{
+  background:var(--forest-green);color:white;
+  padding:10px 22px;border-radius:999px;font-weight:600;font-size:0.88rem;
+  transition:background 0.2s;
 }
-.nav-dropdown:hover .nav-dropdown-menu {
-  display: block;
+.nav-cta:hover{background:var(--deep-blue);}
+
+/* ── HERO ── */
+.hero{
+  background:linear-gradient(135deg,var(--deep-blue) 0%,#3B82C4 40%,var(--forest-green) 100%);
+  padding:100px 32px 90px;text-align:center;color:white;
+  position:relative;overflow:hidden;
 }
-/* Dropdown arrow indicator */
-.nav-dropdown-menu::before {
-  content: '';
-  position: absolute;
-  top: -7px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid #fff;
-  filter: drop-shadow(0 -2px 2px rgba(43,108,176,0.08));
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 30% 50%,rgba(255,255,255,0.06) 0%,transparent 60%);
+}
+.hero-eyebrow{
+  display:inline-block;
+  background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.25);
+  border-radius:999px;padding:6px 18px;
+  font-size:0.75rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;
+  margin-bottom:24px;
+}
+.hero h1{
+  font-size:3.4rem;line-height:1.1;max-width:820px;margin:0 auto 20px;
+  color:white;
+}
+.hero h1 em{font-style:normal;color:#A7F3C4;}
+.hero-sub{
+  font-size:1.1rem;opacity:0.9;max-width:580px;margin:0 auto 16px;line-height:1.7;
+}
+.hero-tagline{
+  font-size:0.88rem;opacity:0.75;margin-bottom:40px;
+  font-style:italic;
+}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.btn-primary{
+  background:white;color:var(--deep-blue);
+  padding:15px 36px;border-radius:999px;font-weight:800;font-size:0.95rem;
+  transition:transform 0.2s,box-shadow 0.2s;
+  box-shadow:0 4px 20px rgba(0,0,0,0.15);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,0.2);}
+.btn-secondary{
+  background:rgba(255,255,255,0.15);color:white;
+  border:2px solid rgba(255,255,255,0.4);
+  padding:15px 36px;border-radius:999px;font-weight:700;font-size:0.95rem;
+  transition:background 0.2s;
+}
+.btn-secondary:hover{background:rgba(255,255,255,0.25);}
+
+/* ── TRUST BAR ── */
+.trust-bar{
+  background:white;padding:28px 32px;
+  border-bottom:1px solid #eee;
+}
+.trust-inner{
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;
+}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:0.88rem;font-weight:600;color:var(--mid);}
+.trust-item span{font-size:1.3rem;}
+
+/* ── SECTIONS ── */
+.section{padding:80px 0;}
+.section-alt{padding:80px 0;background:var(--section-alt);}
+.wrap{max-width:1100px;margin:0 auto;padding:0 32px;}
+.section-label{
+  font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--deep-blue);margin-bottom:12px;
+}
+.section h2{font-size:2.2rem;margin-bottom:16px;line-height:1.2;}
+.section-sub{font-size:1rem;color:var(--mid);line-height:1.7;max-width:600px;margin-bottom:48px;}
+
+/* ── IDENTITY PILLARS ── */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+.pillar{background:white;border-radius:20px;padding:36px 28px;border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.06);}
+.pillar-icon{font-size:2.4rem;margin-bottom:16px;}
+.pillar h3{font-size:1.15rem;margin-bottom:10px;color:var(--deep-blue);}
+.pillar p{font-size:0.9rem;line-height:1.7;color:var(--mid);}
+
+/* ── THE ARC (3 LEVELS) ── */
+.arc-levels{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
+.arc-level{
+  border-radius:20px;padding:36px 28px;color:white;position:relative;overflow:hidden;
+}
+.arc-level-1{background:linear-gradient(135deg,var(--forest-green),var(--fresh-green));}
+.arc-level-2{background:linear-gradient(135deg,var(--deep-blue),var(--light-blue));}
+.arc-level-3{background:linear-gradient(135deg,#5B21B6,#7C3AED);}
+.arc-level-badge{
+  display:inline-block;background:rgba(255,255,255,0.2);
+  border-radius:999px;padding:4px 14px;
+  font-size:0.72rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;
+  margin-bottom:16px;
+}
+.arc-level h3{font-size:1.3rem;margin-bottom:6px;color:white;}
+.arc-level .age{font-size:0.88rem;opacity:0.85;margin-bottom:16px;}
+.arc-level p{font-size:0.88rem;line-height:1.6;opacity:0.9;}
+
+/* ── SKILL MAP ── */
+.skill-map{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:40px;}
+.skill-node{
+  background:white;border-radius:16px;padding:20px 14px;text-align:center;
+  border:1px solid #e8eef6;box-shadow:0 2px 8px rgba(43,108,176,0.06);
+}
+.skill-node .skill-icon{font-size:1.8rem;margin-bottom:8px;}
+.skill-node .skill-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:0.95rem;color:var(--deep-blue);margin-bottom:4px;}
+.skill-node .skill-desc{font-size:0.75rem;color:var(--mid);line-height:1.4;}
+
+/* ── PROGRAMS GRID ── */
+.programs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
+.program-card{
+  border-radius:20px;overflow:hidden;
+  border:1px solid #e8eef6;
+  box-shadow:0 2px 16px rgba(43,108,176,0.07);
+  transition:transform 0.25s ease,box-shadow 0.25s ease;
+  display:block;
+  background:white;
+}
+.program-card:hover{transform:translateY(-5px);box-shadow:0 12px 36px rgba(43,108,176,0.14);}
+.program-card-header{padding:28px 24px 24px;color:white;position:relative;}
+.program-card-header .badge{
+  display:inline-block;background:rgba(255,255,255,0.2);
+  border-radius:999px;padding:3px 12px;
+  font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  margin-bottom:12px;
+}
+.program-card-header h3{font-size:1.2rem;margin-bottom:6px;color:white;}
+.program-card-header p{font-size:0.85rem;opacity:0.88;}
+.program-card img{width:100%;height:180px;object-fit:cover;display:block;}
+.program-card-footer{
+  padding:16px 24px;display:flex;justify-content:space-between;align-items:center;
+  font-size:0.82rem;font-weight:600;color:var(--deep-blue);
+}
+.program-card-footer span{color:var(--mid);font-weight:400;}
+
+/* Program card colors */
+.card-blue{background:linear-gradient(135deg,var(--deep-blue),var(--light-blue));}
+.card-green{background:linear-gradient(135deg,var(--forest-green),var(--fresh-green));}
+.card-purple{background:linear-gradient(135deg,#5B21B6,#7C3AED);}
+.card-teal{background:linear-gradient(135deg,#0D9488,#14B8A6);}
+.card-orange{background:linear-gradient(135deg,#C2410C,#EA580C);}
+.card-pink{background:linear-gradient(135deg,#BE185D,#EC4899);}
+
+/* ── FORMATS ── */
+.formats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
+.format-card{background:white;border-radius:20px;padding:32px;border:1px solid #e8eef6;text-align:center;box-shadow:0 2px 12px rgba(43,108,176,0.06);}
+.format-icon{font-size:2.2rem;margin-bottom:16px;}
+.format-card h3{font-size:1.05rem;margin-bottom:10px;color:var(--ink);}
+.format-card p{font-size:0.88rem;color:var(--mid);line-height:1.6;}
+
+/* ── GALLERY ── */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;}
+.gallery-grid img{width:100%;height:240px;object-fit:cover;border-radius:18px;display:block;}
+
+/* ── PARTNERS ── */
+.partner-features{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px;}
+.partner-feat{display:flex;gap:16px;align-items:flex-start;}
+.feat-icon{font-size:1.8rem;flex-shrink:0;margin-top:4px;}
+.feat-text h4{font-size:1rem;margin-bottom:6px;}
+.feat-text p{font-size:0.88rem;color:var(--mid);line-height:1.6;}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:40px;}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.about-stat{background:white;border-radius:16px;padding:24px;text-align:center;border:1px solid #e8eef6;}
+.about-stat .number{font-family:'Nunito',sans-serif;font-size:2.2rem;font-weight:900;color:var(--deep-blue);}
+.about-stat .label{font-size:0.82rem;color:var(--mid);margin-top:4px;}
+.about-text p{font-size:1rem;line-height:1.8;color:#444;margin-bottom:20px;}
+.about-text .credential{
+  display:flex;align-items:center;gap:10px;
+  padding:12px 0;border-bottom:1px solid #eee;
+  font-size:0.88rem;color:var(--mid);
+}
+.about-text .credential:last-child{border-bottom:none;}
+.about-text .credential span{font-size:1.2rem;}
+
+/* ── CONTACT ── */
+.contact-section{background:linear-gradient(135deg,var(--deep-blue),var(--forest-green));padding:80px 0;color:white;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.contact-info h2{font-size:2.2rem;margin-bottom:16px;color:white;}
+.contact-info p{opacity:0.88;line-height:1.7;margin-bottom:32px;}
+.contact-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-line{background:#00B900;color:white;padding:14px 28px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:8px;}
+.btn-email{background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.4);padding:14px 28px;border-radius:999px;font-weight:700;}
+.contact-details{background:rgba(255,255,255,0.1);border-radius:20px;padding:32px;}
+.contact-detail-row{padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.15);font-size:0.95rem;}
+.contact-detail-row:last-child{border-bottom:none;}
+.contact-detail-row strong{display:block;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;opacity:0.7;margin-bottom:4px;}
+
+/* ── FOOTER ── */
+footer{background:#1A1614;color:rgba(255,255,255,0.5);padding:40px 32px;text-align:center;font-size:0.85rem;}
+footer a{color:#63B3ED;}
+footer .footer-logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px;}
+footer img{width:36px;height:36px;border-radius:50%;object-fit:cover;}
+footer .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;color:rgba(255,255,255,0.8);}
+
+/* ── LINE BUTTON ── */
+.line-button{
+  position:fixed;bottom:28px;right:28px;
+  background:linear-gradient(135deg,#00B900,#00D600);
+  color:white;padding:14px 22px;border-radius:50px;z-index:999;
+  font-weight:700;font-size:0.9rem;
+  box-shadow:0 4px 20px rgba(0,185,0,0.4);
+  display:flex;align-items:center;gap:8px;
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero h1{font-size:2.4rem;}
+  .pillars,.arc-levels,.programs-grid,.formats-grid{grid-template-columns:1fr 1fr;}
+  .skill-map{grid-template-columns:repeat(3,1fr);}
+  .about-grid,.contact-grid,.partner-features{grid-template-columns:1fr;}
+  .trust-inner{gap:24px;}
+}
+@media(max-width:600px){
+  .hero h1{font-size:2rem;}
+  .pillars,.arc-levels,.programs-grid,.formats-grid,.gallery-grid{grid-template-columns:1fr;}
+  .skill-map{grid-template-columns:repeat(2,1fr);}
+  .links{display:none;}
+  .about-stats{grid-template-columns:1fr 1fr;}
 }
 </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-33TWWP2J6J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-33TWWP2J6J');
-</script>
-
 </head>
-<body>
+<body id="top">
 
+<!-- NAV -->
 <header class="site-nav">
   <div class="nav-inner">
     <a href="#top" class="logo">
@@ -177,272 +302,487 @@ footer{background:var(--ink);color:rgba(255,255,255,0.65);padding:32px;text-alig
     </a>
     <nav class="links">
       <div class="nav-dropdown">
-  <a href="#programs" class="nav-dropdown-toggle">Programs ▾</a>
-  <div class="nav-dropdown-menu">
-    <a href="/arc-innovate/subjects/young-innovator">Young Innovator</a>
-    <a href="/arc-innovate/subjects/young-entrepreneurs">Young Entrepreneurs</a>
-    <a href="/arc-innovate/subjects/ux-ui-for-kids">UX/UI for Kids</a>
-    <a href="/arc-innovate/subjects/experimental-arts">Experimental Arts</a>
-    <a href="/arc-innovate/subjects/creative-cooking">Creative Cooking</a>
-    <a href="/arc-innovate/subjects/fashion-design">Fashion Design</a>
-  </div>
-</div>
+        <span class="nav-dropdown-toggle">Programs ▾</span>
+        <div class="nav-dropdown-menu">
+          <a href="/arc-innovate/subjects/young-innovator">3D Printing & Innovation</a>
+          <a href="/arc-innovate/subjects/ux-ui-for-kids">Tech Talk & Digital Design</a>
+          <a href="/arc-innovate/subjects/experimental-arts">Experimental Arts</a>
+          <a href="/arc-innovate/subjects/young-entrepreneurs">Young Entrepreneurs</a>
+          <a href="/arc-innovate/subjects/creative-cooking">Creative Cooking</a>
+          <a href="/arc-innovate/subjects/fashion-design">Fashion Design</a>
+        </div>
+      </div>
+      <a href="#the-arc">The Arc</a>
       <a href="#gallery">Gallery</a>
       <a href="#formats">Formats</a>
       <a href="#partners">For Partners</a>
       <a href="#about">About</a>
       <a href="https://instagram.com/arc.innovate" target="_blank">Instagram</a>
-      <a href="/arc-innovate/insights">News</a>
+      <a href="/arc-innovate/insights">Insights</a>
       <a href="#contact">Contact</a>
     </nav>
     <a href="mailto:arc.international.edu@gmail.com" class="nav-cta">Get in Touch</a>
   </div>
 </header>
 
-<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Bangkok's Creative Problem-Solving Academy • Ages 4–14</div>
+  <h1>The Skills AI Can't Replace — <em>creative problem-solving, from age 4.</em></h1>
+  <p class="hero-sub">Kids learn to solve problems by solving real ones. Design Thinking, 3D Printing & STEAM programs that build the creative confidence your child needs for any future.</p>
+  <div class="hero-btns">
+    <a href="#programs" class="btn-primary">Explore Programs</a>
+    <a href="#partners" class="btn-secondary">School Partnerships</a>
+  </div>
+</section>
 
-<section class="hero-band">
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span>👧</span> Ages 4–14</div>
+    <div class="trust-item"><span>🏫</span> School ECA & Mobile Academy</div>
+    <div class="trust-item"><span>🖨️</span> 3D Printing Studio</div>
+    <div class="trust-item"><span>📍</span> Bangkok, Thailand</div>
+    
+  </div>
+</div>
+
+<!-- IDENTITY PILLARS -->
+<section class="section">
   <div class="wrap">
-    <span class="eyebrow">Creative Enrichment for Kids</span>
-    <h1>Where curious kids learn to think like designers.</h1>
-    <p>Arc Innovate brings hands-on design thinking programs to children ages 4–14 — through school partnerships, weekend classes, and creative kits.</p>
-    <div class="hero-ctas">
-      <a href="#programs" class="cta-primary">Explore Programs</a>
-      <a href="#partners" class="cta-secondary">Partner With Us</a>
+    <div class="section-label">What Makes Arc Innovate Different</div>
+    <h2>Art schools teach making. We teach solving.</h2>
+    <p class="section-sub">Every program at Arc Innovate uses Design Thinking as its backbone — not as a lesson, but as the invisible method that runs through every activity, project, and challenge your child works on.</p>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">🧠</div>
+        <h3>Design Thinking Framework</h3>
+        <p>Every subject uses the same 5-stage process: Empathize → Define → Ideate → Prototype → Test. Children don't just make things — they solve things. The method used by Apple, Google, and IDEO, taught from age 4.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🔨</div>
+        <h3>Real Problems. Real Solutions.</h3>
+        <p>Students don't practice on made-up briefs. They choose real problems from their own lives, build real prototypes, and test them with real users. The learning sticks because the stakes are real.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🎤</div>
+        <h3>Every Subject Ends in a Showcase</h3>
+        <p>Every 8-week program closes with a parent-facing showcase where students present their work. Communication and confidence aren't a subject at Arc Innovate — they're a ritual that happens every term.</p>
+      </div>
     </div>
   </div>
 </section>
 
-
-<section class="section" id="programs">
+<!-- THE ARC — 3 LEVELS -->
+<section class="section-alt" id="the-arc">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Our programs</span>
-      <h2>Find the right subject for your child.</h2>
-      <p>Every Arc Innovate subject is built on design thinking — hands-on, project-based, and designed to build skills that last beyond the classroom.</p>
-    </div>
-    <div style="display:flex;gap:16px;justify-content:center;margin-bottom:48px;flex-wrap:wrap;">
-      <a href="/arc-innovate/lead-gen" style="display:inline-flex;align-items:center;gap:8px;padding:16px 40px;background:#3A8A4A;color:white;border-radius:999px;font-family:'Nunito',sans-serif;font-weight:800;font-size:1.05rem;text-decoration:none;transition:all 0.2s;box-shadow:0 8px 24px rgba(58,138,74,0.3);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">🎯 Enroll Now</a>
-      <a href="https://lin.ee/TQPIVik" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:16px 40px;background:#2B6CB0;color:white;border-radius:999px;font-family:'Nunito',sans-serif;font-weight:800;font-size:1.05rem;text-decoration:none;transition:all 0.2s;box-shadow:0 8px 24px rgba(43,108,176,0.3);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">❓ Ask More</a>
-    </div>
-    <div class="subjects-grid">
-      <a href="/arc-innovate/subjects/young-innovator" class="subject-card">
-        <div class="subject-card-header blue">
-          <span class="subject-age">Ages 7–14</span>
-          <h3>Young Innovator</h3>
-          <p class="subject-sub">Design Thinking + 3D Printing</p>
-        </div>
-        <div class="subject-card-body">
-          <img src="/arc-innovate/subjects/images/young-innovator.jpg" style="width:100%; height:200px; object-fit:cover;">
-          <span class="subject-cta">Learn more →</span>
-        </div>
-      </a>
-      <a href="/arc-innovate/subjects/young-entrepreneurs" class="subject-card">
-        <div class="subject-card-header green">
-          <span class="subject-age">Ages 7–14</span>
-          <h3>Young Entrepreneurs</h3>
-          <p class="subject-sub">Business Thinking for Kids</p>
-        </div>
-        <div class="subject-card-body">
-          <img src="/arc-innovate/subjects/images/young-entrepreneurs.jpg" style="width:100%; height:200px; object-fit:cover;">
-          <span class="subject-cta">Learn more →</span>
-        </div>
-      </a>
-      <a href="/arc-innovate/subjects/ux-ui-for-kids" class="subject-card">
-        <div class="subject-card-header blue">
-          <span class="subject-age">Ages 7–14</span>
-          <h3>UX UI for Kids</h3>
-          <p class="subject-sub">Digital Design & App Thinking</p>
-        </div>
-        <div class="subject-card-body">
-          <img src="/arc-innovate/subjects/images/ux-ui-for-kids.jpg" style="width:100%; height:200px; object-fit:cover;">
-          <span class="subject-cta">Learn more →</span>
-        </div>
-      </a>
-      <a href="/arc-innovate/subjects/experimental-arts" class="subject-card">
-        <div class="subject-card-header green">
-          <span class="subject-age">Ages 4–7</span>
-          <h3>Experimental Arts</h3>
-          <p class="subject-sub">Sensory Art & Design Exploration</p>
-        </div>
-        <div class="subject-card-body">
-          <img src="/arc-innovate/subjects/images/experimental-arts.jpg" style="width:100%; height:200px; object-fit:cover;">
-          <span class="subject-cta">Learn more →</span>
-        </div>
-      </a>
-      <a href="/arc-innovate/subjects/creative-cooking" class="subject-card">
-        <div class="subject-card-header blue">
-          <span class="subject-age">Ages 4–12</span>
-          <h3>Creative Cooking</h3>
-          <p class="subject-sub">Food Design & Kitchen Creativity</p>
-        </div>
-        <div class="subject-card-body">
-          <img src="/arc-innovate/subjects/images/creative-cooking.jpg" style="width:100%; height:200px; object-fit:cover;">
-          <span class="subject-cta">Learn more →</span>
-        </div>
-      </a>
-      <a href="/arc-innovate/subjects/fashion-design" class="subject-card">
-        <div class="subject-card-header green">
-          <span class="subject-age">Ages 7–14</span>
-          <h3>Fashion Design</h3>
-          <p class="subject-sub">Style, Sketching & Collections</p>
-        </div>
-        <div class="subject-card-body">
-          <img src="/arc-innovate/subjects/images/fashion-design.jpg" style="width:100%; height:200px; object-fit:cover;">
-          <span class="subject-cta">Learn more →</span>
-        </div>
-      </a>
+    <div class="section-label">The Arc — Your Child's Learning Journey</div>
+    <h2>One progression. Ages 4 to 14.</h2>
+    <p class="section-sub">The Arc is Arc Innovate's 3-level curriculum architecture. Clean age boundaries, the same Innovator Skill Map at every level — only the depth and complexity changes as children grow.</p>
+    <div class="arc-levels">
+      <div class="arc-level arc-level-1">
+        <div class="arc-level-badge">Level 1</div>
+        <h3>Young Creator</h3>
+        <div class="age">Ages 4–7</div>
+        <p>Sensory exploration, open-ended making, and "how might we fix this?" thinking. Curiosity-first, structure-light. Where the Design Thinking habit begins.</p>
+      </div>
+      <div class="arc-level arc-level-2">
+        <div class="arc-level-badge">Level 2</div>
+        <h3>Young Innovator</h3>
+        <div class="age">Ages 7–10</div>
+        <p>Structured design projects with clear stages. Building, prototyping, 3D printing, and presenting real solutions to real problems. The heart of the Arc.</p>
+      </div>
+      <div class="arc-level arc-level-3">
+        <div class="arc-level-badge">Level 3</div>
+        <h3>Creative Innovator</h3>
+        <div class="age">Ages 10–14</div>
+        <p>Full design thinking applied to complex real-world challenges — digital products, entrepreneurial ventures, and advanced maker projects.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="gallery" style="background:var(--section-alt);">
+<!-- INNOVATOR SKILL MAP -->
+<section class="section">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">See it in action</span>
-      <h2>Moments from the studio.</h2>
-      <p>Photos from sessions, camps, and showcases.</p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:36px;">
-      <img src="/arc-innovate/images/gallery-1.jpg" alt="Studio" style="width:100%;height:250px;object-fit:cover;border-radius:18px;">
-      <img src="/arc-innovate/images/gallery-2.jpg" alt="Studio" style="width:100%;height:250px;object-fit:cover;border-radius:18px;">
-      <img src="/arc-innovate/images/gallery-3.jpg" alt="Studio" style="width:100%;height:250px;object-fit:cover;border-radius:18px;">
-      <img src="/arc-innovate/images/gallery-4.jpg" alt="Studio" style="width:100%;height:250px;object-fit:cover;border-radius:18px;">
-      <img src="/arc-innovate/images/gallery-5.jpg" alt="Studio" style="width:100%;height:250px;object-fit:cover;border-radius:18px;">
-      <img src="/arc-innovate/images/gallery-6.jpg" alt="Studio" style="width:100%;height:250px;object-fit:cover;border-radius:18px;">
+    <div class="section-label">The Innovator Skill Map</div>
+    <h2>Six chapters. Every subject. Every age.</h2>
+    <p class="section-sub">The Innovator Passport tracks your child's progress across six core chapters — the same map at every level, stamped by every subject they complete. Mastery means completing the full cycle independently.</p>
+    <div class="skill-map">
+      <div class="skill-node">
+        <div class="skill-icon">👁️</div>
+        <div class="skill-name">SEE</div>
+        <div class="skill-desc">Observe & empathize with real people and real problems</div>
+      </div>
+      <div class="skill-node">
+        <div class="skill-icon">💡</div>
+        <div class="skill-name">IMAGINE</div>
+        <div class="skill-desc">Generate ideas — quantity before quality</div>
+      </div>
+      <div class="skill-node">
+        <div class="skill-icon">🔨</div>
+        <div class="skill-name">MAKE</div>
+        <div class="skill-desc">Build & prototype — turn ideas into real things</div>
+      </div>
+      <div class="skill-node">
+        <div class="skill-icon">🔬</div>
+        <div class="skill-name">TEST</div>
+        <div class="skill-desc">Try, fail, improve — resilience through iteration</div>
+      </div>
+      <div class="skill-node">
+        <div class="skill-icon">🎤</div>
+        <div class="skill-name">TELL</div>
+        <div class="skill-desc">Communicate & pitch — closes every subject at showcase</div>
+      </div>
+      <div class="skill-node">
+        <div class="skill-icon">💻</div>
+        <div class="skill-name">CRAFT</div>
+        <div class="skill-desc">Digital & design technology — 3D printing, UX, digital tools</div>
+      </div>
     </div>
   </div>
 </section>
 
-
-<section class="section" id="formats">
+<!-- PROGRAMS -->
+<section class="section-alt" id="programs">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Ways to join in</span>
-      <h2>Beyond the regular program.</h2>
-      <p>On top of our core programs, Arc Innovate shows up for celebrations, holidays, and special moments.</p>
+    <div class="section-label">Young Innovator Programs — Ages 7–10</div>
+    <h2>Six programs. One skill map. Every child an innovator.</h2>
+    <p class="section-sub">Each program is 8 weeks, 2x per week. Every session uses the design thinking process — never taught as theory, always wrapped in a real mission. Every term closes with a parent-facing showcase.</p>
+    <div class="programs-grid">
+
+      <a href="/arc-innovate/subjects/young-innovator" class="program-card">
+        <div class="program-card-header card-blue">
+          <div class="badge">CRAFT + MAKE • Ages 7–10</div>
+          <h3>3D Printing</h3>
+          <p>Design to physical object — Tinkercad to printed prototype, taken home.</p>
+        </div>
+        <img src="/arc-innovate/subjects/images/young-innovator.jpg" alt="3D Printing class Bangkok kids">
+        <div class="program-card-footer">
+          Explore program <span>→</span>
+        </div>
+      </a>
+
+      <a href="/arc-innovate/subjects/ux-ui-for-kids" class="program-card">
+        <div class="program-card-header card-teal">
+          <div class="badge">MAKE + TEST • Ages 7–10</div>
+          <h3>Design and Innovation</h3>
+          <p>Flagship big-build missions, cardboard engineering, and break-and-fix challenges.</p>
+        </div>
+        <img src="/arc-innovate/subjects/images/young-entrepreneurs.jpg" alt="Design and Innovation class Bangkok kids">
+        <div class="program-card-footer">
+          Explore program <span>→</span>
+        </div>
+      </a>
+
+      <a href="/arc-innovate/subjects/experimental-arts" class="program-card">
+        <div class="program-card-header card-green">
+          <div class="badge">SEE + IMAGINE • Ages 7–10</div>
+          <h3>Insight & Questioning</h3>
+          <p>Observation, experiments, and insight-hunting missions. Training the eye before the hand.</p>
+        </div>
+        <img src="/arc-innovate/subjects/images/experimental-arts.jpg" alt="Insight and Questioning class Bangkok kids">
+        <div class="program-card-footer">
+          Explore program <span>→</span>
+        </div>
+      </a>
+
+      <a href="/arc-innovate/subjects/young-entrepreneurs" class="program-card">
+        <div class="program-card-header card-purple">
+          <div class="badge">IMAGINE + MAKE • Ages 7–10</div>
+          <h3>Creative Inspire</h3>
+          <p>Visual arts and expression. Produces a real portfolio and sketchbook output every term.</p>
+        </div>
+        <img src="/arc-innovate/subjects/images/fashion-design.jpg" alt="Creative Inspire class Bangkok kids">
+        <div class="program-card-footer">
+          Explore program <span>→</span>
+        </div>
+      </a>
+
+      <a href="/arc-innovate/subjects/creative-cooking" class="program-card">
+        <div class="program-card-header card-orange">
+          <div class="badge">CRAFT + SEE • Ages 7–10</div>
+          <h3>Tech Talk (Digital Communication)</h3>
+          <p>UX/UI, website design, QR/NFC, and digital tools. Thinking like a real digital designer.</p>
+        </div>
+        <img src="/arc-innovate/subjects/images/ux-ui-for-kids.jpg" alt="Tech Talk digital design class Bangkok kids">
+        <div class="program-card-footer">
+          Explore program <span>→</span>
+        </div>
+      </a>
+
+      <a href="/arc-innovate/subjects/fashion-design" class="program-card">
+        <div class="program-card-header card-pink">
+          <div class="badge">SEE + TELL • Ages 7–10</div>
+          <h3>Young Entrepreneurship</h3>
+          <p>Spot opportunities, build a concept, and pitch at Mini Market. Design thinking meets business.</p>
+        </div>
+        <img src="/arc-innovate/subjects/images/creative-cooking.jpg" alt="Young Entrepreneurship class Bangkok kids">
+        <div class="program-card-footer">
+          Explore program <span>→</span>
+        </div>
+      </a>
+
     </div>
+
+    <!-- CAPSTONE -->
+    <div style="margin-top:32px;background:linear-gradient(135deg,var(--deep-blue),var(--forest-green));border-radius:20px;padding:40px;color:white;text-align:center;">
+      <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;opacity:0.8;margin-bottom:12px;">🏆 Level Capstone</div>
+      <h3 style="font-size:1.6rem;margin-bottom:12px;color:white;">Mini Market</h3>
+      <p style="opacity:0.88;max-width:560px;margin:0 auto 24px;line-height:1.7;">Teams design, make, price, and sell a real product at a stall. The full innovator cycle under real conditions. The Level 2 graduation moment — and your child's first real business experience.</p>
+      <a href="mailto:arc.international.edu@gmail.com" style="display:inline-block;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.4);color:white;padding:12px 28px;border-radius:999px;font-weight:700;font-size:0.9rem;">Ask about the next Mini Market →</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-label">Studio Moments</div>
+    <h2>What learning looks like here.</h2>
+    <div class="gallery-grid">
+      <img src="/arc-innovate/images/gallery-1.jpg" alt="Arc Innovate kids design thinking class Bangkok">
+      <img src="/arc-innovate/images/gallery-2.jpg" alt="Arc Innovate 3D printing workshop kids Bangkok">
+      <img src="/arc-innovate/images/gallery-3.jpg" alt="Arc Innovate creative enrichment Bangkok">
+      <img src="/arc-innovate/images/gallery-4.jpg" alt="Arc Innovate STEAM classes kids Bangkok">
+      <img src="/arc-innovate/images/gallery-5.jpg" alt="Arc Innovate design workshop children Bangkok">
+      <img src="/arc-innovate/images/gallery-6.jpg" alt="Arc Innovate student showcase Bangkok">
+    </div>
+  </div>
+</section>
+
+<!-- FORMATS -->
+<section class="section-alt" id="formats">
+  <div class="wrap">
+    <div class="section-label">How We Run</div>
+    <h2>Four ways to learn with Arc Innovate.</h2>
+    <p class="section-sub">We meet children where they are — in weekend studios, school classrooms, or holiday camps. Every format uses the same design thinking framework and closes with a showcase.</p>
     <div class="formats-grid">
       <div class="format-card">
-        <h3>🎂 Birthday Parties</h3>
-        <p>Creative design workshops for birthday celebrations — kids work on a design challenge and leave with something they've made.</p>
+        <div class="format-icon">📅</div>
+        <h3>Weekend Studio Classes</h3>
+        <p>8-week terms, 2x per week. Small groups of max 10–12. The core Arc Innovate experience, with the full design thinking cycle per subject.</p>
       </div>
       <div class="format-card">
-        <h3>📅 Break Camps</h3>
-        <p>Intensive creative weeks during school breaks — dive deep into design thinking, making, and building with peers.</p>
+        <div class="format-icon">🏫</div>
+        <h3>School ECA Programs</h3>
+        <p>We bring the full Arc curriculum to your school as an after-school enrichment program. Everything provided — materials, facilitation, framework.</p>
       </div>
       <div class="format-card">
-        <h3>🎪 Showcase Events</h3>
-        <p>End-of-term celebrations where kids present what they've designed, built, and learned — inviting families to see the work.</p>
+        <div class="format-icon">🏕️</div>
+        <h3>Holiday Camps</h3>
+        <p>Intensive week-long programs during school breaks. Full design challenge from day 1 to showcase on day 5. For kids who want to go deep fast.</p>
+      </div>
+      <div class="format-card">
+        <div class="format-icon">🎂</div>
+        <h3>Birthday Party Workshops</h3>
+        <p>Half or full-day design challenges for groups of 8–16. Your child's birthday becomes a real innovation workshop. Memorable for everyone.</p>
+      </div>
+      <div class="format-card">
+        <div class="format-icon">🎪</div>
+        <h3>Showcase Events</h3>
+        <p>Parent-facing exhibitions where students present their projects. Every term, every subject. The TELL chapter — communication as a ritual.</p>
+      </div>
+      <div class="format-card">
+        <div class="format-icon">🛒</div>
+        <h3>Mini Market Capstone</h3>
+        <p>The Level 2 graduation event. Teams design, make, and sell real products at a market stall. The full innovator cycle under real conditions.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- PARTNERS -->
 <section class="section" id="partners">
   <div class="wrap">
-    <div class="partners-band">
-      <div>
-        <span class="eyebrow">Let's collaborate</span>
-        <h2>Bring creative workshops to your space.</h2>
-        <p>Arc Innovate works with schools, malls, event organisers, and kids' venues to bring hands-on design thinking workshops wherever children gather — we handle everything, you just open the doors.</p>
+    <div class="section-label">School & Venue Partnerships</div>
+    <h2>Bring Arc Innovate to your school.</h2>
+    <p class="section-sub">We partner with Bangkok international schools and community venues to deliver Arc Innovate programs as ECA electives, after-school activities, and holiday workshops. We bring everything — curriculum, materials, facilitation, and framework.</p>
+    <div class="partner-features">
+      <div class="partner-feat">
+        <div class="feat-icon">📦</div>
+        <div class="feat-text">
+          <h4>We bring everything</h4>
+          <p>Materials, tools, facilitator, and the full Arc curriculum. Your school provides the space and the students — we handle the rest.</p>
+        </div>
       </div>
-      <ul class="partner-list">
-        <li><b>🏫 International Schools</b> — Weekly ECA electives, holiday camps, and one-day design workshops delivered on-site by our team.</li>
-        <li><b>🏬 Malls & Kids' Venues</b> — Pop-up creative workshops and activity days that bring families through your doors.</li>
-        <li><b>🎉 Events & Celebrations</b> — Birthday party workshops, school fairs, corporate family days — any occasion that needs something memorable for kids.</li>
-        <li><b>✅ We bring everything</b> — Curriculum, trained facilitators, materials, and activities. You provide the space and the kids.</li>
-      </ul>
+      <div class="partner-feat">
+        <div class="feat-icon">🎯</div>
+        <div class="feat-text">
+          <h4>Curriculum-aligned</h4>
+          <p>Arc Innovate programs reinforce critical thinking, creativity, and collaboration — skills that improve performance across all academic subjects.</p>
+        </div>
+      </div>
+      <div class="partner-feat">
+        <div class="feat-icon">📊</div>
+        <div class="feat-text">
+          <h4>Parent-facing showcase</h4>
+          <p>Every term closes with a student showcase. Parents see the work, children build presentation skills, and schools see real evidence of learning.</p>
+        </div>
+      </div>
+      <div class="partner-feat">
+        <div class="feat-icon">🔧</div>
+        <div class="feat-text">
+          <h4>Flexible & modular</h4>
+          <p>Choose one subject or run the full Arc curriculum. Programs can be adapted for different age groups, session lengths, and school schedules.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:40px;text-align:center;">
+      <a href="mailto:arc.international.edu@gmail.com" style="display:inline-block;background:var(--deep-blue);color:white;padding:15px 36px;border-radius:999px;font-weight:700;font-size:0.95rem;">Request a Partnership Proposal →</a>
     </div>
   </div>
 </section>
 
-<section class="section" id="about">
+<!-- ABOUT -->
+<section class="section-alt" id="about">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Why design thinking matters</span>
-      <h2>What your child gains.</h2>
-    </div>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:40px; max-width:900px; margin:0 auto;">
-      <div>
-        <h3 style="font-size:1.3rem; margin-bottom:14px; color:var(--deep-blue);">Experimental Arts & Design (Ages 4–7)</h3>
-        <p style="color:#4a5c6d; line-height:1.8; margin-bottom:18px;">Building the foundation of a creative mind through sensory play and open-ended making.</p>
-        <ul style="list-style:none; color:#3f5468; line-height:1.8;">
-          <li style="margin-bottom:10px;"><strong>Trust their instincts</strong> — experimenting without fear</li>
-          <li style="margin-bottom:10px;"><strong>Develop fine motor skills</strong> — through intentional making</li>
-          <li style="margin-bottom:10px;"><strong>Build confidence</strong> — celebrating what they create</li>
-          <li style="margin-bottom:10px;"><strong>Expand vocabulary</strong> — learning colours, textures, shapes</li>
-        </ul>
+    <div class="section-label">About Arc Innovate</div>
+    <h2>Built by a designer. Run by an educator.</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Arc Innovate was founded by Coach Anies — a product designer turned educator with 12+ years working with children at Bangkok international schools. After seeing firsthand how school curricula were preparing children for a world that no longer exists, she built Arc Innovate to fill the gap: a structured, design-thinking-led enrichment program that teaches children how to think, not just what to know.</p>
+        <p>Every program at Arc Innovate is rooted in the same framework used by the world's leading innovation companies — made accessible, playful, and genuinely age-appropriate for children from age 4.</p>
+        
       </div>
-      <div>
-        <h3 style="font-size:1.3rem; margin-bottom:14px; color:var(--deep-blue);">Design Programs (Ages 7–14)</h3>
-        <p style="color:#4a5c6d; line-height:1.8; margin-bottom:18px;">Moving into structured problem-solving and the full design process.</p>
-        <ul style="list-style:none; color:#3f5468; line-height:1.8;">
-          <li style="margin-bottom:10px;"><strong>Critical thinking</strong> — spotting problems and imagining solutions</li>
-          <li style="margin-bottom:10px;"><strong>Teamwork</strong> — collaborating and listening to others</li>
-          <li style="margin-bottom:10px;"><strong>Resilience</strong> — learning that failure is just feedback</li>
-          <li style="margin-bottom:10px;"><strong>Presentation confidence</strong> — pitching ideas to peers</li>
-        </ul>
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="number">4–14</div>
+          <div class="label">Age range served</div>
+        </div>
+        <div class="about-stat">
+          <div class="number">6</div>
+          <div class="label">Active subjects</div>
+        </div>
+        <div class="about-stat">
+          <div class="number">Max 12</div>
+          <div class="label">Students per class</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="contact" style="background:var(--forest-green);">
+<!-- STUDENT TESTIMONIALS -->
+<section class="section" id="students">
   <div class="wrap">
-    <div class="contact-band-inner">
-      <div class="qr-placeholder">
-        <div class="qr-inner">
-          <span style="font-size:2.5rem;">📱</span>
-          <p style="font-size:0.78rem; color:#7a8a99; margin-top:8px;">Add Line QR code<br>image here</p>
-        </div>
-        <div class="qr-label">
-          <span style="width:20px; height:20px;">LINE</span>
+    <div class="section-label">From Our Students</div>
+    <h2>What kids say after their first term.</h2>
+    <p class="section-sub">Real words from real young innovators — collected after end-of-term showcases at Arc Innovate Bangkok.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;">
+
+      <div style="background:white;border-radius:20px;padding:32px;border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.07);position:relative;">
+        <div style="font-size:2.5rem;color:var(--light-blue);font-family:Georgia,serif;line-height:1;margin-bottom:12px;">"</div>
+        <p style="font-size:0.95rem;line-height:1.8;color:#333;font-style:italic;margin-bottom:20px;">I didn't know I could actually make something real. When I held my 3D print I was like — I made this. I designed it. That was the best feeling.</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--deep-blue),var(--light-blue));display:flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-weight:900;color:white;font-size:1rem;">P</div>
+          <div>
+            <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:0.95rem;">Pim</div>
+            <div style="font-size:0.78rem;color:var(--mid);">Age 9 · Young Innovator</div>
+          </div>
         </div>
       </div>
-      <div>
-        <span class="eyebrow" style="background:rgba(255,255,255,0.2); color:white;">Get in touch</span>
-        <h2 style="color:white; font-size:2rem; margin:16px 0 28px;">We'd love to hear from you.</h2>
-        <ul class="contact-info-list">
-          <li>
-            <span class="contact-icon" style="background:#00B900;">💬</span>
-            <span style="color:white; font-size:1.1rem; font-weight:600;">@arc.innovate</span>
-          </li>
-          <li>
-            <span class="contact-icon" style="background:rgba(255,255,255,0.2);">✉️</span>
-            <span style="color:white; font-size:1.1rem; font-weight:600;">arc.international.edu@gmail.com</span>
-          </li>
-        </ul>
-        <div class="contact-cta-buttons">
-          <a href="https://lin.ee/TQPIVik" target="_blank" class="contact-btn line-btn">
-            <span class="btn-icon">💬</span>
-            <div>
-              <div style="font-size:0.72rem; opacity:0.85;">Chat with us</div>
-              <div style="font-weight:800; font-size:1rem;">Line Official</div>
-            </div>
-          </a>
-          <a href="mailto:arc.international.edu@gmail.com" class="contact-btn email-btn">
-            <span class="btn-icon">✉️</span>
-            <div>
-              <div style="font-size:0.72rem; opacity:0.85;">Send us a message</div>
-              <div style="font-weight:800; font-size:1rem;">Email Us</div>
-            </div>
-          </a>
+
+      <div style="background:white;border-radius:20px;padding:32px;border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.07);position:relative;">
+        <div style="font-size:2.5rem;color:var(--fresh-green);font-family:Georgia,serif;line-height:1;margin-bottom:12px;">"</div>
+        <p style="font-size:0.95rem;line-height:1.8;color:#333;font-style:italic;margin-bottom:20px;">At school when there's a problem I just wait for teacher to tell me the answer. Here Coach teaches us to ask better questions first. Now I do that everywhere.</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--forest-green),var(--fresh-green));display:flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-weight:900;color:white;font-size:1rem;">N</div>
+          <div>
+            <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:0.95rem;">Nong</div>
+            <div style="font-size:0.78rem;color:var(--mid);">Age 8 · Insight & Questioning</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:white;border-radius:20px;padding:32px;border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.07);position:relative;">
+        <div style="font-size:2.5rem;color:#EC4899;font-family:Georgia,serif;line-height:1;margin-bottom:12px;">"</div>
+        <p style="font-size:0.95rem;line-height:1.8;color:#333;font-style:italic;margin-bottom:20px;">My mum said I talk differently now. Like I explain my thinking instead of just saying 'I don't know.' Showcase day was scary but after I finished I wanted to do it again.</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#BE185D,#EC4899);display:flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-weight:900;color:white;font-size:1rem;">M</div>
+          <div>
+            <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:0.95rem;">Mook</div>
+            <div style="font-size:0.78rem;color:var(--mid);">Age 10 · Creative Inspire</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:white;border-radius:20px;padding:32px;border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.07);position:relative;">
+        <div style="font-size:2.5rem;color:var(--light-blue);font-family:Georgia,serif;line-height:1;margin-bottom:12px;">"</div>
+        <p style="font-size:0.95rem;line-height:1.8;color:#333;font-style:italic;margin-bottom:20px;">We had to interview people about their problems before we could start building. I interviewed my grandma. She said my product idea was actually useful. That made me really proud.</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#5B21B6,#7C3AED);display:flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-weight:900;color:white;font-size:1rem;">T</div>
+          <div>
+            <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:0.95rem;">Tae</div>
+            <div style="font-size:0.78rem;color:var(--mid);">Age 9 · Design and Innovation</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:white;border-radius:20px;padding:32px;border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.07);position:relative;">
+        <div style="font-size:2.5rem;color:var(--forest-green);font-family:Georgia,serif;line-height:1;margin-bottom:12px;">"</div>
+        <p style="font-size:0.95rem;line-height:1.8;color:#333;font-style:italic;margin-bottom:20px;">I made a website in Tech Talk. My dad said it looked like a real website. I want to make an app next. Coach said that's exactly what UX is for.</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#0D9488,#14B8A6);display:flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-weight:900;color:white;font-size:1rem;">B</div>
+          <div>
+            <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:0.95rem;">Beam</div>
+            <div style="font-size:0.78rem;color:var(--mid);">Age 10 · Tech Talk</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:linear-gradient(135deg,var(--deep-blue),var(--forest-green));border-radius:20px;padding:32px;position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:16px;">🌟</div>
+        <h3 style="color:white;font-size:1.2rem;margin-bottom:12px;">Ready to be the next Young Innovator?</h3>
+        <p style="color:rgba(255,255,255,0.88);font-size:0.88rem;line-height:1.6;margin-bottom:24px;">Trial classes available. Small groups, big ideas.</p>
+        <a href="https://lin.ee/TQPIVik" target="_blank" style="background:white;color:var(--deep-blue);padding:12px 26px;border-radius:999px;font-weight:800;font-size:0.9rem;">💬 Chat with us on Line</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Let's connect.</h2>
+        <p>Whether you're a parent looking to enroll your child, a school interested in a partnership, or a venue looking to host Arc Innovate — we'd love to hear from you. Line is the fastest way to reach us.</p>
+        <div class="contact-btns">
+          <a href="https://lin.ee/TQPIVik" class="btn-line" target="_blank">💬 Line @arc.innovate</a>
+          <a href="mailto:arc.international.edu@gmail.com" class="btn-email">✉️ Email Us</a>
+        </div>
+      </div>
+      <div class="contact-details">
+        <div class="contact-detail-row">
+          <strong>Line</strong>@arc.innovate
+        </div>
+        <div class="contact-detail-row">
+          <strong>Email</strong>arc.international.edu@gmail.com
+        </div>
+        <div class="contact-detail-row">
+          <strong>Location</strong>Bangkok, Thailand
+        </div>
+        <div class="contact-detail-row">
+          <strong>Programs</strong>Ages 4–14 • Max 12 per class
+        </div>
+        <div class="contact-detail-row">
+          <strong>Instagram</strong>@arc.innovate
         </div>
       </div>
     </div>
   </div>
 </section>
-
-</main>
 
 <footer>
-  <div style="max-width:1100px; margin:0 auto;">
-    <img src="/arc-innovate-logo.png" alt="Arc Innovate" style="height:40px; width:40px; border-radius:50%; object-fit:cover; margin-bottom:12px;">
-    <p><strong>Arc Innovate</strong> • Bangkok, Thailand</p>
-    <p style="margin-top:8px; opacity:0.7;">© 2026 Arc Innovate · Design Thinking & Creative Enrichment for Kids</p>
-    <p style="margin-top:8px;"><a href="/" style="color:#63B3ED;">← Back to Arc</a></p>
+  <div class="footer-logo">
+    <img src="/arc-innovate-logo.png" alt="Arc Innovate">
+    <span class="footer-name">Arc Innovate</span>
   </div>
+  <p>Bangkok's Creative Problem-Solving Academy for Kids Ages 4–14</p>
+  <p style="margin-top:8px;">© 2026 Arc Innovate · <a href="/">Back to Arc</a> · <a href="/arc-innovate/insights">Insights</a></p>
 </footer>
 
 <a href="https://lin.ee/TQPIVik" class="line-button" target="_blank">💬 Line@</a>
