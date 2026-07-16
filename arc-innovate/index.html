@@ -289,6 +289,52 @@ footer .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:1r
   .links{display:none;}
   .about-stats{grid-template-columns:1fr 1fr;}
 }
+
+/* ── MOBILE NAV ── */
+.hamburger{
+  display:none;flex-direction:column;gap:5px;cursor:pointer;
+  padding:8px;border:none;background:none;z-index:200;
+}
+.hamburger span{
+  display:block;width:24px;height:2px;
+  background:var(--ink);border-radius:2px;
+  transition:all 0.3s ease;
+}
+.mobile-nav{
+  display:none;
+  position:fixed;inset:0;background:white;z-index:150;
+  flex-direction:column;padding:80px 32px 32px;
+  overflow-y:auto;
+}
+.mobile-nav.open{display:flex;}
+.mobile-nav a{
+  font-family:'Nunito',sans-serif;font-weight:800;
+  font-size:1.3rem;color:var(--ink);
+  padding:16px 0;border-bottom:1px solid #f0f0f0;
+  display:block;
+}
+.mobile-nav a:hover{color:var(--deep-blue);}
+.mobile-nav .mobile-section-label{
+  font-size:0.7rem;font-weight:700;letter-spacing:0.2em;
+  text-transform:uppercase;color:var(--deep-blue);
+  margin:24px 0 8px;
+}
+.mobile-nav .mobile-sub a{
+  font-size:1rem;font-weight:600;padding:12px 0 12px 16px;
+  color:var(--mid);border-bottom:1px solid #f8f8f8;
+}
+.mobile-close{
+  position:absolute;top:20px;right:20px;
+  font-size:1.5rem;cursor:pointer;
+  background:none;border:none;color:var(--ink);
+  font-family:'Nunito',sans-serif;font-weight:900;
+}
+@media(max-width:900px){
+  .hamburger{display:flex;}
+  .links{display:none !important;}
+  .nav-cta{display:none;}
+}
+
 </style>
 </head>
 <body id="top">
@@ -304,12 +350,12 @@ footer .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:1r
       <div class="nav-dropdown">
         <span class="nav-dropdown-toggle">Programs ▾</span>
         <div class="nav-dropdown-menu">
-          <a href="/arc-innovate/subjects/young-innovator">3D Printing & Innovation</a>
-          <a href="/arc-innovate/subjects/ux-ui-for-kids">Tech Talk & Digital Design</a>
-          <a href="/arc-innovate/subjects/experimental-arts">Experimental Arts</a>
-          <a href="/arc-innovate/subjects/young-entrepreneurs">Young Entrepreneurs</a>
-          <a href="/arc-innovate/subjects/creative-cooking">Creative Cooking</a>
-          <a href="/arc-innovate/subjects/fashion-design">Fashion Design</a>
+          <a href="/arc-innovate/subjects/young-innovator">🖨️ 3D Printing</a>
+          <a href="/arc-innovate/subjects/design-and-innovation">🔨 Design and Innovation</a>
+          <a href="/arc-innovate/subjects/insight-and-questioning">👁️ Insight & Questioning</a>
+          <a href="/arc-innovate/subjects/creative-inspire">🎨 Creative Inspire</a>
+          <a href="/arc-innovate/subjects/tech-talk">💻 Tech Talk</a>
+          <a href="/arc-innovate/subjects/young-entrepreneurship">💡 Young Entrepreneurship</a>
         </div>
       </div>
       <a href="#the-arc">The Arc</a>
@@ -322,8 +368,46 @@ footer .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:1r
       <a href="#contact">Contact</a>
     </nav>
     <a href="mailto:arc.international.edu@gmail.com" class="nav-cta">Get in Touch</a>
-  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
 </header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#programs" onclick="closeMobileNav()">Programs</a>
+  <div class="mobile-section-label">Our Programs</div>
+  <div class="mobile-sub">
+    <a href="/arc-innovate/subjects/young-innovator" onclick="closeMobileNav()">🖨️ 3D Printing</a>
+    <a href="/arc-innovate/subjects/design-and-innovation" onclick="closeMobileNav()">🔨 Design and Innovation</a>
+    <a href="/arc-innovate/subjects/insight-and-questioning" onclick="closeMobileNav()">👁️ Insight & Questioning</a>
+    <a href="/arc-innovate/subjects/creative-inspire" onclick="closeMobileNav()">🎨 Creative Inspire</a>
+    <a href="/arc-innovate/subjects/tech-talk" onclick="closeMobileNav()">💻 Tech Talk</a>
+    <a href="/arc-innovate/subjects/young-entrepreneurship" onclick="closeMobileNav()">💡 Young Entrepreneurship</a>
+  </div>
+  <a href="#the-arc" onclick="closeMobileNav()">The Arc</a>
+  <a href="#gallery" onclick="closeMobileNav()">Gallery</a>
+  <a href="#formats" onclick="closeMobileNav()">Formats</a>
+  <a href="#partners" onclick="closeMobileNav()">For Partners</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="/arc-innovate/insights" onclick="closeMobileNav()">Insights</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  <div style="margin-top:32px;">
+    <a href="https://lin.ee/TQPIVik" target="_blank" style="background:#00B900;color:white;padding:16px 28px;border-radius:999px;font-weight:800;text-align:center;display:block;">💬 Chat on Line</a>
+  </div>
+</div>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+const mobileClose = document.getElementById('mobileClose');
+function openMobileNav(){ mobileNav.classList.add('open'); document.body.style.overflow='hidden'; }
+function closeMobileNav(){ mobileNav.classList.remove('open'); document.body.style.overflow=''; }
+hamburger.addEventListener('click', openMobileNav);
+mobileClose.addEventListener('click', closeMobileNav);
+</script>
 
 <!-- HERO -->
 <section class="hero">
@@ -463,7 +547,7 @@ footer .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:1r
         </div>
       </a>
 
-      <a href="/arc-innovate/subjects/ux-ui-for-kids" class="program-card">
+      <a href="/arc-innovate/subjects/tech-talk" class="program-card">
         <div class="program-card-header card-teal">
           <div class="badge">MAKE + TEST • Ages 7–10</div>
           <h3>Design and Innovation</h3>
@@ -475,7 +559,7 @@ footer .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:1r
         </div>
       </a>
 
-      <a href="/arc-innovate/subjects/experimental-arts" class="program-card">
+      <a href="/arc-innovate/subjects/insight-and-questioning" class="program-card">
         <div class="program-card-header card-green">
           <div class="badge">SEE + IMAGINE • Ages 7–10</div>
           <h3>Insight & Questioning</h3>
@@ -487,7 +571,7 @@ footer .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:1r
         </div>
       </a>
 
-      <a href="/arc-innovate/subjects/young-entrepreneurs" class="program-card">
+      <a href="/arc-innovate/subjects/design-and-innovation" class="program-card">
         <div class="program-card-header card-purple">
           <div class="badge">IMAGINE + MAKE • Ages 7–10</div>
           <h3>Creative Inspire</h3>
@@ -499,7 +583,7 @@ footer .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:1r
         </div>
       </a>
 
-      <a href="/arc-innovate/subjects/creative-cooking" class="program-card">
+      <a href="/arc-innovate/subjects/creative-inspire" class="program-card">
         <div class="program-card-header card-orange">
           <div class="badge">CRAFT + SEE • Ages 7–10</div>
           <h3>Tech Talk (Digital Communication)</h3>
@@ -511,7 +595,7 @@ footer .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:1r
         </div>
       </a>
 
-      <a href="/arc-innovate/subjects/fashion-design" class="program-card">
+      <a href="/arc-innovate/subjects/young-entrepreneurship" class="program-card">
         <div class="program-card-header card-pink">
           <div class="badge">SEE + TELL • Ages 7–10</div>
           <h3>Young Entrepreneurship</h3>
