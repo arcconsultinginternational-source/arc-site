@@ -265,14 +265,34 @@ footer .footer-logo{display:flex;align-items:center;justify-content:center;gap:1
 footer img{width:36px;height:36px;border-radius:50%;object-fit:cover;}
 footer .footer-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;color:rgba(255,255,255,0.8);}
 
-/* ── LINE BUTTON ── */
-.line-button{
-  position:fixed;bottom:28px;right:28px;
+/* ── FLOATING ACTION BUTTONS ── */
+.fab-container{position:fixed;bottom:28px;right:28px;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:14px;}
+.fab-popup{display:none;flex-direction:column;gap:14px;margin-bottom:6px;}
+.fab-popup.open{display:flex;}
+.fab-btn{
+  display:flex;align-items:center;gap:10px;
+  padding:18px 28px;border-radius:50px;
+  font-weight:800;font-size:1.05rem;
+  box-shadow:0 6px 24px rgba(0,0,0,0.25);
+  color:white;white-space:nowrap;
+  transition:transform 0.15s ease;
+}
+.fab-btn:hover{transform:translateY(-2px) scale(1.03);}
+.fab-btn.call{background:linear-gradient(135deg,#2B6CB0,#63B3ED);}
+.fab-btn.instagram{background:linear-gradient(135deg,#F58529,#DD2A7B,#8134AF);}
+.fab-btn.line{background:linear-gradient(135deg,#00B900,#00D600);}
+.fab-main{
+  width:68px;height:68px;border-radius:50%;
   background:linear-gradient(135deg,#00B900,#00D600);
-  color:white;padding:14px 22px;border-radius:50px;z-index:999;
-  font-weight:700;font-size:0.9rem;
-  box-shadow:0 4px 20px rgba(0,185,0,0.4);
-  display:flex;align-items:center;gap:8px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 24px rgba(0,185,0,0.45);
+  font-size:1.8rem;cursor:pointer;border:none;color:white;
+  transition:transform 0.2s ease;
+}
+.fab-main:hover{transform:scale(1.08);}
+@media(max-width:600px){
+  .fab-btn{padding:15px 22px;font-size:0.95rem;}
+  .fab-main{width:60px;height:60px;font-size:1.5rem;}
 }
 
 /* ── RESPONSIVE ── */
@@ -361,10 +381,7 @@ footer .footer-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1
       </div>
       <a href="#the-arc">The Arc</a>
       <a href="#gallery">Gallery</a>
-      <a href="#formats">Formats</a>
-      <a href="#partners">For Partners</a>
       <a href="#about">About</a>
-      <a href="https://instagram.com/arc.innovate" target="_blank">Instagram</a>
       <a href="/arc-innovate/insights">Articles</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -390,8 +407,6 @@ footer .footer-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1
   </div>
   <a href="#the-arc" onclick="closeMobileNav()">The Arc</a>
   <a href="#gallery" onclick="closeMobileNav()">Gallery</a>
-  <a href="#formats" onclick="closeMobileNav()">Formats</a>
-  <a href="#partners" onclick="closeMobileNav()">For Partners</a>
   <a href="#about" onclick="closeMobileNav()">About</a>
   <a href="/arc-innovate/insights" onclick="closeMobileNav()">Articles</a>
   <a href="#contact" onclick="closeMobileNav()">Contact</a>
@@ -466,7 +481,7 @@ mobileClose.addEventListener('click', closeMobileNav);
 
 
 
-<div style="text-align:center;margin:32px 0;"><a href="/arc-innovate/design-thinking-guide" style="display:inline-block;background:#2B6CB0;color:white;padding:12px 28px;border-radius:999px;font-weight:700;font-size:0.92rem;text-decoration:none;">Learn How Design Thinking Works →</a></div>
+<div style="text-align:center;margin:48px 0;"><a href="/arc-innovate/design-thinking-guide" style="display:inline-block;background:linear-gradient(135deg,#2B6CB0,#63B3ED);color:white;padding:24px 56px;border-radius:999px;font-weight:800;font-size:1.4rem;text-decoration:none;box-shadow:0 8px 32px rgba(43,108,176,0.35);">Learn How Design Thinking Works →</a></div>
 
 <!-- PROGRAM LOGOS BANNER -->
 <section style="padding:40px 0;background:linear-gradient(135deg,#2B6CB0,#63B3ED);">
@@ -559,10 +574,7 @@ mobileClose.addEventListener('click', closeMobileNav);
 
     <!-- CAPSTONE -->
     <div style="margin-top:32px;background:linear-gradient(135deg,var(--deep-blue),var(--forest-green));border-radius:20px;padding:40px;color:white;text-align:center;">
-      <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;opacity:0.8;margin-bottom:12px;">🏆 Level Capstone</div>
-      <h3 style="font-size:1.6rem;margin-bottom:12px;color:white;">Mini Market</h3>
-      <p style="opacity:0.88;max-width:560px;margin:0 auto 24px;line-height:1.7;">Teams design, make, price, and sell a real product at a stall. The full innovator cycle under real conditions. The Level 2 graduation moment — and your child's first real business experience.</p>
-      <a href="mailto:arc.international.edu@gmail.com" style="display:inline-block;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.4);color:white;padding:12px 28px;border-radius:999px;font-weight:700;font-size:0.9rem;">Ask about the next Mini Market →</a>
+      
     </div>
   </div>
 </section>
@@ -864,7 +876,19 @@ mobileClose.addEventListener('click', closeMobileNav);
   <p style="margin-top:8px;">© 2026 Arc Innovate · <a href="/">Back to Arc</a> · <a href="/arc-innovate/insights">Articles</a></p>
 </footer>
 
-<a href="https://lin.ee/TQPIVik" class="line-button" target="_blank">💬 Line@</a>
+<div class="fab-container">
+  <div class="fab-popup" id="fabPopup">
+    <a href="tel:+66835193659" class="fab-btn call">📞 Call Now</a>
+    <a href="https://instagram.com/arc.innovate" target="_blank" class="fab-btn instagram">📷 Instagram</a>
+    <a href="https://lin.ee/TQPIVik" target="_blank" class="fab-btn line">💬 Line@</a>
+  </div>
+  <button class="fab-main" id="fabMain" aria-label="Contact options">💬</button>
+</div>
+<script>
+document.getElementById('fabMain').addEventListener('click', function(){
+  document.getElementById('fabPopup').classList.toggle('open');
+});
+</script>
 
 </body>
 </html>
