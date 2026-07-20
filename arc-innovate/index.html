@@ -265,34 +265,27 @@ footer .footer-logo{display:flex;align-items:center;justify-content:center;gap:1
 footer img{width:36px;height:36px;border-radius:50%;object-fit:cover;}
 footer .footer-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;color:rgba(255,255,255,0.8);}
 
-/* ── FLOATING ACTION BUTTONS ── */
-.fab-container{position:fixed;bottom:28px;right:28px;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:14px;}
-.fab-popup{display:none;flex-direction:column;gap:14px;margin-bottom:6px;}
-.fab-popup.open{display:flex;}
+/* ── FLOATING ACTION STACK ── */
+.fab-stack{
+  position:fixed;bottom:28px;right:28px;z-index:999;
+  display:flex;flex-direction:column;align-items:flex-end;gap:14px;
+}
 .fab-btn{
   display:flex;align-items:center;gap:10px;
-  padding:18px 28px;border-radius:50px;
-  font-weight:800;font-size:1.05rem;
-  box-shadow:0 6px 24px rgba(0,0,0,0.25);
+  padding:18px 32px;border-radius:50px;
+  font-weight:800;font-size:1.1rem;
+  box-shadow:0 8px 28px rgba(0,0,0,0.3);
   color:white;white-space:nowrap;
-  transition:transform 0.15s ease;
+  transition:all 0.2s ease;
+  text-decoration:none;
 }
-.fab-btn:hover{transform:translateY(-2px) scale(1.03);}
+.fab-btn:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 12px 40px rgba(0,0,0,0.4);}
 .fab-btn.call{background:linear-gradient(135deg,#2B6CB0,#63B3ED);}
 .fab-btn.instagram{background:linear-gradient(135deg,#F58529,#DD2A7B,#8134AF);}
 .fab-btn.line{background:linear-gradient(135deg,#00B900,#00D600);}
-.fab-main{
-  width:68px;height:68px;border-radius:50%;
-  background:linear-gradient(135deg,#00B900,#00D600);
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 6px 24px rgba(0,185,0,0.45);
-  font-size:1.8rem;cursor:pointer;border:none;color:white;
-  transition:transform 0.2s ease;
-}
-.fab-main:hover{transform:scale(1.08);}
 @media(max-width:600px){
-  .fab-btn{padding:15px 22px;font-size:0.95rem;}
-  .fab-main{width:60px;height:60px;font-size:1.5rem;}
+  .fab-btn{padding:14px 24px;font-size:0.95rem;}
+  .fab-stack{bottom:20px;right:20px;gap:10px;}
 }
 
 /* ── RESPONSIVE ── */
@@ -876,19 +869,11 @@ mobileClose.addEventListener('click', closeMobileNav);
   <p style="margin-top:8px;">© 2026 Arc Innovate · <a href="/">Back to Arc</a> · <a href="/arc-innovate/insights">Articles</a></p>
 </footer>
 
-<div class="fab-container">
-  <div class="fab-popup" id="fabPopup">
-    <a href="tel:+66835193659" class="fab-btn call">📞 Call Now</a>
-    <a href="https://instagram.com/arc.innovate" target="_blank" class="fab-btn instagram">📷 Instagram</a>
-    <a href="https://lin.ee/TQPIVik" target="_blank" class="fab-btn line">💬 Line@</a>
-  </div>
-  <button class="fab-main" id="fabMain" aria-label="Contact options">💬</button>
+<div class="fab-stack">
+  <a href="tel:+66835193659" class="fab-btn call">📞 Call Now</a>
+  <a href="https://instagram.com/arc.innovate" target="_blank" class="fab-btn instagram">📷 Instagram</a>
+  <a href="https://lin.ee/TQPIVik" target="_blank" class="fab-btn line">💬 Line@</a>
 </div>
-<script>
-document.getElementById('fabMain').addEventListener('click', function(){
-  document.getElementById('fabPopup').classList.toggle('open');
-});
-</script>
 
 </body>
 </html>
