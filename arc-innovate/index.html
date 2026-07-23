@@ -744,8 +744,9 @@ mobileClose.addEventListener('click', closeMobileNav);
     (function(){
       let cur=0;
       const track=document.getElementById('carTrack');
-      const slides=track.children.length-1;
+      const slides=track.querySelectorAll('div[style*="min-width"]').length;
       const dots=document.getElementById('carDots');
+      
       for(let i=0;i<slides;i++){
         const d=document.createElement('button');
         d.className='cdot'+(i===0?' on':'');
@@ -753,12 +754,22 @@ mobileClose.addEventListener('click', closeMobileNav);
         d.onclick=()=>{cur=i;update();};
         dots.appendChild(d);
       }
+      
       function update(){
         track.style.transform='translateX(-'+cur*100+'%)';
         document.querySelectorAll('.cdot').forEach((d,i)=>d.style.background=i===cur?'#2B6CB0':'transparent');
       }
-      window.carMove=function(dir){cur=(cur+dir+slides)%slides;update();};
-      setInterval(()=>{cur=(cur+1)%slides;update();},5000);
+      
+      window.carMove=function(dir){
+        cur=(cur+dir+slides)%slides;
+        update();
+      };
+      
+      // Auto-advance every 5 seconds
+      setInterval(()=>{
+        cur=(cur+1)%slides;
+        update();
+      },5000);
     })();
     </script>
   </div>
