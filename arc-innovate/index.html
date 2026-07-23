@@ -683,74 +683,44 @@ mobileClose.addEventListener('click', closeMobileNav);
     <div class="section-label">From Our Students</div>
     <h2>What kids say after their first term.</h2>
     <p class="section-sub">Real words from real young innovators — collected after end-of-term showcases at Arc Innovate Bangkok.</p>
-    <div style="position:relative;margin-top:40px;width:100%;overflow:hidden;">
-      <div id="carTrack" style="display:flex;overflow:visible;gap:16px;transition:transform 0.45s cubic-bezier(.4,0,.2,1);width:calc(6 * 220px + 5 * 16px);">
-        <!-- Card 1: Pim -->
-        <div style="min-width:220px;flex-shrink:0;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--deep-blue),var(--light-blue));display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:900;color:white;font-size:1.8rem;">P</div>
-          <div>
-            <div style="font-size:0.85rem;font-style:italic;line-height:1.8;color:#333;margin-bottom:16px;">"I didn't know I could actually make something real. When I held my 3D print I was like — I made this. I designed it. That was the best feeling."</div>
-            <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;color:var(--deep-blue);margin-bottom:4px;">Pim</div>
-            <div style="font-size:0.88rem;color:#777;">Age 9 · 3D Printing</div>
-          </div>
+    
+    <div style="margin-top:40px;overflow:hidden;">
+      <div id="carTrack" style="display:flex;gap:16px;overflow-x:auto;scroll-behavior:smooth;padding-bottom:10px;">
+        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
+          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#2B6CB0,#63B3ED);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">P</div>
+          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#333;margin-bottom:8px;">"I didn't know I could actually make something real..."</div><div style="font-weight:800;font-size:0.95rem;color:#2B6CB0;margin-bottom:2px;">Pim</div><div style="font-size:0.75rem;color:#777;">Age 9 · 3D Printing</div></div>
         </div>
-
-        <!-- Card 2: Nong -->
-        <div style="min-width:220px;flex-shrink:0;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--forest-green),var(--fresh-green));display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:900;color:white;font-size:1.8rem;">N</div>
-          <div>
-            <div style="font-size:0.85rem;font-style:italic;line-height:1.8;color:#333;margin-bottom:16px;">"At school when there's a problem I just wait for teacher to tell me the answer. Here I learn to ask better questions first. Now I do that everywhere."</div>
-            <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;color:var(--forest-green);margin-bottom:4px;">Nong</div>
-            <div style="font-size:0.88rem;color:#777;">Age 8 · Experimental Arts & Design</div>
-          </div>
+        
+        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
+          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#3A8A4A,#6BBF7A);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">N</div>
+          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#333;margin-bottom:8px;">"At school I wait for teacher. Here I learn to ask better questions..."</div><div style="font-weight:800;font-size:0.95rem;color:#3A8A4A;margin-bottom:2px;">Nong</div><div style="font-size:0.75rem;color:#777;">Age 8 · Exp Arts & Design</div></div>
         </div>
-
-        <!-- Card 3: Mook -->
-        <div style="min-width:220px;flex-shrink:0;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#BE185D,#EC4899);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:900;color:white;font-size:1.8rem;">M</div>
-          <div>
-            <div style="font-size:0.85rem;font-style:italic;line-height:1.8;color:#333;margin-bottom:16px;">"My mum said I talk differently now. Like I explain my thinking instead of just saying 'I don't know.' Showcase day was scary but after I finished I wanted to do it again."</div>
-            <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;color:#EC4899;margin-bottom:4px;">Mook</div>
-            <div style="font-size:0.88rem;color:#777;">Age 10 · Young Innovator</div>
-          </div>
+        
+        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
+          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#BE185D,#EC4899);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">M</div>
+          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#333;margin-bottom:8px;">"My mum said I talk differently now. I explain my thinking..."</div><div style="font-weight:800;font-size:0.95rem;color:#EC4899;margin-bottom:2px;">Mook</div><div style="font-size:0.75rem;color:#777;">Age 10 · Young Innovator</div></div>
         </div>
-
-        <!-- Card 4: Tae -->
-        <div style="min-width:220px;flex-shrink:0;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#5B21B6,#7C3AED);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:900;color:white;font-size:1.8rem;">T</div>
-          <div>
-            <div style="font-size:0.85rem;font-style:italic;line-height:1.8;color:#333;margin-bottom:16px;">"We had to interview people about their problems before we could start building. I interviewed my grandma. She said my product idea was actually useful. That made me really proud."</div>
-            <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;color:#7C3AED;margin-bottom:4px;">Tae</div>
-            <div style="font-size:0.88rem;color:#777;">Age 9 · Young Innovator</div>
-          </div>
+        
+        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
+          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#5B21B6,#7C3AED);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">T</div>
+          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#333;margin-bottom:8px;">"We interviewed people about their problems. My idea was useful..."</div><div style="font-weight:800;font-size:0.95rem;color:#7C3AED;margin-bottom:2px;">Tae</div><div style="font-size:0.75rem;color:#777;">Age 9 · Young Innovator</div></div>
         </div>
-
-        <!-- Card 5: Beam -->
-        <div style="min-width:220px;flex-shrink:0;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#0D9488,#14B8A6);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:900;color:white;font-size:1.8rem;">B</div>
-          <div>
-            <div style="font-size:0.85rem;font-style:italic;line-height:1.8;color:#333;margin-bottom:16px;">"I made a website in my class. My dad said it looked like a real website. I want to make an app next. My teacher said that's exactly what design is for."</div>
-            <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;color:#14B8A6;margin-bottom:4px;">Beam</div>
-            <div style="font-size:0.88rem;color:#777;">Age 10 · 3D Printing</div>
-          </div>
+        
+        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
+          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#0D9488,#14B8A6);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">B</div>
+          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#333;margin-bottom:8px;">"I made a website. My dad said it looked real. I want to make an app..."</div><div style="font-weight:800;font-size:0.95rem;color:#14B8A6;margin-bottom:2px;">Beam</div><div style="font-size:0.75rem;color:#777;">Age 10 · 3D Printing</div></div>
         </div>
-
-        <!-- Card 6: New student (placeholder - you can customize) -->
-        <div style="min-width:220px;flex-shrink:0;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#F59E0B,#FBBF24);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:900;color:white;font-size:1.8rem;">?</div>
-          <div>
-            <div style="font-size:0.85rem;font-style:italic;line-height:1.8;color:#999;margin-bottom:16px;">Your student's story could be here. Join Arc Innovate and share your creative journey.</div>
-            <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;color:#F59E0B;margin-bottom:4px;">Next Young Innovator</div>
-            <div style="font-size:0.88rem;color:#777;">Coming Soon</div>
-          </div>
+        
+        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
+          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#F59E0B,#FBBF24);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">?</div>
+          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#999;margin-bottom:8px;">Your student's story could be here. Join Arc Innovate.</div><div style="font-weight:800;font-size:0.95rem;color:#F59E0B;margin-bottom:2px;">Next Innovator</div><div style="font-size:0.75rem;color:#777;">Coming Soon</div></div>
         </div>
-</div>
-
-      <div style="display:flex;justify-content:center;align-items:center;gap:20px;margin-top:32px;">
-        <button onclick="carMove(-1)" style="width:44px;height:44px;border-radius:50%;border:none;background:#2B6CB0;color:white;font-size:1.2rem;font-weight:800;cursor:pointer;transition:all 0.2s;">←</button>
-        <div id="carDots" style="display:flex;gap:8px;"></div>
-        <button onclick="carMove(1)" style="width:44px;height:44px;border-radius:50%;border:none;background:#2B6CB0;color:white;font-size:1.2rem;font-weight:800;cursor:pointer;transition:all 0.2s;">→</button>
       </div>
+    </div>
+    
+    <div style="display:flex;justify-content:center;align-items:center;gap:20px;margin-top:24px;">
+      <button onclick="carMove(-1)" style="width:44px;height:44px;border-radius:50%;border:none;background:#2B6CB0;color:white;font-size:1.2rem;font-weight:800;cursor:pointer;transition:all 0.2s;">←</button>
+      <button onclick="carMove(1)" style="width:44px;height:44px;border-radius:50%;border:none;background:#2B6CB0;color:white;font-size:1.2rem;font-weight:800;cursor:pointer;transition:all 0.2s;">→</button>
     </div>
 
     <div style="background:linear-gradient(135deg,var(--deep-blue),var(--forest-green));border-radius:20px;padding:32px;margin-top:32px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
@@ -759,42 +729,15 @@ mobileClose.addEventListener('click', closeMobileNav);
       <p style="color:rgba(255,255,255,0.88);font-size:0.88rem;line-height:1.6;margin-bottom:24px;">Trial classes available. Small groups, big ideas.</p>
       <a href="https://lin.ee/TQPIVik" target="_blank" style="background:white;color:var(--deep-blue);padding:12px 26px;border-radius:999px;font-weight:800;font-size:0.9rem;text-decoration:none;">💬 Chat with us on Line</a>
     </div>
-
-    <script>
-    (function(){
-      let cur=0;
-      const track=document.getElementById('carTrack');
-      const slides=track.querySelectorAll('div[style*="min-width"]').length;
-      const dots=document.getElementById('carDots');
-      
-      for(let i=0;i<slides;i++){
-        const d=document.createElement('button');
-        d.className='cdot'+(i===0?' on':'');
-        d.style.cssText='width:10px;height:10px;border-radius:50%;border:2px solid #2B6CB0;background:transparent;cursor:pointer;transition:all 0.2s;';
-        d.onclick=()=>{cur=i;update();};
-        dots.appendChild(d);
-      }
-      
-      function update(){
-        track.style.transform='translateX(-'+cur*100+'%)';
-        document.querySelectorAll('.cdot').forEach((d,i)=>d.style.background=i===cur?'#2B6CB0':'transparent');
-      }
-      
-      window.carMove=function(dir){
-        cur=(cur+dir+slides)%slides;
-        update();
-      };
-      
-      // Auto-advance every 5 seconds
-      setInterval(()=>{
-        cur=(cur+1)%slides;
-        update();
-      },5000);
-    })();
-    </script>
   </div>
 </section>
 
+<script>
+const track = document.getElementById('carTrack');
+window.carMove = function(dir) {
+  track.scrollBy({ left: dir * 236, behavior: 'smooth' });
+};
+</script>
 
 <!-- ARTICLES -->
 <section class="section-alt" id="articles">
