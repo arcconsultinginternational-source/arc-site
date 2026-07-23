@@ -496,7 +496,7 @@ mobileClose.addEventListener('click', closeMobileNav);
         </div>
       </a>
 
-      <a href="/arc-innovate/subjects/young-innovator" class="program-card">
+      <a href="/arc-innovate/subjects/young-innovators" class="program-card">
         <div class="program-card-header card-blue">
           <div class="badge">SOLVE • Ages 7–10</div>
           <h3>Young Innovator</h3>
@@ -856,5 +856,31 @@ mobileClose.addEventListener('click', closeMobileNav);
   <a href="https://lin.ee/TQPIVik" target="_blank" class="fab-btn line">💬 Line@</a>
 </div>
 
+<script>
+document.querySelectorAll('.nav-dropdown').forEach(dd => {
+  const toggle = dd.querySelector('.nav-dropdown-toggle');
+  const menu = dd.querySelector('.nav-dropdown-menu');
+  
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  });
+  
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.style.display = 'none';
+    });
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown-menu').forEach(menu => {
+      menu.style.display = 'none';
+    });
+  }
+});
+</script>
 </body>
 </html>
