@@ -29,7 +29,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--paper);}
-h1,h2,h3,h4{font-family:'Poppins',sans-serif;font-weight:800;}
+h1,h2,h3,h4{font-family:'Nunito',sans-serif;font-weight:800;}
 a{text-decoration:none;color:inherit;}
 
 /* ── NAV ── */
@@ -439,13 +439,117 @@ mobileClose.addEventListener('click', closeMobileNav);
 </script>
 
 <!-- HERO -->
+<style>
+.hero{
+  background:linear-gradient(135deg,#1A4A80 0%,#2B6CB0 45%,#3A8A4A 100%);
+  padding:0;color:white;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 25% 50%,rgba(255,255,255,0.06) 0%,transparent 60%);
+  pointer-events:none;
+}
+.hero-inner{
+  max-width:1100px;margin:0 auto;padding:80px 40px;
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
+  position:relative;z-index:1;
+}
+.hero-text{text-align:left;}
+.hero-eyebrow{
+  display:inline-block;background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.25);border-radius:999px;
+  padding:6px 18px;font-size:0.72rem;font-weight:700;
+  letter-spacing:0.2em;text-transform:uppercase;margin-bottom:22px;
+}
+.hero h1{
+  font-size:2.8rem;line-height:1.15;margin:0 0 18px;color:white;max-width:100%;
+}
+.hero h1 em{font-style:normal;color:#A7F3C4;}
+.hero-sub{font-size:1rem;opacity:0.88;margin:0 0 32px;line-height:1.75;max-width:480px;}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
+.hero-photo-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr;gap:10px;height:340px;
+}
+.hero-photo-grid .photo-slot{
+  border-radius:12px;overflow:hidden;background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.15);position:relative;
+}
+.hero-photo-grid .photo-slot img{width:100%;height:100%;object-fit:cover;display:block;}
+.hero-photo-grid .photo-slot.tall{grid-row:span 2;}
+.hero-photo-label{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(transparent,rgba(0,0,0,0.55));
+  color:rgba(255,255,255,0.75);font-size:0.62rem;padding:8px 10px 6px;
+  font-family:monospace;
+}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;padding:56px 24px;}
+  .hero-photo-grid{height:220px;}
+  .hero h1{font-size:2rem;}
+}
+@media(max-width:500px){
+  .hero-photo-grid{grid-template-columns:1fr 1fr;height:180px;}
+}
+</style>
 <section class="hero">
-  <div class="hero-eyebrow">Bangkok's Creative Problem-Solving Academy • Ages 4–14</div>
-  <h1>Creative Academy — <em>The Skills AI Can't Replace</em></h1>
-  <p class="hero-sub">Kids learn to solve problems by solving real ones. Design Thinking, 3D Printing & STEAM programs that build the creative confidence your child needs for any future.</p>
-  <div class="hero-btns">
-    <a href="#programs" class="btn-primary">Explore Programs</a>
-    <a href="#partners" class="btn-secondary">School Partnerships</a>
+  <div class="hero-inner">
+
+    <!-- LEFT: TEXT -->
+    <div class="hero-text">
+      <div class="hero-eyebrow">Bangkok's Creative Academy • Ages 4–14</div>
+      <h1>Creative Academy —<br><em>The Skills AI Can't Replace</em></h1>
+      <p class="hero-sub">Kids learn to solve problems by solving real ones. Design Thinking, 3D Printing & STEAM programs that build the creative confidence your child needs for any future.</p>
+      <div class="hero-btns">
+        <a href="#programs" class="btn-primary">Explore Programs</a>
+        <a href="#partners" class="btn-secondary">School Partnerships</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: PHOTO GRID -->
+    <!-- 
+      HOW TO SWAP IMAGES:
+      Replace the src="..." in each img tag with your own photo path.
+      All images should be in: /arc-innovate/images/
+      Recommended: use design-thinking-camp-photo-1.jpg through photo-8.jpg
+      or gallery-1.jpg through gallery-6.jpg
+    -->
+    <div class="hero-photo-grid">
+
+      <!-- PHOTO 1: Top-left — replace with your best classroom photo -->
+      <div class="photo-slot">
+        <img src="/arc-innovate/images/HEROdesign-thinking-camp-photo-1.jpg" 
+             alt="Kids in design thinking class Arc Innovate Bangkok"
+             onerror="this.style.display='none'">
+        <div class="hero-photo-label">HEROdesign-thinking-camp-photo-1.jpg</div>
+      </div>
+
+      <!-- PHOTO 2: Top-right — replace with kids collaborating -->
+      <div class="photo-slot">
+        <img src="/arc-innovate/images/HEROdesign-thinking-camp-photo-2.jpg" 
+             alt="Students collaborating Arc Innovate Bangkok"
+             onerror="this.style.display='none'">
+        <div class="hero-photo-label">HEROdesign-thinking-camp-photo-2.jpg</div>
+      </div>
+
+      <!-- PHOTO 3: Bottom-left — replace with making/prototyping moment -->
+      <div class="photo-slot">
+        <img src="/arc-innovate/images/HEROdesign-thinking-camp-photo-4.jpg" 
+             alt="Kids prototyping design challenge Bangkok"
+             onerror="this.style.display='none'">
+        <div class="hero-photo-label">HEROdesign-thinking-camp-photo-4.jpg</div>
+      </div>
+
+      <!-- PHOTO 4: Bottom-right — replace with showcase/proud moment -->
+      <div class="photo-slot">
+        <img src="/arc-innovate/images/HEROdesign-thinking-camp-photo-6.jpg" 
+             alt="Student presenting work Arc Innovate Bangkok"
+             onerror="this.style.display='none'">
+        <div class="hero-photo-label">HEROdesign-thinking-camp-photo-6.jpg</div>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
@@ -597,8 +701,8 @@ mobileClose.addEventListener('click', closeMobileNav);
 
     <!-- CTA -->
     <div style="text-align:center;">
-      <a href="https://lin.ee/TQPIVik" style="display:inline-flex;align-items:center;gap:8px;background:#00B900;color:white;padding:16px 36px;border-radius:999px;font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;box-shadow:0 4px 20px rgba(0,185,0,0.3);text-decoration:none;margin:6px;">💬 Book a Spot on LINE</a>
-      <a href="/arc-innovate/subjects/young-innovators" style="display:inline-flex;align-items:center;gap:8px;background:white;border:2px solid #2B6CB0;color:#2B6CB0;padding:14px 28px;border-radius:999px;font-family:'Nunito',sans-serif;font-weight:700;font-size:0.92rem;text-decoration:none;margin:6px;">See Full Program →</a>
+      <a href="https://lin.ee/TQPIVik" style="display:inline-flex;align-items:center;gap:8px;background:#00B900;color:white;padding:16px 36px;border-radius:999px;font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;box-shadow:0 4px 20px rgba(0,185,0,0.3);text-decoration:none;margin:6px;">💬 Book a Spot on LINE</a>
+      <a href="/arc-innovate/subjects/young-innovators" style="display:inline-flex;align-items:center;gap:8px;background:white;border:2px solid #2B6CB0;color:#2B6CB0;padding:14px 28px;border-radius:999px;font-family:'Poppins',sans-serif;font-weight:700;font-size:0.92rem;text-decoration:none;margin:6px;">See Full Program →</a>
       <p style="font-size:0.78rem;color:#888;margin-top:12px;">Max 8 students per workshop · Spots fill fast</p>
     </div>
 
