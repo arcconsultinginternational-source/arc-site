@@ -3,92 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Arc Innovate Articles — insights on design thinking, creative education, and raising future-ready kids in Bangkok.">
+<meta name="description" content="Articles and insights from Arc Innovate Bangkok — Design Thinking, 3D Printing, and creative education for kids ages 4-14. Written for Bangkok parents. คอร์ส design thinking เด็ก กรุงเทพ">
+<meta name="keywords" content="design thinking for kids Bangkok, creative education Bangkok, 3D printing kids Bangkok, STEAM Bangkok, คอร์ส design thinking เด็ก กรุงเทพ, creative school Bangkok">
+<meta property="og:title" content="Articles & Insights | Arc Innovate Bangkok">
+<meta property="og:description" content="Design thinking, creative education, and raising future-ready kids — written for Bangkok parents.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.arc-international-edu.com/arc-innovate/insights/articles">
+<meta name="twitter:card" content="summary_large_image">
 <title>Articles & Insights | Arc Innovate Bangkok</title>
+<link rel="canonical" href="https://www.arc-international-edu.com/arc-innovate/insights/articles">
 <link rel="icon" type="image/png" href="/arc-innovate-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-33TWWP2J6J"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-33TWWP2J6J');</script>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1337977120778599");fbq("track","PageView");
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1337977120778599&ev=PageView&noscript=1"/></noscript>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"Arc Innovate Insights","description":"Articles on design thinking, creative education and raising future-ready kids in Bangkok.","publisher":{"@type":"Organization","name":"Arc Innovate","sameAs":"https://www.arc-international-edu.com/arc-innovate"}}
+</script>
 <style>
-:root{--deep-blue:#2B6CB0;--forest-green:#3A8A4A;--light-blue:#63B3ED;--ink:#1A1614;--paper:#FAFAFA;--mid:#555;}
+:root{--deep-blue:#2B6CB0;--light-blue:#63B3ED;--forest-green:#3A8A4A;--ink:#1A1614;--paper:#FAFAFA;--mid:#555;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--paper);}
-h1,h2,h3{font-family:'Nunito',sans-serif;font-weight:800;}
-a{text-decoration:none;}
+h1,h2,h3,h4{font-family:'Nunito',sans-serif;font-weight:800;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;height:auto;display:block;}
 .wrap{max-width:1100px;margin:0 auto;padding:0 32px;}
-nav{background:#fff;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+nav{background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,0.07);}
 .back-link{color:var(--deep-blue);font-weight:600;font-size:0.9rem;}
 .nav-cta{background:var(--forest-green);color:white;padding:10px 22px;border-radius:999px;font-weight:600;font-size:0.88rem;}
+
+/* HERO */
 .hero{background:linear-gradient(135deg,var(--deep-blue),var(--forest-green));padding:80px 32px;text-align:center;color:white;}
 .hero-eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;opacity:0.8;margin-bottom:16px;}
 .hero h1{font-size:2.8rem;margin-bottom:16px;color:white;}
 .hero p{font-size:1rem;opacity:0.88;max-width:540px;margin:0 auto;line-height:1.7;}
-.articles{padding:72px 0;}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;}
+.hero p.th{font-size:0.88rem;opacity:0.7;margin-top:8px;font-style:italic;}
+
+/* FEATURED */
+.featured{padding:64px 0 0;}
+.section-label{font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--mid);margin-bottom:24px;}
+.featured-card{display:grid;grid-template-columns:1fr 1fr;gap:0;background:white;border-radius:20px;overflow:hidden;border:1px solid #e8eef6;box-shadow:0 4px 24px rgba(43,108,176,0.08);transition:transform 0.2s,box-shadow 0.2s;}
+.featured-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(43,108,176,0.14);}
+.featured-img{background:linear-gradient(135deg,#1A4A80,#2B6CB0,#3A8A4A);min-height:280px;display:flex;align-items:center;justify-content:center;padding:40px;position:relative;overflow:hidden;}
+.featured-img-photos{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%;}
+.featured-img-photos img{width:100%;height:100px;object-fit:cover;border-radius:8px;opacity:0.9;}
+.featured-content{padding:36px;}
+.featured-tag{display:inline-block;background:#EDF4FB;color:var(--deep-blue);padding:4px 12px;border-radius:999px;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:12px;}
+.featured-content h2{font-size:1.5rem;line-height:1.3;margin-bottom:8px;color:var(--ink);}
+.featured-content p{font-size:0.92rem;color:var(--mid);line-height:1.7;margin-bottom:8px;}
+.featured-content p.th{font-size:0.85rem;color:#E65100;font-style:italic;margin-bottom:20px;}
+.featured-meta{font-size:0.78rem;color:var(--mid);margin-bottom:16px;}
+.read-link{font-size:0.88rem;font-weight:700;color:var(--deep-blue);display:inline-flex;align-items:center;gap:6px;}
+
+/* GRID */
+.articles{padding:48px 0 72px;}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px;}
 .card{background:white;border-radius:18px;overflow:hidden;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.06);transition:transform 0.2s,box-shadow 0.2s;display:block;}
 .card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(43,108,176,0.12);}
-.card-header{padding:28px 24px;color:white;}
-.card-meta{font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;opacity:0.8;margin-bottom:10px;}
-.card-header h3{font-size:1.05rem;color:white;line-height:1.3;}
+.card-header{padding:28px 24px;color:white;min-height:110px;display:flex;flex-direction:column;justify-content:flex-end;}
+.card-meta{font-size:0.68rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;opacity:0.8;margin-bottom:8px;}
+.card-header h3{font-size:1rem;color:white;line-height:1.35;}
 .card-body{padding:20px 24px;}
-.card-body p{font-size:0.88rem;color:var(--mid);line-height:1.6;margin-bottom:16px;}
-.card-link{font-size:0.85rem;font-weight:700;color:var(--deep-blue);}
-.coming-soon{opacity:0.6;pointer-events:none;}
+.card-body p{font-size:0.86rem;color:var(--mid);line-height:1.65;margin-bottom:6px;}
+.card-body p.th{font-size:0.8rem;color:#E65100;font-style:italic;margin-bottom:14px;}
+.card-link{font-size:0.84rem;font-weight:700;color:var(--deep-blue);}
+.card-tag{display:inline-block;background:#EDF4FB;color:var(--deep-blue);padding:3px 10px;border-radius:999px;font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;}
+.card-tag.green{background:#F0F7F1;color:var(--forest-green);}
+.card-tag.orange{background:#FFF3E0;color:#E65100;}
+.coming-soon{opacity:0.55;pointer-events:none;}
+.coming-label{display:inline-block;background:#f0f4f8;color:#999;padding:3px 10px;border-radius:999px;font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;}
+
+/* FOOTER */
 footer{background:#1A1614;color:#666;padding:28px 32px;text-align:center;font-size:0.85rem;}
 footer a{color:#63B3ED;}
 .line-btn{position:fixed;bottom:28px;right:28px;background:linear-gradient(135deg,#00B900,#00D600);color:white;padding:14px 22px;border-radius:50px;z-index:999;font-weight:700;font-size:0.9rem;box-shadow:0 4px 20px rgba(0,185,0,0.35);}
-@media(max-width:800px){.grid{grid-template-columns:1fr 1fr;}}
-@media(max-width:500px){.grid{grid-template-columns:1fr;}}
+
+@media(max-width:900px){
+  .featured-card{grid-template-columns:1fr;}
+  .featured-img{min-height:180px;}
+  .grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:500px){
+  .grid{grid-template-columns:1fr;}
+  .hero h1{font-size:2rem;}
+  .wrap{padding:0 20px;}
+  nav{padding:0 20px;}
+}
 </style>
 </head>
 <body>
+
 <nav>
   <a href="/arc-innovate" class="back-link">← Arc Innovate</a>
-  <a href="mailto:arc.international.edu@gmail.com" class="nav-cta">Get in Touch</a>
+  <a href="https://lin.ee/TQPIVik" class="nav-cta">สอบถามเพิ่มเติม</a>
 </nav>
+
+<!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <div class="hero-eyebrow">Arc Innovate Bangkok</div>
+    <div class="hero-eyebrow">Arc Innovate Bangkok · Insights</div>
     <h1>Articles & Insights</h1>
     <p>Design thinking, creative education, and raising future-ready kids — written for Bangkok parents.</p>
+    <p class="th">เรื่องราวจากคลาส ความรู้เรื่อง Design Thinking และการเลี้ยงลูกให้พร้อมสำหรับอนาคต</p>
   </div>
 </section>
+
+<!-- FEATURED ARTICLE -->
+<section class="featured">
+  <div class="wrap">
+    <div class="section-label">✦ Latest · ล่าสุด</div>
+    <a href="/arc-innovate/insights/design-thinking-class-recap" class="featured-card">
+      <div class="featured-img">
+        <div class="featured-img-photos">
+          <img src="/arc-innovate/images/design-thinking-camp-photo-1.jpg" alt="Design Thinking class Arc Innovate Bangkok">
+          <img src="/arc-innovate/images/design-thinking-camp-photo-2.jpg" alt="Kids learning design thinking Bangkok">
+          <img src="/arc-innovate/images/design-thinking-camp-photo-3.jpg" alt="Student presenting design thinking project">
+          <img src="/arc-innovate/images/design-thinking-camp-photo-4.jpg" alt="Design thinking activity kids Bangkok">
+        </div>
+      </div>
+      <div class="featured-content">
+        <span class="featured-tag">Class Recap · New</span>
+        <h2>Before They Print Anything, They Learn to Think</h2>
+        <p>A look inside our Design Thinking class — what we do each week, what your child learns, and the alarm clock story that explains everything.</p>
+        <p class="th">ก่อนที่เด็กจะสร้างอะไร เราสอนให้เขาคิดก่อน ดูว่าในคลาสเราทำอะไรกัน</p>
+        <div class="featured-meta">July 28, 2026 · 8 min read · 🇬🇧 🇹🇭 Bilingual</div>
+        <span class="read-link">Read article →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ALL ARTICLES GRID -->
 <section class="articles">
   <div class="wrap">
+    <div class="section-label">✦ All Articles · บทความทั้งหมด</div>
     <div class="grid">
+
+      <!-- Article 1: Why DT -->
       <a href="/arc-innovate/insights/why-design-thinking-is-the-1-skill-kids-need-in-2026" class="card">
         <div class="card-header" style="background:linear-gradient(135deg,#2B6CB0,#63B3ED);">
           <div class="card-meta">July 15, 2026 · 6 min read</div>
           <h3>Why Design Thinking is the #1 Skill Kids Need in 2026</h3>
         </div>
         <div class="card-body">
+          <span class="card-tag">Guide</span>
           <p>World Economic Forum data shows complex problem-solving tops the future workforce list. Here's why design thinking is the framework that teaches it.</p>
           <span class="card-link">Read article →</span>
         </div>
       </a>
-      <div class="card coming-soon">
-        <div class="card-header" style="background:linear-gradient(135deg,#0D9488,#14B8A6);">
-          <div class="card-meta">Coming Soon</div>
-          <h3>What 3D Printing Teaches Kids That No Other Class Can</h3>
+
+      <!-- Article 2: 3D Printing + DT -->
+      <a href="/arc-innovate/insights/3d-printing-and-design-thinking" class="card">
+        <div class="card-header" style="background:linear-gradient(135deg,#0D9488,#3A8A4A);">
+          <div class="card-meta">July 19, 2026 · 5 min read</div>
+          <h3>3D Printing + Design Thinking: How They Connect</h3>
         </div>
         <div class="card-body">
-          <p>Why physical prototyping builds a different kind of confidence — and what Bangkok parents should know about the maker movement.</p>
+          <span class="card-tag green">3D Printing</span>
+          <p>How 3D printing teaches design thinking through hands-on problem solving. Why making things physical changes how kids think.</p>
+          <span class="card-link">Read article →</span>
         </div>
-      </div>
+      </a>
+
+      <!-- Article 3: Class Recap (same as featured but in grid too) -->
+      <a href="/arc-innovate/insights/design-thinking-class-recap" class="card">
+        <div class="card-header" style="background:linear-gradient(135deg,#1A4A80,#2B6CB0,#3A8A4A);">
+          <div class="card-meta">July 28, 2026 · 8 min read</div>
+          <h3>Before They Print Anything, They Learn to Think</h3>
+        </div>
+        <div class="card-body">
+          <span class="card-tag orange">Class Recap</span>
+          <p>Inside our Design Thinking class — the alarm clock story, the 4-week journey, and why ideas matter more than any tool.</p>
+          <p class="th">เรื่องนาฬิกาปลุกซ่อนลูกอม และทำไมไอเดียสำคัญกว่าเครื่องมือใดๆ</p>
+          <span class="card-link">Read article →</span>
+        </div>
+      </a>
+
+      <!-- Coming Soon 1 -->
       <div class="card coming-soon">
         <div class="card-header" style="background:linear-gradient(135deg,#BE185D,#EC4899);">
           <div class="card-meta">Coming Soon</div>
           <h3>Is My Child Creative? Why the Answer is Always Yes</h3>
         </div>
         <div class="card-body">
+          <span class="coming-label">Coming Soon</span>
           <p>The biggest myth in children's enrichment — and what the research on creativity actually says about every child's potential.</p>
         </div>
       </div>
+
+      <!-- Coming Soon 2 -->
+      <div class="card coming-soon">
+        <div class="card-header" style="background:linear-gradient(135deg,#7C3AED,#5B21B6);">
+          <div class="card-meta">Coming Soon</div>
+          <h3>What Bangkok Parents Get Wrong About STEAM Education</h3>
+        </div>
+        <div class="card-body">
+          <span class="coming-label">Coming Soon</span>
+          <p>Why certificates and competitions miss the point — and what real creative education looks like for kids in Thailand.</p>
+        </div>
+      </div>
+
+      <!-- Coming Soon 3 -->
+      <div class="card coming-soon">
+        <div class="card-header" style="background:linear-gradient(135deg,#B45309,#D97706);">
+          <div class="card-meta">Coming Soon</div>
+          <h3>How to Tell if an Enrichment Class is Actually Teaching Your Child to Think</h3>
+        </div>
+        <div class="card-body">
+          <span class="coming-label">Coming Soon</span>
+          <p>The 5 questions every Bangkok parent should ask before enrolling their child in any enrichment program.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-<footer>© 2026 Arc Innovate · <a href="/arc-innovate">Back to Programs</a></footer>
-<a href="https://lin.ee/TQPIVik" class="line-btn" target="_blank">💬 Line@</a>
+
+<footer>© 2026 Arc Innovate Bangkok · <a href="/arc-innovate">Back to Programs</a> · <a href="mailto:arc.international.edu@gmail.com">arc.international.edu@gmail.com</a></footer>
+<a href="https://lin.ee/TQPIVik" class="line-btn" target="_blank">💬 LINE us</a>
+
 </body>
 </html>
