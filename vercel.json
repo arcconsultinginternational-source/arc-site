@@ -1,4 +1,31 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/arc-innovate",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/arc-innovate/insights/:path*",
+      "destination": "/insights/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/arc-innovate/subjects/:path*",
+      "destination": "/programs/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/arc-innovate/images/:path*",
+      "destination": "/images/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/arc-innovate/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    }
+  ]
 }
