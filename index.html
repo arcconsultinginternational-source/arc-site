@@ -434,7 +434,7 @@ footer .footer-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1
   <a href="/insights" onclick="closeMobileNav()">Articles</a>
   <a href="#contact" onclick="closeMobileNav()">Contact</a>
   <div style="margin-top:32px;">
-    <a href="https://lin.ee/TQPIVik" target="_blank" style="background:#00B900;color:white;padding:16px 28px;border-radius:999px;font-weight:800;text-align:center;display:block;">💬 Chat on Line</a>
+    <a href="https://lin.ee/TQPIVik" target="_blank" style="background:#00B900;color:white;padding:16px 28px;border-radius:999px;font-weight:800;text-align:center;display:block;" onclick="gtag('event','line_click',{'button_location':'hero'})">💬 Chat on Line</a>
   </div>
 </div>
 
@@ -701,7 +701,7 @@ mobileClose.addEventListener('click', closeMobileNav);
 
     <!-- CTA -->
     <div style="text-align:center;">
-      <a href="https://lin.ee/TQPIVik" style="display:inline-flex;align-items:center;gap:8px;background:#00B900;color:white;padding:16px 36px;border-radius:999px;font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;box-shadow:0 4px 20px rgba(0,185,0,0.3);text-decoration:none;margin:6px;">💬 Book a Spot on LINE</a>
+      <a href="https://lin.ee/TQPIVik" style="display:inline-flex;align-items:center;gap:8px;background:#00B900;color:white;padding:16px 36px;border-radius:999px;font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;box-shadow:0 4px 20px rgba(0,185,0,0.3);text-decoration:none;margin:6px;" onclick="gtag('event','line_click',{'button_location':'hero'})">💬 Book a Spot on LINE</a>
       <a href="/programs/young-innovators" style="display:inline-flex;align-items:center;gap:8px;background:white;border:2px solid #2B6CB0;color:#2B6CB0;padding:14px 28px;border-radius:999px;font-family:'Poppins',sans-serif;font-weight:700;font-size:0.92rem;text-decoration:none;margin:6px;">See Full Program →</a>
       <p style="font-size:0.78rem;color:#888;margin-top:12px;">Max 8 students per workshop · Spots fill fast</p>
     </div>
@@ -981,7 +981,7 @@ mobileClose.addEventListener('click', closeMobileNav);
       <div style="font-size:2rem;margin-bottom:16px;">🌟</div>
       <h3 style="color:white;font-size:1.2rem;margin-bottom:12px;">Ready to be the next Young Innovator?</h3>
       <p style="color:rgba(255,255,255,0.88);font-size:0.88rem;line-height:1.6;margin-bottom:24px;">Trial classes available. Small groups, big ideas.</p>
-      <a href="https://lin.ee/TQPIVik" target="_blank" style="background:white;color:var(--deep-blue);padding:12px 26px;border-radius:999px;font-weight:800;font-size:0.9rem;text-decoration:none;">💬 Chat with us on Line</a>
+      <a href="https://lin.ee/TQPIVik" target="_blank" style="background:white;color:var(--deep-blue);padding:12px 26px;border-radius:999px;font-weight:800;font-size:0.9rem;text-decoration:none;" onclick="gtag('event','line_click',{'button_location':'about'})">💬 Chat with us on Line</a>
     </div>
   </div>
 </section>
@@ -1129,7 +1129,7 @@ window.carMove = function(dir) {
     </div>
 
     <div style="text-align:center;margin-top:40px;">
-      <a href="https://lin.ee/TQPIVik" target="_blank" style="display:inline-block;background:var(--forest-green);color:white;padding:14px 32px;border-radius:999px;font-weight:700;font-size:0.92rem;">💬 Ask us on LINE</a>
+      <a href="https://lin.ee/TQPIVik" target="_blank" style="display:inline-block;background:var(--forest-green);color:white;padding:14px 32px;border-radius:999px;font-weight:700;font-size:0.92rem;" onclick="gtag('event','line_click',{'button_location':'faq'})">💬 Ask us on LINE</a>
     </div>
   </div>
 </section>
@@ -1183,7 +1183,7 @@ function toggleFaq(el){
         <h2>Let's connect.</h2>
         <p>Whether you're a parent looking to enroll your child, a school interested in a partnership, or a venue looking to host Arc Innovate — we'd love to hear from you. Line is the fastest way to reach us.</p>
         <div class="contact-btns">
-          <a href="https://lin.ee/TQPIVik" class="btn-line" target="_blank">💬 Line @arc.innovate</a>
+          <a href="https://lin.ee/TQPIVik" class="btn-line" target="_blank" onclick="gtag('event','line_click',{'button_location':'contact'})">💬 Line @arc.innovate</a>
           <a href="mailto:arc.international.edu@gmail.com" class="btn-email">✉️ Email Us</a>
         </div>
       </div>
@@ -1220,7 +1220,7 @@ function toggleFaq(el){
 <div class="fab-stack">
   <a href="tel:+66835193659" class="fab-btn call">📞 Call Now</a>
   <a href="https://instagram.com/arc.innovate" target="_blank" class="fab-btn instagram">📷 Instagram</a>
-  <a href="https://lin.ee/TQPIVik" target="_blank" class="fab-btn line">💬 Line@</a>
+  <a href="https://lin.ee/TQPIVik" target="_blank" class="fab-btn line" onclick="gtag('event','line_click',{'button_location':'page'})">💬 Line@</a>
 </div>
 
 <script>
