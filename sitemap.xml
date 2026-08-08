@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.arc-international-edu.com/</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/design-thinking-guide</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/insights</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/insights/3d-printing-and-design-thinking</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/insights/articles</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/insights/design-thinking-class-recap</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/insights/why-design-thinking-is-the-1-skill-kids-need-in-2026</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/lead-gen</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/3d-printing</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/creative-cooking</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/creative-inspire</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/design-and-innovation</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/experimental-arts</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/experimental-arts-and-design</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/fashion-design</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/insight-and-questioning</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/tech-talk</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/ux-ui-for-kids</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/young-entrepreneurs</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/young-entrepreneurship</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/young-innovator</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/programs/young-innovators</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/the-arc</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/insights/3d-printing-kids-bangkok</loc><lastmod>2026-08-05</lastmod></url>
-  <url><loc>https://www.arc-international-edu.com/eng/</loc><lastmod>2026-08-09</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.arc-international-edu.com/</loc>
+    <lastmod>2026-08-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.arc-international-edu.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.arc-international-edu.com/eng/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.arc-international-edu.com/"/>
+  </url>
+  <url>
+    <loc>https://www.arc-international-edu.com/eng/</loc>
+    <lastmod>2026-08-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.arc-international-edu.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.arc-international-edu.com/eng/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.arc-international-edu.com/"/>
+  </url>
+  <url><loc>https://www.arc-international-edu.com/design-thinking-guide</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/the-arc</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/lead-gen</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/programs/3d-printing</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/programs/experimental-arts-and-design</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/programs/young-innovators</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/programs/young-innovator</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/programs/creative-inspire</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/programs/insight-and-questioning</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/programs/tech-talk</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/insights</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/insights/3d-printing-kids-bangkok</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/insights/why-design-thinking-is-the-1-skill-kids-need-in-2026</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/insights/3d-printing-and-design-thinking</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://www.arc-international-edu.com/insights/design-thinking-class-recap</loc><lastmod>2026-08-09</lastmod></url>
 </urlset>
