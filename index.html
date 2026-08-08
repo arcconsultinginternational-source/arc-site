@@ -1264,6 +1264,14 @@ window.carMove = function(dir) {
 }
 </style>
 
+/* MOBILE FIX - articles grid */
+@media(max-width:900px){
+  .articles-grid{grid-template-columns:1fr 1fr !important;}
+}
+@media(max-width:600px){
+  .articles-grid{grid-template-columns:1fr !important;}
+}
+
 <script>
 function toggleFaq(el){
   const isOpen = el.classList.contains('open');
