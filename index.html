@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <link rel="canonical" href="https://www.arc-international-edu.com/">
-  <link rel="alternate" hreflang="th" href="https://www.arc-international-edu.com/">
-  <link rel="alternate" hreflang="en" href="https://www.arc-international-edu.com/eng/">
-  <link rel="alternate" hreflang="x-default" href="https://www.arc-international-edu.com/">
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="เวิร์กช็อปสร้างสรรค์สำหรับนักเรียนอายุ 4–14 ปี ในกรุงเทพฯ เรียนรู้ Design Thinking การพิมพ์ 3 มิติ และ STEAM เสริมทักษะที่ AI ไม่สามารถทดแทนได้">
-<meta name="keywords" content="เรียน 3D printing เด็ก กรุงเทพ, คลาส 3D printing เด็ก, design thinking เด็ก กรุงเทพ, กิจกรรมเสริมทักษะเด็ก กรุงเทพ, STEAM เด็ก กรุงเทพ">
-<title>Design Thinking และ 3D Printing เพื่อแก้ปัญหาในโลกจริง | Arc Innovate กรุงเทพฯ</title>
+<meta name="description" content="Creative academy for kids ages 4-14 in Bangkok. Design Thinking, 3D Printing & STEAM. The skills AI cannot replace. คอร์สเสริมทักษะเด็ก กรุงเทพ">
+<meta name="keywords" content="design thinking for kids Bangkok, 3D printing for kids Bangkok, creative school Bangkok, STEAM classes Bangkok, คอร์ส design thinking เด็ก กรุงเทพ, เรียน 3d printing เด็ก, after school enrichment Bangkok">
+<meta property="og:title" content="Arc Innovate | Design Thinking & 3D Printing for Kids Bangkok">
+<meta property="og:description" content="Creative academy for kids ages 4-14 in Bangkok. Design Thinking, 3D Printing & STEAM classes. The skills AI cannot replace.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.arc-international-edu.com/arc-innovate">
+<meta property="og:image" content="https://www.arc-international-edu.com/arc-innovate-logo.png">
+<title>Arc Innovate | Creative and Design Thinking Academy for Kids Bangkok</title>
 <link rel="icon" type="image/png" href="/arc-innovate-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--paper);}
-h1,h2,h3,h4{font-family:'Nunito',sans-serif;font-weight:800;}
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;font-weight:800;}
 a{text-decoration:none;color:inherit;}
 
 /* ── NAV ── */
@@ -104,6 +104,18 @@ a{text-decoration:none;color:inherit;}
   font-style:italic;
 }
 .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.hero-images{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+  max-width:520px;margin:44px auto 0;
+  border-radius:16px;overflow:hidden;
+}
+.hero-images img{
+  width:100%;height:160px;object-fit:cover;display:block;
+}
+@media(max-width:600px){
+  .hero-images{max-width:100%;gap:6px;}
+  .hero-images img{height:110px;}
+}
 .btn-primary{
   background:white;color:var(--deep-blue);
   padding:15px 36px;border-radius:999px;font-weight:800;font-size:0.95rem;
@@ -139,7 +151,7 @@ a{text-decoration:none;color:inherit;}
   font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;
   color:var(--deep-blue);margin-bottom:12px;
 }
-.section h2,.section-alt h2{font-size:2.2rem;margin-bottom:16px;line-height:1.2;}
+.section h2{font-size:2.2rem;margin-bottom:16px;line-height:1.2;}
 .section-sub{font-size:1rem;color:var(--mid);line-height:1.7;max-width:600px;margin-bottom:48px;}
 
 /* ── IDENTITY PILLARS ── */
@@ -167,18 +179,8 @@ a{text-decoration:none;color:inherit;}
 .arc-level .age{font-size:0.88rem;opacity:0.85;margin-bottom:16px;}
 .arc-level p{font-size:0.88rem;line-height:1.6;opacity:0.9;}
 
-/* ── SKILL MAP ── */
-.skill-map{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:40px;}
-.skill-node{
-  background:white;border-radius:16px;padding:20px 14px;text-align:center;
-  border:1px solid #e8eef6;box-shadow:0 2px 8px rgba(43,108,176,0.06);
-}
-.skill-node .skill-icon{font-size:1.8rem;margin-bottom:8px;}
-.skill-node .skill-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:0.95rem;color:var(--deep-blue);margin-bottom:4px;}
-.skill-node .skill-desc{font-size:0.75rem;color:var(--mid);line-height:1.4;}
-
 /* ── PROGRAMS GRID ── */
-.programs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
+.programs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px;}
 .program-card{
   border-radius:20px;overflow:hidden;
   border:1px solid #e8eef6;
@@ -212,13 +214,6 @@ a{text-decoration:none;color:inherit;}
 .card-orange{background:linear-gradient(135deg,#C2410C,#EA580C);}
 .card-pink{background:linear-gradient(135deg,#BE185D,#EC4899);}
 
-/* ── FORMATS ── */
-.formats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
-.format-card{background:white;border-radius:20px;padding:32px;border:1px solid #e8eef6;text-align:center;box-shadow:0 2px 12px rgba(43,108,176,0.06);}
-.format-icon{font-size:2.2rem;margin-bottom:16px;}
-.format-card h3{font-size:1.05rem;margin-bottom:10px;color:var(--ink);}
-.format-card p{font-size:0.88rem;color:var(--mid);line-height:1.6;}
-
 /* ── GALLERY ── */
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;}
 .gallery-grid img{width:100%;height:240px;object-fit:cover;border-radius:18px;display:block;}
@@ -231,9 +226,7 @@ a{text-decoration:none;color:inherit;}
 .feat-text p{font-size:0.88rem;color:var(--mid);line-height:1.6;}
 
 /* ── ABOUT ── */
-.about-grid{display:grid;grid-template-columns:0.85fr 1.25fr 1fr;gap:40px;align-items:center;margin-top:40px;}
-.about-photo{width:100%;aspect-ratio:3/4;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#EDF4FB,#E3F0E7);border:1px solid #e8eef6;}
-.about-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:40px;}
 .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
 .about-stat{background:white;border-radius:16px;padding:24px;text-align:center;border:1px solid #e8eef6;}
 .about-stat .number{font-family:'Poppins',sans-serif;font-size:2.2rem;font-weight:900;color:var(--deep-blue);}
@@ -285,25 +278,44 @@ footer .footer-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1
 .fab-btn.call{background:linear-gradient(135deg,#2B6CB0,#63B3ED);}
 .fab-btn.instagram{background:linear-gradient(135deg,#F58529,#DD2A7B,#8134AF);}
 .fab-btn.line{background:linear-gradient(135deg,#00B900,#00D600);}
-@media(max-width:600px){
-  .fab-btn{padding:14px 24px;font-size:0.95rem;}
-  .fab-stack{bottom:20px;right:20px;gap:10px;}
-}
 
 /* ── RESPONSIVE ── */
+@media(max-width:1200px){
+  .programs-grid{grid-template-columns:repeat(2,1fr);}
+}
 @media(max-width:900px){
   .hero h1{font-size:2.4rem;}
-  .pillars,.arc-levels,.programs-grid,.formats-grid,.articles-grid{grid-template-columns:1fr 1fr;}
-  .skill-map{grid-template-columns:repeat(3,1fr);}
+  .pillars,.arc-levels{grid-template-columns:1fr 1fr;}
+  .programs-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
   .about-grid,.contact-grid,.partner-features{grid-template-columns:1fr;}
   .trust-inner{gap:24px;}
+  .site-nav{padding:0 16px;}
+  .wrap{padding:0 16px;}
 }
 @media(max-width:600px){
-  .hero h1{font-size:2rem;}
-  .pillars,.arc-levels,.programs-grid,.formats-grid,.gallery-grid,.articles-grid{grid-template-columns:1fr;}
-  .skill-map{grid-template-columns:repeat(2,1fr);}
+  .hero{padding:60px 16px 60px;}
+  .hero h1{font-size:2rem;margin-bottom:16px;}
+  .hero-sub{font-size:0.95rem;}
+  .pillars,.arc-levels,.programs-grid,.gallery-grid{grid-template-columns:1fr;}
+  .gallery-grid img{height:200px;}
   .links{display:none;}
-  .about-stats{grid-template-columns:1fr 1fr;}
+  .about-stats{grid-template-columns:1fr;}
+  .trust-inner{flex-direction:column;gap:16px;}
+  .section{padding:60px 0;}
+  .section-alt{padding:60px 0;}
+  .section h2{font-size:1.6rem;}
+  .hero-btns{flex-direction:column;}
+  .btn-primary,.btn-secondary{width:100%;}
+  .contact-btns{flex-direction:column;}
+  .btn-line,.btn-email{width:100%;justify-content:center;}
+  .fab-stack{bottom:20px;right:20px;gap:10px;}
+  .fab-btn{padding:14px 20px;font-size:0.9rem;}
+  .program-card-header{padding:20px 16px 16px;}
+  .program-card-header h3{font-size:1rem;}
+  .partner-features{gap:16px;}
+  .contact-details{padding:20px;}
+  footer{padding:32px 16px;}
 }
 
 /* ── MOBILE NAV ── */
@@ -351,50 +363,28 @@ footer .footer-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1
   .nav-cta{display:none;}
 }
 
-
-/* Testimonial Carousel Fixes */
-#carTrack { 
-  display: flex !important; 
-  flex-wrap: nowrap !important;
-  overflow: hidden !important;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-#carTrack > div { 
-  min-width: 100% !important; 
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  aspect-ratio: 1 / 1 !important;
-  max-width: 340px !important;
-  margin: 0 auto !important;
-  overflow-y: auto !important;
-  padding: 24px !important;
-}
-#carDots button { 
-  min-width: 10px !important; 
-  min-height: 10px !important; 
-}
-@media(max-width:600px){
-  #carTrack > div { aspect-ratio: auto !important; min-height: 320px !important; max-width: 100% !important; }
-}
-
 </style>
-
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1337977120778599");fbq("track","PageView");
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1337977120778599&ev=PageView&noscript=1"/></noscript>
-<meta property="og:title" content="Kids' Creative Workshops & STEAM Classes Bangkok | Arc Innovate">
-<meta property="og:description" content="Hands-on creative workshops for children ages 4–14 in Bangkok. Design thinking, 3D printing and STEAM classes that build the skills AI can’t replace.">
-<meta property="og:url" content="https://www.arc-international-edu.com/">
-<meta property="og:image" content="https://www.arc-international-edu.com/images/design-thinking-camp-cover.jpg">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Arc Innovate">
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xy283s92pl");
+  <!-- META PIXEL — Arc Innovate -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1337977120778599');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1337977120778599&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- END META PIXEL -->
+  <link rel="canonical" href="https://www.arc-international-edu.com/arc-innovate">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Arc Innovate","description":"Creative problem-solving academy for kids ages 4-14 in Bangkok, teaching design thinking, STEAM, and creative enrichment programs.","url":"https://www.arc-international-edu.com/arc-innovate","telephone":"+66835193659","email":"arc.international.edu@gmail.com","areaServed":"Bangkok, Thailand","sameAs":["https://instagram.com/arc.innovate"]}
 </script>
 </head>
 <body id="top">
@@ -408,21 +398,20 @@ footer .footer-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1
     </a>
     <nav class="links">
       <div class="nav-dropdown">
-        <span class="nav-dropdown-toggle">โปรแกรม ▾</span>
+        <span class="nav-dropdown-toggle">Programs ▾</span>
         <div class="nav-dropdown-menu">
-          <a href="/programs/experimental-arts-and-design">🎨 Experimental Arts & Design</a>
-          <a href="/programs/young-innovators">✨ Young Innovators</a>
-          <a href="/programs/3d-printing">🖨️ 3D Printing</a>
+          <a href="/arc-innovate/subjects/experimental-arts-and-design">🎨 Experimental Arts & Design</a>
+          <a href="/arc-innovate/subjects/young-innovators">✨ Young Innovators</a>
+          <a href="/arc-innovate/subjects/3d-printing">🖨️ 3D Printing</a>
         </div>
       </div>
       <a href="#the-arc">The Arc</a>
-      <a href="#gallery">แกลเลอรี</a>
-      <a href="#about">เกี่ยวกับเรา</a>
-      <a href="/insights">บทความ</a>
-      <a href="#contact">ติดต่อเรา</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="/arc-innovate/insights">Articles</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a href="/eng/" style="font-size:0.8rem;font-weight:700;color:var(--deep-blue);border:1px solid var(--deep-blue);border-radius:999px;padding:6px 16px;margin-right:10px;">🇬🇧 English</a>
-  <a href="mailto:arc.international.edu@gmail.com" class="nav-cta">ติดต่อเรา</a>
+    <a href="mailto:arc.international.edu@gmail.com" class="nav-cta">Get in Touch</a>
   <button class="hamburger" id="hamburger" aria-label="Open menu">
     <span></span><span></span><span></span>
   </button>
@@ -432,21 +421,20 @@ footer .footer-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1
 <!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-close" id="mobileClose">✕</button>
-  <a href="/eng/" style="display:block;text-align:center;background:#EDF4FB;color:var(--deep-blue);border-radius:12px;padding:14px;margin-bottom:16px;font-weight:700;">🇬🇧 View English Site</a>
-  <a href="#programs" onclick="closeMobileNav()">โปรแกรม</a>
-  <div class="mobile-section-label">โปรแกรมของเรา</div>
+  <a href="#programs" onclick="closeMobileNav()">Programs</a>
+  <div class="mobile-section-label">Our Programs</div>
   <div class="mobile-sub">
-    <a href="/programs/experimental-arts-and-design" onclick="closeMobileNav()">🎨 Experimental Arts & Design</a>
-    <a href="/programs/young-innovators" onclick="closeMobileNav()">✨ Young Innovators</a>
-    <a href="/programs/3d-printing" onclick="closeMobileNav()">🖨️ 3D Printing</a>
+    <a href="/arc-innovate/subjects/experimental-arts-and-design" onclick="closeMobileNav()">🎨 Experimental Arts & Design</a>
+    <a href="/arc-innovate/subjects/young-innovators" onclick="closeMobileNav()">✨ Young Innovators</a>
+    <a href="/arc-innovate/subjects/3d-printing" onclick="closeMobileNav()">🖨️ 3D Printing</a>
   </div>
   <a href="#the-arc" onclick="closeMobileNav()">The Arc</a>
-  <a href="#gallery" onclick="closeMobileNav()">แกลเลอรี</a>
-  <a href="#about" onclick="closeMobileNav()">เกี่ยวกับเรา</a>
-  <a href="/insights" onclick="closeMobileNav()">บทความ</a>
-  <a href="#contact" onclick="closeMobileNav()">ติดต่อเรา</a>
+  <a href="#gallery" onclick="closeMobileNav()">Gallery</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="/arc-innovate/insights" onclick="closeMobileNav()">Articles</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
   <div style="margin-top:32px;">
-    <a href="https://lin.ee/TQPIVik" target="_blank" style="background:#00B900;color:white;padding:16px 28px;border-radius:999px;font-weight:800;text-align:center;display:block;" onclick="gtag('event','line_click',{'button_location':'hero'})">💬 แชทผ่าน LINE</a>
+    <a href="https://lin.ee/TQPIVik" target="_blank" style="background:#00B900;color:white;padding:16px 28px;border-radius:999px;font-weight:800;text-align:center;display:block;">💬 Chat on Line</a>
   </div>
 </div>
 
@@ -461,505 +449,141 @@ mobileClose.addEventListener('click', closeMobileNav);
 </script>
 
 <!-- HERO -->
-<style>
-.hero{
-  background:linear-gradient(135deg,#1A4A80 0%,#2B6CB0 45%,#3A8A4A 100%);
-  padding:0;color:white;position:relative;overflow:hidden;
-}
-.hero::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at 25% 50%,rgba(255,255,255,0.06) 0%,transparent 60%);
-  pointer-events:none;
-}
-.hero-inner{
-  max-width:1100px;margin:0 auto;padding:80px 40px;
-  display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
-  position:relative;z-index:1;
-}
-.hero-text{text-align:left;}
-.hero-eyebrow{
-  display:inline-block;background:rgba(255,255,255,0.15);
-  border:1px solid rgba(255,255,255,0.25);border-radius:999px;
-  padding:6px 18px;font-size:0.72rem;font-weight:700;
-  letter-spacing:0.2em;text-transform:uppercase;margin-bottom:22px;
-}
-.hero h1{
-  font-size:2.8rem;line-height:1.15;margin:0 0 18px;color:white;max-width:100%;
-}
-.hero h1 em{font-style:normal;color:#A7F3C4;}
-.hero-sub{font-size:1rem;opacity:0.88;margin:0 0 32px;line-height:1.75;max-width:480px;}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
-.hero-photo-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  grid-template-rows:1fr 1fr;gap:10px;height:340px;
-}
-.hero-photo-grid .photo-slot{
-  border-radius:12px;overflow:hidden;background:rgba(255,255,255,0.1);
-  border:1px solid rgba(255,255,255,0.15);position:relative;
-}
-.hero-photo-grid .photo-slot img{width:100%;height:100%;object-fit:cover;display:block;}
-.hero-photo-grid .photo-slot.tall{grid-row:span 2;}
-@media(max-width:900px){
-  .hero-inner{grid-template-columns:1fr;padding:56px 24px;}
-  .hero-photo-grid{height:220px;}
-  .hero h1{font-size:2rem;}
-}
-@media(max-width:500px){
-  .hero-photo-grid{grid-template-columns:1fr 1fr;height:180px;}
-}
-</style>
 <section class="hero">
-  <div class="hero-inner">
-
-    <!-- LEFT: TEXT -->
-    <div class="hero-text">
-      <a href="/eng/" class="btn-secondary" style="margin-bottom:28px;display:inline-block;">Visit English Site</a>
-      <h1>Mobile Creative Academy</h1>
-      <p class="hero-sub">Where children learn to think, create & innovate.<br><br>น้องๆ เรียนรู้การแก้ปัญหาผ่านการลงมือแก้ปัญหาจริง หลักสูตร Design Thinking, 3D Printing และ Innovation ที่สร้างความมั่นใจเชิงสร้างสรรค์ให้เด็กๆ พร้อมรับมือด้วย Future Skill ที่จำเป็น</p>
-      <div class="hero-logos">
-        <p style="font-size:0.8rem;color:rgba(255,255,255,0.6);margin-bottom:20px;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;">Our programs</p>
-        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:nowrap;overflow-x:auto;">
-          <img src="/images/logos/logo-1.png" alt="Partner school" style="height:140px;opacity:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));flex-shrink:0;">
-          <img src="/images/logos/logo-2.png" alt="Partner school" style="height:140px;opacity:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));flex-shrink:0;">
-          <img src="/images/logos/logo-3.png" alt="Partner school" style="height:140px;opacity:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));flex-shrink:0;">
-          <img src="/images/logos/logo-4.png" alt="Partner school" style="height:140px;opacity:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));flex-shrink:0;">
-        </div>
-      </div>
-    </div>
-
-    <!-- RIGHT: PHOTO GRID -->
-    <!-- 
-      HOW TO SWAP IMAGES:
-      Replace the src="..." in each img tag with your own photo path.
-      All images should be in: /images/
-      Recommended: use design-thinking-camp-photo-1.jpg through photo-8.jpg
-      or gallery-1.jpg through gallery-6.jpg
-    -->
-    <div class="hero-photo-grid">
-
-      <!-- PHOTO 1: Top-left — replace with your best classroom photo -->
-      <div class="photo-slot">
-        <img src="/images/hero/HEROdesign-thinking-camp-photo-1.jpg" 
-             alt="Kids in design thinking class Arc Innovate Bangkok"
-             onerror="this.style.display='none'">
-      </div>
-
-      <!-- PHOTO 2: Top-right — replace with kids collaborating -->
-      <div class="photo-slot">
-        <img src="/images/hero/HEROdesign-thinking-camp-photo-2.jpg" 
-             alt="Students collaborating Arc Innovate Bangkok"
-             onerror="this.style.display='none'">
-      </div>
-
-      <!-- PHOTO 3: Bottom-left — replace with making/prototyping moment -->
-      <div class="photo-slot">
-        <img src="/images/hero/HEROdesign-thinking-camp-photo-4.jpg" 
-             alt="Kids prototyping design challenge Bangkok"
-             onerror="this.style.display='none'">
-      </div>
-
-      <!-- PHOTO 4: Bottom-right — replace with showcase/proud moment -->
-      <div class="photo-slot">
-        <img src="/images/hero/HEROdesign-thinking-camp-photo-6.jpg" 
-             alt="Student presenting work Arc Innovate Bangkok"
-             onerror="this.style.display='none'">
-      </div>
-
-    </div>
-
+  <div class="hero-eyebrow">Creative and Design Thinking Academy • Ages 4–14</div>
+  <h1>See Problem. Shape Ideas. <em>Create Possibilities.</em></h1>
+  <p class="hero-sub">Kids learn to solve problems by solving real ones. Design Thinking, 3D Printing & STEAM programs that build the creative confidence your child needs for any future.</p>
+  <div class="hero-btns">
+    <a href="#programs" class="btn-primary">Explore Programs</a>
+    <a href="#partners" class="btn-secondary">School Partnerships</a>
+  </div>
+  <div class="hero-images">
+    <img src="/images/HERO-1.jpg" alt="Arc Innovate students creating">
+    <img src="/images/HERO-2.jpg" alt="Design thinking workshop">
+    <img src="/images/HERO-3.jpg" alt="3D printing session">
+    <img src="/images/HERO-4.jpg" alt="Kids building and making">
   </div>
 </section>
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
   <div class="trust-inner">
-    <div class="trust-item"><span>👧</span> อายุ 4–14 ปี</div>
+    <div class="trust-item"><span>👧</span> Ages 4–14</div>
       <div class="trust-item"><span>🧠</span> Design Thinking</div>
-    <div class="trust-item"><span>🏫</span> กิจกรรมเสริมหลักสูตร & อคาเดมีเคลื่อนที่</div>
-    <div class="trust-item"><span>🖨️</span> สตูดิโอพิมพ์ 3 มิติ</div>
-    <div class="trust-item"><span>📍</span> กรุงเทพฯ ประเทศไทย</div>
-    
+    <div class="trust-item"><span>🏫</span> School ECA & Mobile Academy</div>
+    <div class="trust-item"><span>🖨️</span> 3D Printing Studio</div>
+    <div class="trust-item"><span>📍</span> Bangkok, Thailand</div>
   </div>
 </div>
-
-<style>
-@media(max-width:900px){.workshop-week-grid{grid-template-columns:1fr 1fr !important;}}
-@media(max-width:500px){.workshop-week-grid{grid-template-columns:1fr !important;}}
-@media(max-width:600px){.workshop-info-strip{flex-direction:column;align-items:center;}}
-</style>
-<!-- YOUNG INNOVATOR WORKSHOP -->
-<section style="padding:72px 32px 56px;background:#F0F7FF;">
-  <div style="max-width:1100px;margin:0 auto;">
-
-    <!-- HEADER -->
-    <div style="text-align:center;margin-bottom:40px;">
-      <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#2B6CB0;margin-bottom:10px;">✦ เวิร์กช็อปแนะนำ · เปิดรับสมัครแล้ว</div>
-      <h2 style="font-family:'Nunito',sans-serif;font-size:2.2rem;font-weight:900;color:#1A1614;margin-bottom:8px;">Young Innovator</h2>
-      <p style="font-size:1rem;font-weight:600;color:#3A8A4A;margin-bottom:4px;">Design Thinking + 3D Printing · เปลี่ยนไอเดียให้เป็นจริง</p>
-      <div class="hero-logos">
-        <p style="font-size:0.8rem;color:rgba(255,255,255,0.6);margin-bottom:20px;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;">Our programs</p>
-        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:nowrap;overflow-x:auto;">
-          <img src="/images/logos/logo-1.png" alt="Partner school" style="height:140px;opacity:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));flex-shrink:0;">
-          <img src="/images/logos/logo-2.png" alt="Partner school" style="height:140px;opacity:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));flex-shrink:0;">
-          <img src="/images/logos/logo-3.png" alt="Partner school" style="height:140px;opacity:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));flex-shrink:0;">
-          <img src="/images/logos/logo-4.png" alt="Partner school" style="height:140px;opacity:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));flex-shrink:0;">
-        </div>
-      </div>
-      <p style="font-size:0.88rem;color:#888;margin-bottom:16px;">ไอเดียดีๆ ควรจับต้องได้ — เราช่วยเด็กๆ ทำให้มันเกิดขึ้นจริง</p>
-      <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:8px;">
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 16px;font-size:0.78rem;font-weight:600;">🎒 อายุ 7–10 ปี</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 16px;font-size:0.78rem;font-weight:600;">📅 เพียง 4 สัปดาห์</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 16px;font-size:0.78rem;font-weight:600;">👥 สูงสุด 8 คน</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 16px;font-size:0.78rem;font-weight:600;">🇬🇧 🇹🇭 สองภาษา</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 16px;font-size:0.78rem;font-weight:600;">🖨️ เครื่องพิมพ์ 3 มิติของจริง</span>
-      </div>
-      <p style="font-size:0.78rem;color:#888;font-style:italic;">⚡ เวิร์กช็อปพิเศษ 4 สัปดาห์ — โปรแกรมปกติของเราคือ 8 สัปดาห์ นี่คือวิธีที่เร็วที่สุดในการสัมผัสประสบการณ์ Arc Innovate</p>
-    </div>
-
-    <!-- 4 WEEK CARDS -->
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px;" class="workshop-week-grid">
-
-      <!-- WEEK 1 -->
-      <div style="background:white;border-radius:16px;overflow:hidden;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.07);">
-        <div style="background:#2B6CB0;padding:14px 18px;">
-          <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:4px;">สัปดาห์ 1–2</div>
-          <div style="font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:800;color:white;margin-bottom:2px;">สำรวจโลก 3 มิติ</div>
-          <div style="font-size:0.75rem;color:rgba(255,255,255,0.75);font-style:italic;">ค้นพบ จินตนาการ สร้างสรรค์</div>
-        </div>
-        <div style="padding:18px;">
-          <ul style="list-style:none;margin:0;padding:0;">
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>Design Thinking คืออะไร</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>ความรู้เบื้องต้นเกี่ยวกับการพิมพ์ 3 มิติ</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>สำรวจผลิตภัณฑ์จากโลกจริง</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>เรียนรู้การใช้งาน Tinkercad เบื้องต้น</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>ออกแบบโมเดล 3 มิติชิ้นแรก</li>
-          </ul>
-          <div style="margin-top:14px;background:#EDF4FB;border-radius:10px;padding:10px 14px;">
-            <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2B6CB0;margin-bottom:3px;">Outcome</div>
-            <div style="font-size:0.82rem;font-weight:700;color:#1A1614;">ผลงานพิมพ์ 3 มิติชิ้นแรกของตนเอง</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- WEEK 2 -->
-      <div style="background:white;border-radius:16px;overflow:hidden;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.07);">
-        <div style="background:#3A8A4A;padding:14px 18px;">
-          <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:4px;">สัปดาห์ 3–4</div>
-          <div style="font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:800;color:white;margin-bottom:2px;">คิดแบบนักออกแบบ</div>
-          <div style="font-size:0.75rem;color:rgba(255,255,255,0.75);font-style:italic;">ผลิตภัณฑ์ที่ดีเริ่มต้นจากไอเดียที่ดี</div>
-        </div>
-        <div style="padding:18px;">
-          <ul style="list-style:none;margin:0;padding:0;">
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>สังเกตความต้องการของผู้คน</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>สร้างสรรค์ไอเดียใหม่ๆ</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>ร่างแบบแนวคิดผลิตภัณฑ์</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>เรียนรู้การขึ้นโมเดล 3 มิติเบื้องต้น</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>พัฒนาผลงานผ่านคำแนะนำ</li>
-          </ul>
-          <div style="margin-top:14px;background:#F0F7F1;border-radius:10px;padding:10px 14px;">
-            <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#3A8A4A;margin-bottom:3px;">Outcome</div>
-            <div style="font-size:0.82rem;font-weight:700;color:#1A1614;">แนวคิดผลิตภัณฑ์ต้นแบบของตนเอง</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- WEEK 3 -->
-      <div style="background:white;border-radius:16px;overflow:hidden;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.07);">
-        <div style="background:#1A4A80;padding:14px 18px;">
-          <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:4px;">สัปดาห์ 5–6</div>
-          <div style="font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:800;color:white;margin-bottom:2px;">แก้ปัญหาจากโลกจริง</div>
-          <div style="font-size:0.75rem;color:rgba(255,255,255,0.75);font-style:italic;">นวัตกรรมคือการแก้ปัญหาที่แท้จริง</div>
-        </div>
-        <div style="padding:18px;">
-          <ul style="list-style:none;margin:0;padding:0;">
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>ระบุปัญหาที่พบในชีวิตประจำวัน</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>เลือกโจทย์ที่มีความหมาย</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>สร้างต้นแบบทางออก</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>ปรับปรุงโมเดล 3 มิติของตนเอง</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>เตรียมพร้อมสำหรับการพิมพ์</li>
-          </ul>
-          <div style="margin-top:14px;background:#EDF4FB;border-radius:10px;padding:10px 14px;">
-            <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2B6CB0;margin-bottom:3px;">Outcome</div>
-            <div style="font-size:0.82rem;font-weight:700;color:#1A1614;">ต้นแบบที่ใช้งานได้ พร้อมพิมพ์จริง</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- WEEK 4 -->
-      <div style="background:white;border-radius:16px;overflow:hidden;border:2px solid #3A8A4A;box-shadow:0 4px 20px rgba(58,138,74,0.15);position:relative;">
-        <div style="position:absolute;top:12px;right:12px;background:#3A8A4A;color:white;padding:3px 10px;border-radius:999px;font-size:0.62rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;">🏆 รอบสุดท้าย</div>
-        <div style="background:linear-gradient(135deg,#3A8A4A,#2B6CB0);padding:14px 18px;">
-          <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:4px;">สัปดาห์ 7–8</div>
-          <div style="font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:800;color:white;margin-bottom:2px;">สร้างสรรค์ผลงานขั้นสุดท้าย</div>
-          <div style="font-size:0.75rem;color:rgba(255,255,255,0.75);font-style:italic;">จากไอเดียสู่นวัตกรรม</div>
-        </div>
-        <div style="padding:18px;">
-          <ul style="list-style:none;margin:0;padding:0;">
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>พิมพ์ผลงานชิ้นสุดท้าย</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>ทดสอบและปรับปรุง</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>นำเสนอสิ่งประดิษฐ์ของตนเอง</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;border-bottom:1px solid #f0f4f8;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>อธิบายแนวคิดการออกแบบ</li>
-            <li style="font-size:0.82rem;color:#444;padding:5px 0;display:flex;gap:8px;align-items:flex-start;"><span style="color:#3A8A4A;font-weight:700;flex-shrink:0;">✓</span>ฉลองความสำเร็จ</li>
-          </ul>
-          <div style="margin-top:14px;background:linear-gradient(135deg,#F0F7F1,#EDF4FB);border-radius:10px;padding:10px 14px;border:1px solid #c8dfc8;">
-            <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#3A8A4A;margin-bottom:3px;">Outcome</div>
-            <div style="font-size:0.82rem;font-weight:700;color:#1A1614;">ผลงานพิมพ์ 3 มิติ + ใบประกาศนียบัตร + งานแสดงผลงาน</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- SKILLS BAR -->
-    <div style="background:white;border-radius:14px;padding:20px 24px;margin-bottom:28px;border:1px solid #e8eef6;">
-      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#888;margin-bottom:12px;">ทักษะที่นักเรียนจะได้รับ</div>
-      <div style="display:flex;flex-wrap:wrap;gap:8px;">
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 14px;font-size:0.78rem;font-weight:600;">🧠 การคิดวิเคราะห์</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 14px;font-size:0.78rem;font-weight:600;">💡 ความคิดสร้างสรรค์</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 14px;font-size:0.78rem;font-weight:600;">❤️ ความเข้าใจผู้อื่น</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 14px;font-size:0.78rem;font-weight:600;">🧩 การแก้ปัญหา</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 14px;font-size:0.78rem;font-weight:600;">💬 การสื่อสาร</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 14px;font-size:0.78rem;font-weight:600;">🤝 การทำงานร่วมกัน</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 14px;font-size:0.78rem;font-weight:600;">🖨️ การสร้างต้นแบบ</span>
-        <span style="background:#EDF4FB;color:#2B6CB0;border-radius:999px;padding:6px 14px;font-size:0.78rem;font-weight:600;">🚀 แนวคิดเชิงนวัตกรรม</span>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div style="text-align:center;">
-      <a href="https://lin.ee/TQPIVik" style="display:inline-flex;align-items:center;gap:8px;background:#00B900;color:white;padding:16px 36px;border-radius:999px;font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;box-shadow:0 4px 20px rgba(0,185,0,0.3);text-decoration:none;margin:6px;" onclick="gtag('event','line_click',{'button_location':'hero'})">💬 จองที่นั่งผ่าน LINE</a>
-      <a href="/programs/young-innovators" style="display:inline-flex;align-items:center;gap:8px;background:white;border:2px solid #2B6CB0;color:#2B6CB0;padding:14px 28px;border-radius:999px;font-family:'Poppins',sans-serif;font-weight:700;font-size:0.92rem;text-decoration:none;margin:6px;">ดูรายละเอียดโปรแกรม →</a>
-      <p style="font-size:0.78rem;color:#888;margin-top:12px;">สูงสุด 8 คนต่อรอบ · ที่นั่งมีจำนวนจำกัด</p>
-    </div>
-
-  </div>
-</section>
-<!-- END YOUNG INNOVATOR WORKSHOP -->
-
-
-
-<!-- PROGRAMS -->
-<section class="section-alt" id="programs">
-  <div class="wrap">
-    <div class="section-label">โปรแกรม Young Innovator — อายุ 7–10 ปี</div>
-    <h2>หลักสูตรเต็มรูปแบบของเรา</h2>
-    <p class="section-sub">แต่ละโปรแกรมใช้เวลา 8 สัปดาห์ สัปดาห์ละ 1 ครั้ง ทุกคาบเรียนใช้กระบวนการคิดเชิงออกแบบ ไม่ใช่เพียงทฤษฎี แต่ผูกกับภารกิจจริงเสมอ ทุกภาคเรียนปิดท้ายด้วยการแสดงผลงานให้ผู้ปกครองได้ชม</p>
-    <div class="programs-grid">
-      <a href="/programs/experimental-arts-and-design" class="program-card">
-        <div class="program-card-header card-green">
-          <div class="badge">MAKE • อายุ 4–7 ปี</div>
-          <h3>Experimental Arts & Design</h3>
-          <p>การสำรวจผ่านประสาทสัมผัส การลงมือสร้างอย่างอิสระ และการค้นพบความคิดสร้างสรรค์ด้วยตนเอง จุดเริ่มต้นของนิสัยการคิดเชิงออกแบบ</p>
-        </div>
-        <img src="/programs/images/experimental-arts.jpg" alt="Experimental Arts and Design class Bangkok kids">
-        <div class="program-card-footer">
-          ดูรายละเอียด <span>→</span>
-        </div>
-      </a>
-
-      <a href="/programs/young-innovators" class="program-card">
-        <div class="program-card-header card-blue">
-          <div class="badge">SOLVE • อายุ 7–10 ปี &amp; INNOVATE • อายุ 10 ปีขึ้นไป</div>
-          <h3>Young Innovator</h3>
-          <p>การคิดเชิงออกแบบและการพิมพ์ 3 มิติ ตั้งแต่การทำความเข้าใจผู้ใช้ ไปจนถึงต้นแบบที่จับต้องได้และนำกลับบ้าน</p>
-        </div>
-        <img src="/programs/images/young-innovator.jpg" alt="Young Innovator class Bangkok kids">
-        <div class="program-card-footer">
-          ดูรายละเอียด <span>→</span>
-        </div>
-      </a>
-
-      <a href="/programs/3d-printing" class="program-card">
-        <div class="program-card-header card-purple">
-          <div class="badge">SOLVE • อายุ 7–10 ปี &amp; INNOVATE • อายุ 10 ปีขึ้นไป</div>
-          <h3>3D Printing</h3>
-          <p>การสร้างต้นแบบขั้นสูงและนวัตกรรมการออกแบบสำหรับโจทย์ที่ซับซ้อนจากโลกจริง</p>
-        </div>
-        <img src="/programs/images/ux-ui-for-kids.jpg" alt="3D Printing class Bangkok kids">
-        <div class="program-card-footer">
-          ดูรายละเอียด <span>→</span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- OUR WORKSHOP PROGRAM -->
-<section class="section" id="workshops">
-  <div class="wrap">
-    <div class="section-label">เวิร์กช็อประยะสั้น</div>
-    <h2>โปรแกรมเวิร์กช็อปของเรา</h2>
-    <p class="section-sub">เวิร์กช็อป 4 รูปแบบ แต่ละแบบออกแบปมาเพื่อฝึกวิธีคิดที่แตกต่างกัน นักเรียนสามารถเริ่มจากรอบใดก่อนก็ได้ และต่อยอดไปยังรอบอื่นๆ — ทุกเวิร์กช็อปสมบูรณ์ในตัวเอง</p>
-
-    <div class="workshops-grid">
-
-      <div class="workshop-card">
-        <div class="workshop-icon" style="background:linear-gradient(135deg,#2B6CB0,#63B3ED);">🖨️</div>
-        <div class="workshop-tag">การค้นพบเทคโนโลยี</div>
-        <h3>3D Printing Starter</h3>
-        <p class="workshop-purpose">ค้นพบเทคโนโลยี</p>
-        <p class="workshop-learn">การพิมพ์ 3 มิติคืออะไร เครื่องพิมพ์ทำงานอย่างไร และประสบการณ์การพิมพ์ครั้งแรกด้วยตนเอง</p>
-        <p class="workshop-quote">"การพิมพ์ 3 มิติคืออะไร และฉันสามารถทำอะไรกับมันได้บ้าง"</p>
-      </div>
-
-      <div class="workshop-card">
-        <div class="workshop-icon" style="background:linear-gradient(135deg,#1A4A80,#2B6CB0);">🛠️</div>
-        <div class="workshop-tag">ทักษะการสร้างและดิจิทัล</div>
-        <h3>3D Printing Basic</h3>
-        <p class="workshop-purpose">เรียนรู้การสร้างสรรค์</p>
-        <p class="workshop-learn">การขึ้นโมเดล 3 มิติเบื้องต้น การเตรียมไฟล์ และการพิมพ์ผลงานออกแบบของตนเอง</p>
-        <p class="workshop-quote">"ฉันจะเปลี่ยนไอเดียให้เป็นชิ้นงาน 3 มิติได้อย่างไร"</p>
-      </div>
-
-      <div class="workshop-card">
-        <div class="workshop-icon" style="background:linear-gradient(135deg,#BE185D,#EC4899);">🧸</div>
-        <div class="workshop-tag">การทดลองเชิงสร้างสรรค์</div>
-        <h3>Toy Lab</h3>
-        <p class="workshop-purpose">เรียนรู้ผ่านการสร้างสรรค์และการทดลอง</p>
-        <p class="workshop-learn">การออกแบบ กลไกการเคลื่อนไหวและเหตุผล และการสร้างต้นแบบด้วยมือ</p>
-        <p class="workshop-quote">"ฉันจะสร้างสิ่งที่สนุก น่าสนใจ หรือใช้งานได้อย่างไร"</p>
-      </div>
-
-      <div class="workshop-card">
-        <div class="workshop-icon" style="background:linear-gradient(135deg,#5B21B6,#7C3AED);">🧩</div>
-        <div class="workshop-tag">การแก้ปัญหาและการคิดเชิงระบบ</div>
-        <h3>Maze World</h3>
-        <p class="workshop-purpose">เรียนรู้ผ่านการแก้ปัญหา</p>
-        <p class="workshop-learn">ตรรกะ การคิดเชิงพื้นที่ กลยุทธ์ภายใต้เงื่อนไข และการทดสอบเพื่อปรับปรุงผลลัพธ์</p>
-        <p class="workshop-quote">"ฉันจะค้นหา ออกแบบ ทดสอบ และพัฒนาทางออกได้อย่างไร"</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<style>
-.workshops-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px;
-}
-.workshop-card{
-  background:white;border-radius:20px;padding:28px 22px;
-  border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.06);
-  transition:transform 0.25s ease,box-shadow 0.25s ease;
-}
-.workshop-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(43,108,176,0.12);}
-.workshop-icon{
-  width:48px;height:48px;border-radius:14px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:1.5rem;margin-bottom:16px;
-}
-.workshop-tag{
-  font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;
-  color:var(--deep-blue);margin-bottom:8px;
-}
-.workshop-card h3{
-  font-size:1.1rem;color:var(--ink);margin-bottom:6px;
-}
-.workshop-purpose{
-  font-size:0.85rem;font-weight:700;color:var(--forest-green);margin-bottom:10px;
-}
-.workshop-learn{
-  font-size:0.85rem;color:var(--mid);line-height:1.6;margin-bottom:14px;
-}
-.workshop-quote{
-  font-size:0.8rem;font-style:italic;color:#888;
-  padding-top:12px;border-top:1px solid #f0f4f8;line-height:1.5;
-}
-@media(max-width:900px){.workshops-grid{grid-template-columns:1fr 1fr;}}
-@media(max-width:600px){.workshops-grid{grid-template-columns:1fr;}}
-</style>
 
 <!-- THE ARC — 3 LEVELS -->
 <section class="section-alt" id="the-arc">
   <div class="wrap">
-    <div class="section-label">The Arc — เส้นทางการเรียนรู้ของบุตรหลานท่าน</div>
-    <h2>เส้นทางการเติบโตไปกับ Arc</h2>
-    <p class="section-sub">The Arc คือโครงสร้างหลักสูตร 3 ระดับของ Arc Innovate แบ่งตามช่วงอายุอย่างชัดเจน ใช้ Innovator Skill Map เดียวกันในทุกระดับ เพียงแต่ความลึกและความซับซ้อนจะเพิ่มขึ้นตามพัฒนาการของนักเรียน</p>
+    <div class="section-label">The Arc — Your Child's Learning Journey</div>
+    <h2>One progression. Ages 4 to 14.</h2>
+    <p class="section-sub">The Arc is Arc Innovate's 3-level curriculum architecture. Clean age boundaries, the same Innovator Skill Map at every level — only the depth and complexity changes as children grow.</p>
     <div class="arc-levels">
-      <a href="/the-arc" style="text-decoration:none;color:inherit;"><div class="arc-level arc-level-1">
+      <a href="/arc-innovate/the-arc" style="text-decoration:none;color:inherit;"><div class="arc-level arc-level-1">
         <div class="arc-level-badge">Level 1</div>
         <h3>Maker</h3>
-        <div class="age">อายุ 4–7 ปี</div>
-        <p>การสำรวจผ่านประสาทสัมผัส การลงมือสร้างอย่างอิสระ และการฝึกคิดแบบ "เราจะแก้ปัญหานี้ได้อย่างไร" เริ่มต้นจากความอยากรู้อยากเห็น จุดเริ่มต้นของนิสัยการคิดเชิงออกแบบ</p>
+        <div class="age">Ages 4–7</div>
+        <p>Sensory exploration, open-ended making, and "how might we fix this?" thinking. Curiosity-first, structure-light. Where the Design Thinking habit begins.</p>
       </div></a>
-      <a href="/the-arc" style="text-decoration:none;color:inherit;"><div class="arc-level arc-level-2">
+      <a href="/arc-innovate/the-arc" style="text-decoration:none;color:inherit;"><div class="arc-level arc-level-2">
         <div class="arc-level-badge">Level 2</div>
         <h3>Solver</h3>
-        <div class="age">อายุ 7–10 ปี</div>
-        <p>โปรเจกตการออกแบบที่มีโครงสร้างชัดเจนเป็นขั้นตอน ตั้งแต่การสร้าง การทำต้นแบบ การพิมพ์ 3 มิติ ไปจนถึงการนำเสนอทางออกที่ใช้ได้จริง หัวใจสำคัญของ The Arc</p>
+        <div class="age">Ages 7–10</div>
+        <p>Structured design projects with clear stages. Building, prototyping, 3D printing, and presenting real solutions to real problems. The heart of the Arc.</p>
       </div></a>
-      <a href="/the-arc" style="text-decoration:none;color:inherit;"><div class="arc-level arc-level-3">
+      <a href="/arc-innovate/the-arc" style="text-decoration:none;color:inherit;"><div class="arc-level arc-level-3">
         <div class="arc-level-badge">Level 3</div>
         <h3>Innovator</h3>
-        <div class="age">อายุ 10–14 ปี</div>
-        <p>การประยุกต์ใช้กระบวนการคิดเชิงออกแบบอย่างเต็มรูปแบบกับโจทย์ที่ซับซ้อนจากโลกจริง ทั้งผลิตภัณฑ์ดิจิทัล แนวคิดเชิงธุรกิจ และโปรเจกขั้นสูง</p>
+        <div class="age">Ages 10–14</div>
+        <p>Full design thinking applied to complex real-world challenges — digital products, entrepreneurial ventures, and advanced maker projects.</p>
       </div></a>
     </div>
   </div>
 </section>
 
-<div style="text-align:center;margin:48px 0;"><a href="/design-thinking-guide" style="display:inline-block;background:linear-gradient(135deg,#2B6CB0,#63B3ED);color:white;padding:24px 56px;border-radius:999px;font-weight:800;font-size:1.4rem;text-decoration:none;box-shadow:0 8px 32px rgba(43,108,176,0.35);">เรียนรู้วิธีการทำงานของ Design Thinking →</a></div>
+<div style="text-align:center;margin:48px 0;"><a href="/arc-innovate/design-thinking-guide" style="display:inline-block;background:linear-gradient(135deg,#2B6CB0,#63B3ED);color:white;padding:24px 56px;border-radius:999px;font-weight:800;font-size:1.4rem;text-decoration:none;box-shadow:0 8px 32px rgba(43,108,176,0.35);">Learn How Design Thinking Works →</a></div>
 
 <!-- PROGRAM LOGOS BANNER -->
 <section style="padding:40px 0;background:linear-gradient(135deg,#2B6CB0,#63B3ED);">
   <div class="wrap" style="text-align:center;">
-    <img src="/images/program-logos-banner.png" alt="Experimental Arts & Design + Young Innovator Programs" style="max-width:100%;height:auto;display:block;margin:0 auto;">
+    <img src="/arc-innovate/images/program-logos-banner.png" alt="Arc Innovate Program Logos" style="max-width:100%;height:auto;display:block;margin:0 auto;">
+  </div>
+</section>
+
+<!-- PROGRAMS: OUR PROGRAM OFFERINGS -->
+<section class="section-alt" id="programs">
+  <div class="wrap">
+    <div class="section-label">Our Program</div>
+    <h2>Four Core Learning Tracks</h2>
+    <p class="section-sub">Each program is designed to build confidence, creativity, and real-world problem-solving skills. Choose one or combine multiple tracks for a comprehensive creative education.</p>
+    <div class="programs-grid">
+      <div class="program-card">
+        <div class="program-card-header card-blue">
+          <div class="badge">DESIGN • Ages 4–14</div>
+          <h3>Idea to Design</h3>
+          <p>From concept to execution. Learn the full design thinking process to turn creative ideas into real solutions.</p>
+        </div>
+        <img src="/arc-innovate/subjects/images/experimental-arts.jpg" alt="Idea to Design class Bangkok kids">
+        <div class="program-card-footer">
+          Explore <span>→</span>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card-header card-green">
+          <div class="badge">BUILD • Ages 7–14</div>
+          <h3>3D Printing</h3>
+          <p>Turn drawings into physical objects. Design and prototype with cutting-edge 3D printing technology.</p>
+        </div>
+        <img src="/arc-innovate/subjects/images/ux-ui-for-kids.jpg" alt="3D Printing class Bangkok kids">
+        <div class="program-card-footer">
+          Explore <span>→</span>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card-header card-purple">
+          <div class="badge">CREATE • Ages 4–10</div>
+          <h3>Tech Toys & Tools</h3>
+          <p>Hands-on exploration of creative technology. Build, code, and make with innovative tools and gadgets.</p>
+        </div>
+        <img src="/arc-innovate/subjects/images/ux-ui-for-kids.jpg" alt="Tech Toys class Bangkok kids">
+        <div class="program-card-footer">
+          Explore <span>→</span>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card-header card-teal">
+          <div class="badge">CRAFT • Ages 4–12</div>
+          <h3>Craft Club</h3>
+          <p>Explore traditional and modern crafting techniques. Build skills, creativity, and showcase your handmade creations.</p>
+        </div>
+        <img src="/arc-innovate/subjects/images/gallery-1.jpg" alt="Craft Club class Bangkok kids">
+        <div class="program-card-footer">
+          Explore <span>→</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- GALLERY -->
 <section class="section" id="gallery">
   <div class="wrap">
-    <div class="section-label">ช่วงเวลาในสตูดิโอ</div>
-    <h2>การเรียนรู้ที่นี่เป็นอย่างไร</h2>
+    <div class="section-label">Studio Moments</div>
+    <h2>What learning looks like here.</h2>
     <div class="gallery-grid">
-      <img src="/images/gallery-1.jpg" alt="Arc Innovate kids design thinking class Bangkok">
-      <img src="/images/gallery-2.jpg" alt="Arc Innovate 3D printing workshop kids Bangkok">
-      <img src="/images/gallery-3.jpg" alt="Arc Innovate creative enrichment Bangkok">
-      <img src="/images/gallery-4.jpg" alt="Arc Innovate STEAM classes kids Bangkok">
-      <img src="/images/gallery-5.jpg" alt="Arc Innovate design workshop children Bangkok">
-      <img src="/images/gallery-6.jpg" alt="Arc Innovate student showcase Bangkok">
-    </div>
-  </div>
-</section>
-
-<!-- FORMATS -->
-<section class="section-alt" id="formats">
-  <div class="wrap">
-    <div class="section-label">รูปแบบการเรียนของเรา</div>
-    <h2>รูปแบบการเรียนรู้กับ Arc Innovate</h2>
-    <p class="section-sub">เราพร้อมให้บริการในรูปแบบที่เหมาะกับนักเรียนแต่ละคน ไม่ว่าจะเป็นสตูดิโอวันหยุดสุดสัปดาห์ ห้องเรียนในโรงเรียน หรือแคมป๊ช่วงปิดเทอม ทุกรูปแบบใช้กรอบแนวคิดการคิดเชิงออกแบบเดียวกัน และปิดท้ายด้วยการแสดงผลงาน</p>
-    <div class="formats-grid">
-      <div class="format-card">
-        <div class="format-icon">📅</div>
-        <h3>คลาสสตูดิโอวันหยุดสุดสัปดาห์</h3>
-        <p>หลักสูตร 8 สัปดาห์ สัปดาห์ละ 1 ครั้ง กลุ่มเล็กไม่เกิน 10–12 คน ประสบการณ์หลักของ Arc Innovate ที่ครบทุกขั้นตอนของกระบวนการคิดเชิงออกแบบในแต่ละวิชา</p>
-      </div>
-      <div class="format-card">
-        <div class="format-icon">🏫</div>
-        <h3>โปรแกรมกิจกรรมเสริมหลักสูตรในโรงเรียน</h3>
-        <p>เรานำหลักสูตร Arc แบบเต็มรูปแบบไปจัดที่โรงเรียนของท่านในรูปแบบกิจกรรมเสริมหลังเลิกเรียน พร้อมทุกอย่าง ทั้งอุปกรณ์ ผู้สอน และกรอบหลักสูตร</p>
-      </div>
-      <div class="format-card">
-        <div class="format-icon">🏕️</div>
-        <h3>แคมป๊ช่วงปิดเทอม</h3>
-        <p>โปรแกรมเข้มข้นตลอดหนึ่งสัปดาห์ในช่วงปิดเทอม เริ่มโจทย์การออกแบบตั้งแต่วันแรกจนถึงวันแสดงผลงานในวันที่ 5 เหมาะสำหรับนักเรียนที่ต้องการเรียนรู้อย่างเข้มข้นในเวลาสั้น</p>
-      </div>
-      <div class="format-card">
-        <div class="format-icon">🎂</div>
-        <h3>เวิร์กช็อปวันเกิด</h3>
-        <p>โจทย์การออกแบบครึ่งวันหรือเต็มวันสำหรับกลุ่ม 8–16 คน เปลี่ยนวันเกิดของบุตรหลานท่านให้เป็นเวิร์กช็อปแห่งนวัตกรรมที่แท้จริง น่าจดจำสำหรับทุกคน</p>
-      </div>
-      <div class="format-card">
-        <div class="format-icon">🎪</div>
-        <h3>งานแสดงผลงาน</h3>
-        <p>งานนิทรรศการที่นักเรียนนำเสนอผลงานให้ผู้ปกครองได้ชม จัดขึ้นทุกภาคเรียน ทุกวิชา ขั้นตอน TELL ที่ฝึกฝนการสื่อสารอย่างสม่ำเสมอ</p>
-      </div>
-      <div class="format-card">
-        <div class="format-icon">🛒</div>
-        <h3>งานตลาดนัดจบหลักสูตร</h3>
-        <p>กิจกรรมปิดท้ายหลักสูตรระดับ 2 ทีมนักเรียนออกแบบ ผลิต และจำหน่ายสินค้าจริงที่แผงตลาด ครบวงจรนักสร้างสรรค์ในสถานการณ์จริง</p>
-      </div>
+      <img src="/arc-innovate/images/gallery-1.jpg" alt="Arc Innovate kids design thinking class Bangkok">
+      <img src="/arc-innovate/images/gallery-2.jpg" alt="Arc Innovate 3D printing workshop kids Bangkok">
+      <img src="/arc-innovate/images/gallery-3.jpg" alt="Arc Innovate creative enrichment Bangkok">
+      <img src="/arc-innovate/images/gallery-4.jpg" alt="Arc Innovate STEAM classes kids Bangkok">
+      <img src="/arc-innovate/images/gallery-5.jpg" alt="Arc Innovate design workshop children Bangkok">
+      <img src="/arc-innovate/images/gallery-6.jpg" alt="Arc Innovate student showcase Bangkok">
     </div>
   </div>
 </section>
@@ -967,29 +591,29 @@ mobileClose.addEventListener('click', closeMobileNav);
 <!-- PARTNERS -->
 <section class="section" id="partners">
   <div class="wrap">
-    <div class="section-label">ความร่วมมือกับโรงเรียนและสถานที่จัดกิจกรรม</div>
-    <h2>Arc Innovate Partnership Program</h2>
-    <p class="section-sub">เราร่วมมือกับโรงเรียนนานาชาติในกรุงเทพฯ และสถานที่จัดกิจกรรมในชุมชน เพื่อนำโปรแกรม Arc Innovate ไปจัดเป็นวิชาเลือกกิจกรรมเสริมหลักสูตร กิจกรรมหลังเลิกเรียน และเวิร์กช็อปช่วงปิดเทอม เรานำทุกอย่างไปให้พร้อม ทั้งหลักสูตร อุปกรณ์ ผู้สอน และกรอบการทำงาน</p>
+    <div class="section-label">School & Venue Partnerships</div>
+    <h2>Bring Arc Innovate to your school.</h2>
+    <p class="section-sub">We partner with Bangkok international schools and community venues to deliver Arc Innovate programs as ECA electives, after-school activities, and holiday workshops. We bring everything — curriculum, materials, facilitation, and framework.</p>
     <div class="partner-features">
       <div class="partner-feat">
         <div class="feat-icon">📦</div>
         <div class="feat-text">
-          <h4>เรานำทุกอย่างไปให้พร้อม</h4>
-          <p>อุปกรณ์ เครื่องมือ ผู้สอน และหลักสูตร Arc แบบเต็มรูปแบบ โรงเรียนของท่านเพียงจัดเตรียมสถานที่และนักเรียน ส่วนที่เหลือเราดูแลให้ทั้งหมด</p>
+          <h4>We bring everything</h4>
+          <p>Materials, tools, facilitator, and the full Arc curriculum. Your school provides the space and the students — we handle the rest.</p>
         </div>
       </div>
       <div class="partner-feat">
         <div class="feat-icon">🎯</div>
         <div class="feat-text">
-          <h4>สอดคล้องกับหลักสูตรการศึกษา</h4>
-          <p>โปรแกรม Arc Innovate เสริมสร้างการคิดวิเคราะห์ ความคิดสร้างสรรค์ และการทำงานร่วมกัน ทักษะที่ช่วยพัฒนาผลการเรียนในทุกวิชา</p>
+          <h4>Curriculum-aligned</h4>
+          <p>Arc Innovate programs reinforce critical thinking, creativity, and collaboration — skills that improve performance across all academic subjects.</p>
         </div>
       </div>
       <div class="partner-feat">
         <div class="feat-icon">📊</div>
         <div class="feat-text">
-          <h4>งานแสดงผลงานสำหรับผู้ปกครอง</h4>
-          <p>ทุกภาคเรียนปิดท้ายด้วยงานแสดงผลงานของนักเรียน ผู้ปกครองได้เห็นผลงานจริง นักเรียนได้ฝึกทักษะการนำเสนอ และโรงเรียนได้เห็นหลักฐานการเรียนรู้ที่ชัดเจน</p>
+          <h4>Parent-facing showcase</h4>
+          <p>Every term closes with a student showcase. Parents see the work, children build presentation skills, and schools see real evidence of learning.</p>
         </div>
       </div>
       <div class="partner-feat">
@@ -1001,7 +625,7 @@ mobileClose.addEventListener('click', closeMobileNav);
       </div>
     </div>
     <div style="margin-top:40px;text-align:center;">
-      <a href="mailto:arc.international.edu@gmail.com" style="display:inline-block;background:var(--deep-blue);color:white;padding:15px 36px;border-radius:999px;font-weight:700;font-size:0.95rem;">ขอข้อเสนอความร่วมมือ →</a>
+      <a href="mailto:arc.international.edu@gmail.com" style="display:inline-block;background:var(--deep-blue);color:white;padding:15px 36px;border-radius:999px;font-weight:700;font-size:0.95rem;">Request a Partnership Proposal →</a>
     </div>
   </div>
 </section>
@@ -1009,301 +633,41 @@ mobileClose.addEventListener('click', closeMobileNav);
 <!-- ABOUT -->
 <section class="section-alt" id="about">
   <div class="wrap">
-    <div class="section-label">เกี่ยวกับ Arc Innovate</div>
-    <h2>สร้างสรรค์โดยนักออกแบบ บริหารโดยนักการศึกษา</h2>
+    <div class="section-label">About Arc Innovate</div>
+    <h2>Built by a designer. Run by an educator.</h2>
     <div class="about-grid">
-      <div class="about-photo">
-        <!-- Replace with a photo of Coach Anies or a classroom moment -->
-        <img src="/images/hero/HEROdesign-thinking-camp-photo-1.jpg" 
-             alt="Coach Anies, founder of Arc Innovate, Bangkok"
-             onerror="this.style.display='none'">
-      </div>
       <div class="about-text">
-        <p>Arc Innovate ก่อตั้งขึ้นโดย Coach Anies นักออกแบบผลิตภัณฑ์ที่ผันตัวมาเป็นนักการศึกษา ด้วยประสบการณ์กว่า 12 ปีในการทำงานร่วมกับนักเรียนที่โรงเรียนนานาชาติในกรุงเทพฯ หลังจากเห็นด้วยตนเองว่าหลักสูตรในโรงเรียนกำลังเตรียมเด็กให้พร้อมสำหรับโลกที่ไม่มีอยู่จริงอีกต่อไป เธอจึงก่อตั้ง Arc Innovate ขึ้นเพื่อเติมเต็มช่องว่างนี้ ด้วยโปรแกรมเสริมหลักสูตรที่มีโครงสร้างชัดเจนบนพื้นฐานของการคิดเชิงออกแบบ ที่สอนให้นักเรียนรู้วิธีคิด ไม่ใช่เพียงสิ่งที่ต้องรู้</p>
-        <p>การคิดเชิงออกแบบคือแกนหลัก นักเรียนจะได้เรียนรู้การสังเกต การตั้งคำถาม และการมองปัญหาใหม่ ก่อนที่จะไปถึงทางออก ส่วนการพิมพ์ 3 มิติคือจุดที่ความคิดนั้นกลายเป็นจริง เป็นวิธีสื่อสารไอเดียให้ชัดเจนจนสามารถจับต้องได้ด้วยมือ ทั้งสองอย่างนี้ร่วมกันพัฒนาทักษะเดียวกัน คือวิธีคิดที่นำไปใช้ได้กับทุกวิชา ทุกโจทย์ และทุกอนาคต</p>
-        <p>ทุกโปรแกรมของ Arc Innovate มีรากฐานมาจากกรอบแนวคิดเดียวกับที่บริษัทนวัตกรรมชั้นนำของโลกใช้ ปรับให้เข้าใจง่าย สนุกสนาน และเหมาะสมกับพัฒนาการของนักเรียนตั้งแต่อายุ 4 ปีขึ้นไปอย่างแท้จริง</p>
-        
+        <p>Arc Innovate was founded by Coach Anies — a product designer turned educator with 12+ years working with children at Bangkok international schools. After seeing firsthand how school curricula were preparing children for a world that no longer exists, she built Arc Innovate to fill the gap: a structured, design-thinking-led enrichment program that teaches children how to think, not just what to know.</p>
+        <p>Every program at Arc Innovate is rooted in the same framework used by the world's leading innovation companies — made accessible, playful, and genuinely age-appropriate for children from age 4.</p>
       </div>
       <div class="about-stats">
         <div class="about-stat">
           <div class="number">4–14</div>
-          <div class="label">ช่วงอายุที่เปิดสอน</div>
+          <div class="label">Age range served</div>
         </div>
         <div class="about-stat">
           <div class="number">6</div>
-          <div class="label">วิชาที่เปิดสอนอยู่</div>
+          <div class="label">Active subjects</div>
         </div>
         <div class="about-stat">
           <div class="number">Max 12</div>
-          <div class="label">นักเรียนต่อคลาส</div>
+          <div class="label">Students per class</div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- STUDENT TESTIMONIALS -->
-<section class="section" id="students">
-  <div class="wrap">
-    <div class="section-label">เสียงจากนักเรียนของเรา</div>
-    <h2>นักเรียนพูดอย่างไรหลังเรียนจบเทอมแรก</h2>
-    <p class="section-sub">คำพูดจริงจากนักสร้างสรรค์รุ่นเยาวตัวจริง เก็บรวบรวมหลังงานแสดงผลงานปลายภาคที่ Arc Innovate กรุงเทพฯ</p>
-    
-    <div style="margin-top:40px;overflow:hidden;">
-      <div id="carTrack" style="display:flex;gap:16px;overflow-x:auto;scroll-behavior:smooth;padding-bottom:10px;">
-        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#2B6CB0,#63B3ED);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">P</div>
-          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#333;margin-bottom:8px;">"หนูไม่เคยรู้เลยว่าหนูจะสามารถสร้างสิ่งที่จับต้องได้จริงๆ..."</div><div style="font-weight:800;font-size:0.95rem;color:#2B6CB0;margin-bottom:2px;">Pim</div><div style="font-size:0.75rem;color:#777;">อายุ 9 ปี · 3D Printing</div></div>
-        </div>
-        
-        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#3A8A4A,#6BBF7A);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">N</div>
-          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#333;margin-bottom:8px;">"ที่โรงเรียนหนูรอครูบอก แต่ที่นี่หนูได้เรียนรู้ที่จะตั้งคำถามที่ดีขึ้น..."</div><div style="font-weight:800;font-size:0.95rem;color:#3A8A4A;margin-bottom:2px;">Nong</div><div style="font-size:0.75rem;color:#777;">Age 8 · Exp Arts & Design</div></div>
-        </div>
-        
-        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#BE185D,#EC4899);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">M</div>
-          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#333;margin-bottom:8px;">"คุณแม่บอกว่าหนูพูดจาเปลี่ยนไป หนูอธิบายความคิดของตัวเองได้..."</div><div style="font-weight:800;font-size:0.95rem;color:#EC4899;margin-bottom:2px;">Mook</div><div style="font-size:0.75rem;color:#777;">อายุ 10 ปี · Young Innovator</div></div>
-        </div>
-        
-        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#5B21B6,#7C3AED);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">T</div>
-          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#333;margin-bottom:8px;">"พวกเราไปสัมภาษณ์คนเกี่ยวกับปัญหาของเขา ไอเดียของผมมีประโยชน์จริงๆ..."</div><div style="font-weight:800;font-size:0.95rem;color:#7C3AED;margin-bottom:2px;">Tae</div><div style="font-size:0.75rem;color:#777;">อายุ 9 ปี · Young Innovator</div></div>
-        </div>
-        
-        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#0D9488,#14B8A6);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">B</div>
-          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#333;margin-bottom:8px;">"ผมสร้างเว็บไซต์ขึ้นมา คุณพ่อบอกว่ามันดูเหมือนของจริงเลย ผมอยากลองทำแอปต่อไป..."</div><div style="font-weight:800;font-size:0.95rem;color:#14B8A6;margin-bottom:2px;">Beam</div><div style="font-size:0.75rem;color:#777;">อายุ 10 ปี · 3D Printing</div></div>
-        </div>
-        
-        <div style="min-width:220px;flex-shrink:0;height:220px;padding:20px;background:white;border-radius:16px;border:1px solid #e8eef6;box-shadow:0 2px 12px rgba(43,108,176,0.08);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#F59E0B,#FBBF24);display:flex;align-items:center;justify-content:center;font-weight:900;color:white;font-size:1.8rem;">?</div>
-          <div><div style="font-size:0.85rem;font-style:italic;line-height:1.5;color:#999;margin-bottom:8px;">เรื่องราวของน้องอาจอยู่ตรงนี้ก็ได้ มาร่วมเป็นส่วนหนึ่งกับ Arc Innovate</div><div style="font-weight:800;font-size:0.95rem;color:#F59E0B;margin-bottom:2px;">นักสร้างสรรค์คนต่อไป</div><div style="font-size:0.75rem;color:#777;">เร็วๆ นี้</div></div>
-        </div>
-      </div>
-    </div>
-    
-    <div style="display:flex;justify-content:center;align-items:center;gap:20px;margin-top:24px;">
-      <button onclick="carMove(-1)" style="width:44px;height:44px;border-radius:50%;border:none;background:#2B6CB0;color:white;font-size:1.2rem;font-weight:800;cursor:pointer;transition:all 0.2s;">←</button>
-      <button onclick="carMove(1)" style="width:44px;height:44px;border-radius:50%;border:none;background:#2B6CB0;color:white;font-size:1.2rem;font-weight:800;cursor:pointer;transition:all 0.2s;">→</button>
-    </div>
-
-    <div style="background:linear-gradient(135deg,var(--deep-blue),var(--forest-green));border-radius:20px;padding:32px;margin-top:32px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
-      <div style="font-size:2rem;margin-bottom:16px;">🌟</div>
-      <h3 style="color:white;font-size:1.2rem;margin-bottom:12px;">พร้อมที่จะเป็น Young Innovator คนต่อไปหรือยัง?</h3>
-      <p style="color:rgba(255,255,255,0.88);font-size:0.88rem;line-height:1.6;margin-bottom:24px;">เปิดให้ทดลองเรียน กลุ่มเล็ก ไอเดียใหญ่</p>
-      <a href="https://lin.ee/TQPIVik" target="_blank" style="background:white;color:var(--deep-blue);padding:12px 26px;border-radius:999px;font-weight:800;font-size:0.9rem;text-decoration:none;" onclick="gtag('event','line_click',{'button_location':'about'})">💬 แชทกับเราทาง LINE</a>
-    </div>
-  </div>
-</section>
-
-<script>
-const track = document.getElementById('carTrack');
-window.carMove = function(dir) {
-  track.scrollBy({ left: dir * 236, behavior: 'smooth' });
-};
-</script>
-
-<!-- ARTICLES -->
-<section class="section-alt" id="articles">
-  <div class="wrap">
-    <div class="section-label">จากบล็อกของเรา</div>
-    <h2>บทความที่น่าอ่าน</h2>
-    <p class="section-sub">การคิดเชิงออกแบบ การศึกษาเชิงสร้างสรรค์ และการเลี้ยงลูกให้พร้อมสำหรับอนาคต เขียนขึ้นสำหรับผู้ปกครองในกรุงเทพฯ</p>
-    <div class="articles-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;">
-
-      <a href="/insights/why-design-thinking-is-the-1-skill-kids-need-in-2026" style="background:white;border-radius:20px;overflow:hidden;border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.07);display:block;transition:transform 0.2s ease,box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(43,108,176,0.12)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 16px rgba(43,108,176,0.07)'">
-        <div style="background:linear-gradient(135deg,#2B6CB0,#63B3ED);padding:28px 24px;color:white;">
-          <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;opacity:0.8;margin-bottom:10px;">15 กรกฎาคม 2026 · อ่าน 6 นาที</div>
-          <h3 style="font-size:1.05rem;color:white;line-height:1.3;">Why Design Thinking is the #1 Skill Kids Need in 2026</h3>
-        </div>
-        <div style="padding:20px 24px;">
-          <p style="font-size:0.88rem;color:#555;line-height:1.6;margin-bottom:16px;">ข้อมูลจาก World Economic Forum ชี้ว่าทักษะการแก้ปัญหาที่ซับซ้อนคือทักษะอันดับหนึ่งที่แรงงานในอนาคตต้องมี นี่คือสิ่งที่ผู้ปกครองในกรุงเทพฯเริ่มทำได้ตั้งแต่วันนี้</p>
-          <span style="font-size:0.85rem;font-weight:700;color:#2B6CB0;">อ่านบทความ →</span>
-        </div>
-      </a>
-
-      <div style="background:white;border-radius:20px;overflow:hidden;border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.07);opacity:0.6;">
-        <div style="background:linear-gradient(135deg,#0D9488,#14B8A6);padding:28px 24px;color:white;">
-          <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;opacity:0.8;margin-bottom:10px;">เร็วๆ นี้</div>
-          <h3 style="font-size:1.05rem;color:white;line-height:1.3;">What 3D Printing Teaches Kids That No Other Class Can</h3>
-        </div>
-        <div style="padding:20px 24px;">
-          <p style="font-size:0.88rem;color:#555;line-height:1.6;">เหตุใดการสร้างต้นแบบที่จับต้องได้จึงสร้างความมั่นใจในแบบที่ต่างออกไป และสิ่งที่ผู้ปกครองในกรุงเทพฯควรรู้เกี่ยวกับกระแส Maker Movement</p>
-        </div>
-      </div>
-
-      <div style="background:white;border-radius:20px;overflow:hidden;border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.07);opacity:0.6;">
-        <div style="background:linear-gradient(135deg,#BE185D,#EC4899);padding:28px 24px;color:white;">
-          <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;opacity:0.8;margin-bottom:10px;">เร็วๆ นี้</div>
-          <h3 style="font-size:1.05rem;color:white;line-height:1.3;">Is My Child Creative? Why the Answer is Always Yes</h3>
-        </div>
-        <div style="padding:20px 24px;">
-          <p style="font-size:0.88rem;color:#555;line-height:1.6;">ความเข้าใจผิดที่พบบ่อยที่สุดในวงการการศึกษาเสริม และสิ่งที่งานวิจัยด้านความคิดสร้างสรรค์บอกเกี่ยวกับศักยภาพของนักเรียนทุกคน</p>
-        </div>
-      </div>
-
-    </div>
-    <div style="text-align:center;margin-top:36px;">
-      <a href="/insights" style="display:inline-block;background:var(--deep-blue);color:white;padding:14px 32px;border-radius:999px;font-weight:700;font-size:0.92rem;">ดูบทความทั้งหมด →</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- FAQ -->
-<section class="section" id="faq">
-  <div class="wrap">
-    <div class="section-label">มีคำถามใช่ไหม?</div>
-    <h2>คำถามที่พบบ่อย</h2>
-    <p class="section-sub">ทุกคำถามที่ผู้ปกครองมักถามก่อนตัดสินใจสมัครเรียน</p>
-
-    <div style="max-width:800px;margin-top:40px;" id="faq-list">
-
-      <!-- Q1 -->
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">
-          <span>Arc Innovate เหมาะสำหรับนักเรียนช่วงอายุใดบ้าง?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">
-          <p>We have three programs for different ages:</p>
-          <ul style="margin:10px 0 10px 20px;line-height:2;">
-            <li><strong>Experimental Arts &amp; Design (MAKE)</strong> — Ages 4–7</li>
-            <li><strong>Young Innovator</strong> (Design Thinking + 3D Printing) — Ages 7–10+</li>
-            <li><strong>3D Printing</strong> (3D software &amp; printing focus) — Ages 7–10+</li>
-          </ul>
-          <p class="faq-th">เรามีสามโปรแกรมสำหรับช่วงอายุที่ต่างกัน: Experimental Arts &amp; Design (MAKE) อายุ 4–7 ปี · Young Innovator (Design Thinking + 3D Printing) อายุ 7–10 ปีขึ้นไป · 3D Printing (เน้นซอฟต์แวร์และการพิมพ์ 3D) อายุ 7–10 ปีขึ้นไป</p>
-        </div>
-      </div>
-
-      <!-- Q2 -->
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">
-          <span>นักเรียนจำเป็นต้องมีพื้นฐานด้านการออกแบบหรือเทคโนโลยีมาก่อนหรือไม่?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">
-          <p>None at all. Arc Innovate is built for beginners. We start with curiosity, not skills.</p>
-          <p class="faq-th">ไม่จำเป็นเลย Arc Innovate ออกแบบมาสำหรับผู้เริ่มต้น เราเริ่มจากความอยากรู้อยากเห็น ไม่ใช่ทักษะ</p>
-        </div>
-      </div>
-
-      <!-- Q3 -->
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">
-          <span>Design Thinking คืออะไร และเหตุใดบุตรหลานของท่านจึงควรเรียนรู้?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">
-          <p>Design Thinking is a problem-solving process used by companies like Apple, IDEO, and Google. Kids learn to observe, ask questions, brainstorm, prototype, and test ideas — skills that work in every subject and every career.</p>
-          <p class="faq-th">Design Thinking คือกระบวนการแก้ปัญหาที่ใช้โดยบริษัทชั้นนำอย่าง Apple และ Google เด็กๆ จะได้เรียนรู้การสังเกต ตั้งคำถาม ระดมความคิด และทดสอบไอเดีย ทักษะที่ใช้ได้ในทุกวิชาและทุกอาชีพ</p>
-        </div>
-      </div>
-
-      <!-- Q4 -->
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">
-          <span>บุตรหลานของท่านจะได้สร้างผลงานอะไรบ้างในคลาส 3D Printing?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">
-          <p>Kids design their own objects using design thinking principles, then print them on a real 3D printer. Past students have made custom phone stands, prototypes of inventions, and personalised gifts.</p>
-          <p class="faq-th">เด็กๆ จะออกแบบชิ้นงานของตัวเองโดยใช้หลักการ Design Thinking แล้วพิมพ์จริงด้วยเครื่อง 3D Printer ที่ผ่านมามีนักเรียนสร้างที่วางโทรศัพท์ ต้นแบบสิ่งประดิษฐ์ และของขวัญส่วนตัว</p>
-        </div>
-      </div>
-
-      <!-- Q5 -->
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">
-          <span>แต่ละคลาสมีนักเรียนกี่คน?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">
-          <p>Maximum 12 students per class. Small groups mean more hands-on time and personal attention for every child.</p>
-          <p class="faq-th">สูงสุด 12 คนต่อคลาส กลุ่มเล็กๆ ทำให้เด็กแต่ละคนได้รับความสนใจและเวลาลงมือทำมากขึ้น</p>
-        </div>
-      </div>
-
-      <!-- Q6 -->
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">
-          <span>คลาสจัดที่ไหน และจองอย่างไร?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">
-          <p>Arc Innovate runs at partner schools and venues across Bangkok. The fastest way to book or ask questions is via LINE @arc.innovate.</p>
-          <p class="faq-th">Arc Innovate จัดคลาสที่โรงเรียนและสถานที่พันธมิตรทั่วกรุงเทพฯ วิธีที่เร็วที่สุดในการจองหรือสอบถามคือผ่าน LINE @arc.innovate</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div style="text-align:center;margin-top:40px;">
-      <a href="https://lin.ee/TQPIVik" target="_blank" style="display:inline-block;background:var(--forest-green);color:white;padding:14px 32px;border-radius:999px;font-weight:700;font-size:0.92rem;" onclick="gtag('event','line_click',{'button_location':'faq'})">💬 สอบถามผ่าน LINE</a>
-    </div>
-  </div>
-</section>
-
-<style>
-.faq-item{
-  border:1px solid #e8eef6;border-radius:16px;margin-bottom:12px;
-  overflow:hidden;background:white;
-  box-shadow:0 2px 12px rgba(43,108,176,0.06);
-  cursor:pointer;transition:box-shadow 0.2s;
-}
-.faq-item:hover{box-shadow:0 4px 20px rgba(43,108,176,0.12);}
-.faq-item.open{border-color:var(--deep-blue);}
-.faq-q{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:20px 24px;font-weight:700;font-size:0.98rem;
-  color:var(--ink);font-family:'Nunito',sans-serif;
-}
-.faq-icon{
-  font-size:1.4rem;font-weight:300;color:var(--deep-blue);
-  transition:transform 0.3s;flex-shrink:0;margin-left:16px;
-}
-.faq-item.open .faq-icon{transform:rotate(45deg);}
-.faq-a{
-  display:none;padding:0 24px 20px;
-  font-size:0.9rem;line-height:1.75;color:var(--mid);
-  border-top:1px solid #f0f4fa;
-}
-.faq-item.open .faq-a{display:block;}
-.faq-th{
-  margin-top:12px;padding:10px 14px;
-  border-left:3px solid #E65100;
-  color:#E65100;font-size:0.85rem;line-height:1.7;
-  background:#fff8f5;border-radius:0 8px 8px 0;
-}
-
-/* MOBILE FIX - articles grid */
-@media(max-width:900px){
-  .articles-grid{grid-template-columns:1fr 1fr !important;}
-}
-@media(max-width:600px){
-  .articles-grid{grid-template-columns:1fr !important;}
-}
-</style>
-
-<script>
-function toggleFaq(el){
-  const isOpen = el.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-  if(!isOpen) el.classList.add('open');
-}
-</script>
 
 <!-- CONTACT -->
 <section class="contact-section" id="contact">
   <div class="wrap">
     <div class="contact-grid">
       <div class="contact-info">
-        <h2>มาเชื่อมต่อกัน</h2>
-        <p>ไม่ว่าท่านจะเป็นผู้ปกครองที่สนใจสมัครเรียนให้บุตรหลาน โรงเรียนที่สนใจความร่วมมือ หรือสถานที่ที่ต้องการจัดกิจกรรมร่วมกับ Arc Innovate เรายินดีรับฟังทุกท่าน ช่องทาง LINE คือวิธีที่เร็วที่สุดในการติดต่อเรา</p>
+        <h2>Let's connect.</h2>
+        <p>Whether you're a parent looking to enroll your child, a school interested in a partnership, or a venue looking to host Arc Innovate — we'd love to hear from you. Line is the fastest way to reach us.</p>
         <div class="contact-btns">
-          <a href="https://lin.ee/TQPIVik" class="btn-line" target="_blank" onclick="gtag('event','line_click',{'button_location':'contact'})">💬 Line @arc.innovate</a>
-          <a href="mailto:arc.international.edu@gmail.com" class="btn-email">✉️ อีเมลถึงเรา</a>
+          <a href="https://lin.ee/TQPIVik" class="btn-line" target="_blank">💬 Line @arc.innovate</a>
+          <a href="mailto:arc.international.edu@gmail.com" class="btn-email">✉️ Email Us</a>
         </div>
       </div>
       <div class="contact-details">
@@ -1311,13 +675,13 @@ function toggleFaq(el){
           <strong>Line</strong>@arc.innovate
         </div>
         <div class="contact-detail-row">
-          <strong>อีเมล</strong>arc.international.edu@gmail.com
+          <strong>Email</strong>arc.international.edu@gmail.com
         </div>
         <div class="contact-detail-row">
-          <strong>ที่ตั้ง</strong>กรุงเทพฯ ประเทศไทย
+          <strong>Location</strong>Bangkok, Thailand
         </div>
         <div class="contact-detail-row">
-          <strong>โปรแกรม</strong>อายุ 4–14 ปี • สูงสุด 12 คนต่อคลาส
+          <strong>Programs</strong>Ages 4–14 • Max 12 per class
         </div>
         <div class="contact-detail-row">
           <strong>Instagram</strong>@arc.innovate
@@ -1332,27 +696,27 @@ function toggleFaq(el){
     <img src="/arc-innovate-logo.png" alt="Arc Innovate">
     <span class="footer-name">Arc Innovate</span>
   </div>
-  <p>สถาบันพัฒนาทักษะการแก้ปัญหาเชิงสร้างสรรค์สำหรับนักเรียนอายุ 4–14 ปี แห่งกรุงเทพฯ</p>
-  <p style="margin-top:8px;">© 2026 Arc Innovate · <a href="/">กลับสู่หน้าหลัก</a> · <a href="/insights">บทความ</a></p>
+  <p>Bangkok's Creative Problem-Solving Academy for Kids Ages 4–14</p>
+  <p style="margin-top:8px;">© 2026 Arc Innovate · <a href="/">Back to Arc</a> · <a href="/arc-innovate/insights">Articles</a></p>
 </footer>
 
 <div class="fab-stack">
-  <a href="tel:+66835193659" class="fab-btn call">📞 โทรเลย</a>
+  <a href="tel:+66835193659" class="fab-btn call">📞 Call Now</a>
   <a href="https://instagram.com/arc.innovate" target="_blank" class="fab-btn instagram">📷 Instagram</a>
-  <a href="https://lin.ee/TQPIVik" target="_blank" class="fab-btn line" onclick="gtag('event','line_click',{'button_location':'page'})">💬 แชท LINE</a>
+  <a href="https://lin.ee/TQPIVik" target="_blank" class="fab-btn line">💬 Line@</a>
 </div>
 
 <script>
 document.querySelectorAll('.nav-dropdown').forEach(dd => {
   const toggle = dd.querySelector('.nav-dropdown-toggle');
   const menu = dd.querySelector('.nav-dropdown-menu');
-  
+
   toggle.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
   });
-  
+
   menu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       menu.style.display = 'none';
