@@ -104,17 +104,33 @@ a{text-decoration:none;color:inherit;}
   font-style:italic;
 }
 .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.hero-inner{
+  max-width:1180px;margin:0 auto;
+  display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;
+  align-items:center;position:relative;z-index:1;
+}
+.hero-copy{text-align:left;}
+.hero-copy h1{margin-left:0;margin-right:0;}
+.hero-copy .hero-sub{margin-left:0;margin-right:0;}
+.hero-copy .hero-btns{justify-content:flex-start;}
 .hero-images{
-  display:grid;grid-template-columns:1fr 1fr;gap:10px;
-  max-width:520px;margin:44px auto 0;
-  border-radius:16px;overflow:hidden;
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
 }
 .hero-images img{
-  width:100%;height:160px;object-fit:cover;display:block;
+  width:100%;height:190px;object-fit:cover;display:block;
+  border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,0.18);
+}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:40px;}
+  .hero-copy{text-align:center;}
+  .hero-copy .hero-sub{margin-left:auto;margin-right:auto;}
+  .hero-copy .hero-btns{justify-content:center;}
+  .hero-images{max-width:520px;margin:0 auto;}
+  .hero-images img{height:160px;}
 }
 @media(max-width:600px){
-  .hero-images{max-width:100%;gap:6px;}
-  .hero-images img{height:110px;}
+  .hero-images{gap:8px;}
+  .hero-images img{height:120px;border-radius:10px;}
 }
 .btn-primary{
   background:white;color:var(--deep-blue);
@@ -443,6 +459,8 @@ mobileClose.addEventListener('click', closeMobileNav);
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-inner">
+  <div class="hero-copy">
   <div class="hero-eyebrow">Creative and Design Thinking Academy • อายุ 4–14 ปี</div>
   <h1>See Problem. Shape Ideas. <em>Create Possibilities.</em></h1>
   <p class="hero-sub">เด็กๆ เรียนรู้การแก้ปัญหาโดยการแก้ไขปัญหาจริง Design Thinking 3D Printing และโครงการ STEAM ที่สร้างความมั่นใจในความสร้างสรรค์สำหรับโลกอนาคต</p>
@@ -450,11 +468,13 @@ mobileClose.addEventListener('click', closeMobileNav);
     <a href="#programs" class="btn-primary">เรียนรู้เพิ่มเติม</a>
     <a href="#partners" class="btn-secondary">ความร่วมมือโรงเรียน</a>
   </div>
+  </div>
   <div class="hero-images">
     <img src="/images/HERO-1.jpg" alt="นักเรียน Arc Innovate กำลังสร้างสรรค์">
     <img src="/images/HERO-2.jpg" alt="เวิร์คช็อป Design Thinking">
     <img src="/images/HERO-3.jpg" alt="เซสชั่น 3D Printing">
     <img src="/images/HERO-4.jpg" alt="เด็กๆ ออกแบบและสร้างสรรค์">
+  </div>
   </div>
 </section>
 
@@ -503,7 +523,7 @@ mobileClose.addEventListener('click', closeMobileNav);
 <!-- PROGRAM LOGOS BANNER -->
 <section style="padding:40px 0;background:linear-gradient(135deg,#2B6CB0,#63B3ED);">
   <div class="wrap" style="text-align:center;">
-    <img src="/arc-innovate/images/program-logos-banner.png" alt="Arc Innovate Program Logos" style="max-width:100%;height:auto;display:block;margin:0 auto;">
+    <img src="/images/program-logos-banner.png" alt="Arc Innovate Program Logos" style="max-width:100%;height:auto;display:block;margin:0 auto;">
   </div>
 </section>
 
@@ -520,7 +540,7 @@ mobileClose.addEventListener('click', closeMobileNav);
           <h3>Idea to Design</h3>
           <p>จากแนวคิดไปจนถึงการทำให้สำเร็จ เรียนรู้กระบวนการคิดเชิงออกแบบทั้งหมดเพื่อเปลี่ยนไอเดียสร้างสรรค์ให้เป็นวิธีแก้ปัญหาจริง</p>
         </div>
-        <img src="/arc-innovate/subjects/images/experimental-arts.jpg" alt="Idea to Design class Bangkok kids">
+        <img src="/programs/images/experimental-arts.jpg" alt="Idea to Design class Bangkok kids">
         <div class="program-card-footer">
           เรียนรู้เพิ่มเติม <span>→</span>
         </div>
@@ -532,7 +552,7 @@ mobileClose.addEventListener('click', closeMobileNav);
           <h3>3D Printing</h3>
           <p>เปลี่ยนภาพวาดให้เป็นวัตถุทางกายภาพ ออกแบบและสร้างต้นแบบด้วยเทคโนโลยี 3D printing ล้ำสมัย</p>
         </div>
-        <img src="/arc-innovate/subjects/images/ux-ui-for-kids.jpg" alt="3D Printing class Bangkok kids">
+        <img src="/programs/images/young-innovator.jpg" alt="3D Printing class Bangkok kids">
         <div class="program-card-footer">
           เรียนรู้เพิ่มเติม <span>→</span>
         </div>
@@ -544,7 +564,7 @@ mobileClose.addEventListener('click', closeMobileNav);
           <h3>Tech Toys & Tools</h3>
           <p>การสำรวจแบบไม่มีมือของเทคโนโลยีสร้างสรรค์ สร้าง เข้ารหัส และสร้างด้วยเครื่องมือและอุปกรณ์นวัตกรรม</p>
         </div>
-        <img src="/arc-innovate/subjects/images/ux-ui-for-kids.jpg" alt="Tech Toys class Bangkok kids">
+        <img src="/programs/images/ux-ui-for-kids.jpg" alt="Tech Toys class Bangkok kids">
         <div class="program-card-footer">
           เรียนรู้เพิ่มเติม <span>→</span>
         </div>
@@ -556,7 +576,7 @@ mobileClose.addEventListener('click', closeMobileNav);
           <h3>Craft Club</h3>
           <p>สำรวจเทคนิคการทำฝีมือแบบเดิมและสมัยใหม่ สร้างทักษะ ความสร้างสรรค์ และจัดแสดงผลงานที่ทำด้วยมือของคุณ</p>
         </div>
-        <img src="/arc-innovate/subjects/images/gallery-1.jpg" alt="Craft Club class Bangkok kids">
+        <img src="/programs/images/fashion-design.jpg" alt="Craft Club class Bangkok kids">
         <div class="program-card-footer">
           เรียนรู้เพิ่มเติม <span>→</span>
         </div>
@@ -571,12 +591,12 @@ mobileClose.addEventListener('click', closeMobileNav);
     <div class="section-label">ช่วงเวลาในสตูดิโอ</div>
     <h2>การเรียนรู้ดูเป็นอย่างไรที่นี่</h2>
     <div class="gallery-grid">
-      <img src="/arc-innovate/images/gallery-1.jpg" alt="Arc Innovate kids design thinking class Bangkok">
-      <img src="/arc-innovate/images/gallery-2.jpg" alt="Arc Innovate 3D printing workshop kids Bangkok">
-      <img src="/arc-innovate/images/gallery-3.jpg" alt="Arc Innovate creative enrichment Bangkok">
-      <img src="/arc-innovate/images/gallery-4.jpg" alt="Arc Innovate STEAM classes kids Bangkok">
-      <img src="/arc-innovate/images/gallery-5.jpg" alt="Arc Innovate design workshop children Bangkok">
-      <img src="/arc-innovate/images/gallery-6.jpg" alt="Arc Innovate student showcase Bangkok">
+      <img src="/images/gallery-1.jpg" alt="Arc Innovate kids design thinking class Bangkok">
+      <img src="/images/gallery-2.jpg" alt="Arc Innovate 3D printing workshop kids Bangkok">
+      <img src="/images/gallery-3.jpg" alt="Arc Innovate creative enrichment Bangkok">
+      <img src="/images/gallery-4.jpg" alt="Arc Innovate STEAM classes kids Bangkok">
+      <img src="/images/gallery-5.jpg" alt="Arc Innovate design workshop children Bangkok">
+      <img src="/images/gallery-6.jpg" alt="Arc Innovate student showcase Bangkok">
     </div>
   </div>
 </section>
