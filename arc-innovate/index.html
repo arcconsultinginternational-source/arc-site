@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.arc-international-edu.com/arc-innovate">
 <meta property="og:image" content="https://www.arc-international-edu.com/arc-innovate-logo.png">
-<title>Arc Innovate | Design Thinking & 3D Printing for Kids Bangkok</title>
+<title>Arc Innovate | Creative and Design Thinking Academy for Kids Bangkok</title>
 <link rel="icon" type="image/png" href="/arc-innovate-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -104,6 +104,18 @@ a{text-decoration:none;color:inherit;}
   font-style:italic;
 }
 .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.hero-images{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+  max-width:520px;margin:44px auto 0;
+  border-radius:16px;overflow:hidden;
+}
+.hero-images img{
+  width:100%;height:160px;object-fit:cover;display:block;
+}
+@media(max-width:600px){
+  .hero-images{max-width:100%;gap:6px;}
+  .hero-images img{height:110px;}
+}
 .btn-primary{
   background:white;color:var(--deep-blue);
   padding:15px 36px;border-radius:999px;font-weight:800;font-size:0.95rem;
@@ -438,12 +450,18 @@ mobileClose.addEventListener('click', closeMobileNav);
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-eyebrow">Bangkok's Creative Problem-Solving Academy • Ages 4–14</div>
-  <h1>Creative Academy — <em>The Skills AI Can't Replace</em></h1>
+  <div class="hero-eyebrow">Creative and Design Thinking Academy • Ages 4–14</div>
+  <h1>See Problem. Shape Ideas. <em>Create Possibilities.</em></h1>
   <p class="hero-sub">Kids learn to solve problems by solving real ones. Design Thinking, 3D Printing & STEAM programs that build the creative confidence your child needs for any future.</p>
   <div class="hero-btns">
     <a href="#programs" class="btn-primary">Explore Programs</a>
     <a href="#partners" class="btn-secondary">School Partnerships</a>
+  </div>
+  <div class="hero-images">
+    <img src="/images/HERO-1.jpg" alt="Arc Innovate students creating">
+    <img src="/images/HERO-2.jpg" alt="Design thinking workshop">
+    <img src="/images/HERO-3.jpg" alt="3D printing session">
+    <img src="/images/HERO-4.jpg" alt="Kids building and making">
   </div>
 </section>
 
@@ -488,6 +506,13 @@ mobileClose.addEventListener('click', closeMobileNav);
 </section>
 
 <div style="text-align:center;margin:48px 0;"><a href="/arc-innovate/design-thinking-guide" style="display:inline-block;background:linear-gradient(135deg,#2B6CB0,#63B3ED);color:white;padding:24px 56px;border-radius:999px;font-weight:800;font-size:1.4rem;text-decoration:none;box-shadow:0 8px 32px rgba(43,108,176,0.35);">Learn How Design Thinking Works →</a></div>
+
+<!-- PROGRAM LOGOS BANNER -->
+<section style="padding:40px 0;background:linear-gradient(135deg,#2B6CB0,#63B3ED);">
+  <div class="wrap" style="text-align:center;">
+    <img src="/arc-innovate/images/program-logos-banner.png" alt="Arc Innovate Program Logos" style="max-width:100%;height:auto;display:block;margin:0 auto;">
+  </div>
+</section>
 
 <!-- PROGRAMS: OUR PROGRAM OFFERINGS -->
 <section class="section-alt" id="programs">
