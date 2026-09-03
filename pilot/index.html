@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Creative academy for kids ages 4-14 in Bangkok. Design Thinking, 3D Printing & STEAM. The skills AI cannot replace. คอร์สเสริมทักษะเด็ก กรุงเทพ">
+<meta name="keywords" content="design thinking for kids Bangkok, 3D printing for kids Bangkok, creative school Bangkok, STEAM classes Bangkok, คอร์ส design thinking เด็ก กรุงเทพ, เรียน 3d printing เด็ก, after school enrichment Bangkok">
+<meta property="og:title" content="Arc Innovate | Design Thinking & 3D Printing for Kids Bangkok">
+<meta property="og:description" content="Creative academy for kids ages 4-14 in Bangkok. Design Thinking, 3D Printing & STEAM classes. The skills AI cannot replace.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.arc-international-edu.com/en">
+<meta property="og:image" content="https://www.arc-international-edu.com/arc-innovate-logo.png">
+<title>Arc Innovate | Creative and Design Thinking Academy for Kids Bangkok</title>
+<link rel="icon" type="image/png" href="/arc-innovate-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-33TWWP2J6J"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-33TWWP2J6J');</script>
+<style>
+:root{
+  --deep-blue:#2B6CB0;
+  --light-blue:#63B3ED;
+  --forest-green:#3A8A4A;
+  --fresh-green:#6BBF7A;
+  --ink:#1A1614;
+  --paper:#FAFAFA;
+  --section-alt:#EDF4FB;
+  --mid:#555;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--paper);}
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;font-weight:800;}
+a{text-decoration:none;color:inherit;}
+
+/* ── NAV ── */
+.site-nav{
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(12px);
+  padding:0 32px;
+  height:68px;
+  display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:100;
+  box-shadow:0 2px 16px rgba(0,0,0,0.07);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Poppins',sans-serif;font-weight:900;font-size:1.1rem;color:var(--deep-blue);}
+.logo img{width:36px;height:36px;border-radius:50%;object-fit:cover;}
+.links{display:flex;align-items:center;gap:28px;}
+.links a{font-size:0.88rem;font-weight:500;color:var(--ink);transition:color 0.2s;}
+.links a:hover{color:var(--deep-blue);}
+.nav-dropdown{position:relative;}
+.nav-dropdown-toggle{cursor:pointer;display:flex;align-items:center;gap:4px;font-size:0.88rem;font-weight:500;color:var(--ink);}
+.nav-dropdown-menu{
+  display:none;position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%);
+  background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(43,108,176,0.15);
+  min-width:230px;padding:10px 0;z-index:999;
+  border:1px solid rgba(43,108,176,0.08);
+}
+.nav-dropdown-menu::before{
+  content:'';position:absolute;top:-7px;left:50%;transform:translateX(-50%);
+  border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #fff;
+}
+.nav-dropdown-menu a{
+  display:block;padding:11px 22px;font-size:0.88rem;font-weight:500;
+  color:var(--deep-blue);border-radius:8px;margin:2px 8px;transition:background 0.18s,color 0.18s;
+}
+.nav-dropdown-menu a:hover{background:linear-gradient(90deg,var(--deep-blue),var(--forest-green));color:#fff;}
+.nav-dropdown:hover .nav-dropdown-menu{display:none;}
+.nav-cta{
+  background:var(--forest-green);color:white;
+  padding:10px 22px;border-radius:999px;font-weight:600;font-size:0.88rem;
+  transition:background 0.2s;
+}
+.nav-cta:hover{background:var(--deep-blue);}
+
+/* ── HERO ── */
+.hero{
+  background:linear-gradient(135deg,var(--deep-blue) 0%,#3B82C4 40%,var(--forest-green) 100%);
+  padding:100px 32px 90px;text-align:center;color:white;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 30% 50%,rgba(255,255,255,0.06) 0%,transparent 60%);
+}
+.hero-eyebrow{
+  display:inline-block;
+  background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.25);
+  border-radius:999px;padding:6px 18px;
+  font-size:0.75rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;
+  margin-bottom:24px;
+}
+.hero h1{
+  font-size:3.4rem;line-height:1.1;max-width:820px;margin:0 auto 20px;
+  color:white;
+}
+.hero h1 em{font-style:normal;color:#A7F3C4;}
+.hero-sub{
+  font-size:1.1rem;opacity:0.9;max-width:580px;margin:0 auto 16px;line-height:1.7;
+}
+.hero-tagline{
+  font-size:0.88rem;opacity:0.75;margin-bottom:40px;
+  font-style:italic;
+}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.hero-inner{
+  max-width:1180px;margin:0 auto;
+  display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;
+  align-items:center;position:relative;z-index:1;
+}
+.hero-copy{text-align:left;}
+.hero-copy .hero-h1,.hero-copy h1{margin-left:0;margin-right:0;}
+.hero-copy .hero-sub{margin-left:0;margin-right:0;}
+.hero-copy .hero-btns{justify-content:flex-start;}
+.hero-images{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
+}
+.hero-images img{
+  width:100%;height:190px;object-fit:cover;display:block;
+  border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,0.18);
+}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:40px;}
+  .hero-copy{text-align:center;}
+  .hero-copy .hero-sub{margin-left:auto;margin-right:auto;}
+  .hero-copy .hero-btns{justify-content:center;}
+  .hero-images{max-width:520px;margin:0 auto;}
+  .hero-images img{height:160px;}
+}
+@media(max-width:600px){
+  .hero-images{gap:8px;}
+  .hero-images img{height:120px;border-radius:10px;}
+}
+.btn-primary{
+  background:white;color:var(--deep-blue);
+  padding:15px 36px;border-radius:999px;font-weight:800;font-size:0.95rem;
+  transition:transform 0.2s,box-shadow 0.2s;
+  box-shadow:0 4px 20px rgba(0,0,0,0.15);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,0.2);}
+.btn-secondary{
+  background:rgba(255,255,255,0.15);color:white;
+  border:2px solid rgba(255,255,255,0.4);
+  padding:15px 36px;border-radius:999px;font-weight:700;font-size:0.95rem;
+  transition:background 0.2s;
+}
+.btn-secondary:hover{background:rgba(255,255,255,0.25);}
+
+/* ── TRUST BAR ── */
+.trust-bar{
+  background:white;padding:28px 32px;
+  border-bottom:1px solid #eee;
+}
+.trust-inner{
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;
+}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:0.88rem;font-weight:600;color:var(--mid);}
+.trust-item span{font-size:1.3rem;}
+
+/* ── SECTIONS ── */
+.section{padding:80px 0;}
+.section-alt{padding:80px 0;background:var(--section-alt);}
+.wrap{max-width:1100px;margin:0 auto;padding:0 32px;}
+.section-label{
+  font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--deep-blue);margin-bottom:12px;
+}
+.section h2{font-size:2.2rem;margin-bottom:16px;line-height:1.2;}
+.section-sub{font-size:1rem;color:var(--mid);line-height:1.7;max-width:600px;margin-bottom:48px;}
+
+/* ── IDENTITY PILLARS ── */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+.pillar{background:white;border-radius:20px;padding:36px 28px;border:1px solid #e8eef6;box-shadow:0 2px 16px rgba(43,108,176,0.06);}
+.pillar-icon{font-size:2.4rem;margin-bottom:16px;}
+.pillar h3{font-size:1.15rem;margin-bottom:10px;color:var(--deep-blue);}
+.pillar p{font-size:0.9rem;line-height:1.7;color:var(--mid);}
+
+/* ── THE ARC (3 LEVELS) ── */
+.arc-levels{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
+.arc-level{
+  border-radius:20px;padding:36px 28px;color:white;position:relative;overflow:hidden;
+}
+.arc-level-1{background:linear-gradient(135deg,var(--forest-green),var(--fresh-green));}
+.arc-level-2{background:linear-gradient(135deg,var(--deep-blue),var(--light-blue));}
+.arc-level-3{background:linear-gradient(135deg,#5B21B6,#7C3AED);}
+.arc-level-badge{
+  display:inline-block;background:rgba(255,255,255,0.2);
+  border-radius:999px;padding:4px 14px;
+  font-size:0.72rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;
+  margin-bottom:16px;
+}
+.arc-level h3{font-size:1.3rem;margin-bottom:6px;color:white;}
+.arc-level .age{font-size:0.88rem;opacity:0.85;margin-bottom:16px;}
+.arc-level p{font-size:0.88rem;line-height:1.6;opacity:0.9;}
+
+/* ── PROGRAMS GRID ── */
+.programs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px;}
+.program-card{
+  border-radius:20px;overflow:hidden;
+  border:1px solid #e8eef6;
+  box-shadow:0 2px 16px rgba(43,108,176,0.07);
+  transition:transform 0.25s ease,box-shadow 0.25s ease;
+  display:block;
+  background:white;
+}
+.program-card:hover{transform:translateY(-5px);box-shadow:0 12px 36px rgba(43,108,176,0.14);}
+.program-card-header{padding:28px 24px 24px;color:white;position:relative;}
+.program-card-header .badge{
+  display:inline-block;background:rgba(255,255,255,0.2);
+  border-radius:999px;padding:3px 12px;
+  font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  margin-bottom:12px;
+}
+.program-card-header h3{font-size:1.2rem;margin-bottom:6px;color:white;}
+.program-card-header p{font-size:0.85rem;opacity:0.88;}
+.program-card img{width:100%;height:180px;object-fit:cover;display:block;}
+.program-card-footer{
+  padding:16px 24px;display:flex;justify-content:space-between;align-items:center;
+  font-size:0.82rem;font-weight:600;color:var(--deep-blue);
+}
+.program-card-footer span{color:var(--mid);font-weight:400;}
+
+/* Program card colors */
+.card-blue{background:linear-gradient(135deg,var(--deep-blue),var(--light-blue));}
+.card-green{background:linear-gradient(135deg,var(--forest-green),var(--fresh-green));}
+.card-purple{background:linear-gradient(135deg,#5B21B6,#7C3AED);}
+.card-teal{background:linear-gradient(135deg,#0D9488,#14B8A6);}
+.card-orange{background:linear-gradient(135deg,#C2410C,#EA580C);}
+.card-pink{background:linear-gradient(135deg,#BE185D,#EC4899);}
+
+/* ── GALLERY ── */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;}
+.gallery-grid img{width:100%;height:240px;object-fit:cover;border-radius:18px;display:block;}
+
+/* ── PARTNERS ── */
+.partner-features{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px;}
+.partner-feat{display:flex;gap:16px;align-items:flex-start;}
+.feat-icon{font-size:1.8rem;flex-shrink:0;margin-top:4px;}
+.feat-text h4{font-size:1rem;margin-bottom:6px;}
+.feat-text p{font-size:0.88rem;color:var(--mid);line-height:1.6;}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:40px;}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.about-stat{background:white;border-radius:16px;padding:24px;text-align:center;border:1px solid #e8eef6;}
+.about-stat .number{font-family:'Poppins',sans-serif;font-size:2.2rem;font-weight:900;color:var(--deep-blue);}
+.about-stat .label{font-size:0.82rem;color:var(--mid);margin-top:4px;}
+.about-text p{font-size:1rem;line-height:1.8;color:#444;margin-bottom:20px;}
+.about-text .credential{
+  display:flex;align-items:center;gap:10px;
+  padding:12px 0;border-bottom:1px solid #eee;
+  font-size:0.88rem;color:var(--mid);
+}
+.about-text .credential:last-child{border-bottom:none;}
+.about-text .credential span{font-size:1.2rem;}
+
+/* ── CONTACT ── */
+.contact-section{background:linear-gradient(135deg,var(--deep-blue),var(--forest-green));padding:80px 0;color:white;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.contact-info h2{font-size:2.2rem;margin-bottom:16px;color:white;}
+.contact-info p{opacity:0.88;line-height:1.7;margin-bottom:32px;}
+.contact-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-line{background:#00B900;color:white;padding:14px 28px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:8px;}
+.btn-email{background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.4);padding:14px 28px;border-radius:999px;font-weight:700;}
+.contact-details{background:rgba(255,255,255,0.1);border-radius:20px;padding:32px;}
+.contact-detail-row{padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.15);font-size:0.95rem;}
+.contact-detail-row:last-child{border-bottom:none;}
+.contact-detail-row strong{display:block;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;opacity:0.7;margin-bottom:4px;}
+
+/* ── FOOTER ── */
+footer{background:#1A1614;color:rgba(255,255,255,0.5);padding:40px 32px;text-align:center;font-size:0.85rem;}
+footer a{color:#63B3ED;}
+footer .footer-logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px;}
+footer img{width:36px;height:36px;border-radius:50%;object-fit:cover;}
+footer .footer-name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1rem;color:rgba(255,255,255,0.8);}
+
+/* ── FLOATING ACTION STACK ── */
+.fab-stack{
+  position:fixed;bottom:28px;right:28px;z-index:999;
+  display:flex;flex-direction:column;align-items:flex-end;gap:14px;
+}
+.fab-btn{
+  display:flex;align-items:center;gap:10px;
+  padding:18px 32px;border-radius:50px;
+  font-weight:800;font-size:1.1rem;
+  box-shadow:0 8px 28px rgba(0,0,0,0.3);
+  color:white;white-space:nowrap;
+  transition:all 0.2s ease;
+  text-decoration:none;
+}
+.fab-btn:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 12px 40px rgba(0,0,0,0.4);}
+.fab-btn.call{background:linear-gradient(135deg,#2B6CB0,#63B3ED);}
+.fab-btn.instagram{background:linear-gradient(135deg,#F58529,#DD2A7B,#8134AF);}
+.fab-btn.line{background:linear-gradient(135deg,#00B900,#00D600);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1200px){
+  .programs-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:900px){
+  .hero h1{font-size:2.4rem;}
+  .pillars,.arc-levels{grid-template-columns:1fr 1fr;}
+  .programs-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .about-grid,.contact-grid,.partner-features{grid-template-columns:1fr;}
+  .trust-inner{gap:24px;}
+  .site-nav{padding:0 16px;}
+  .wrap{padding:0 16px;}
+}
+@media(max-width:600px){
+  .hero{padding:60px 16px 60px;}
+  .hero h1{font-size:2rem;margin-bottom:16px;}
+  .hero-sub{font-size:0.95rem;}
+  .pillars,.arc-levels,.programs-grid,.gallery-grid{grid-template-columns:1fr;}
+  .gallery-grid img{height:200px;}
+  .links{display:none;}
+  .about-stats{grid-template-columns:1fr;}
+  .trust-inner{flex-direction:column;gap:16px;}
+  .section{padding:60px 0;}
+  .section-alt{padding:60px 0;}
+  .section h2{font-size:1.6rem;}
+  .hero-btns{flex-direction:column;}
+  .btn-primary,.btn-secondary{width:100%;}
+  .contact-btns{flex-direction:column;}
+  .btn-line,.btn-email{width:100%;justify-content:center;}
+  .fab-stack{bottom:20px;right:20px;gap:10px;}
+  .fab-btn{padding:14px 20px;font-size:0.9rem;}
+  .program-card-header{padding:20px 16px 16px;}
+  .program-card-header h3{font-size:1rem;}
+  .partner-features{gap:16px;}
+  .contact-details{padding:20px;}
+  footer{padding:32px 16px;}
+}
+
+/* ── MOBILE NAV ── */
+.hamburger{
+  display:none;flex-direction:column;gap:5px;cursor:pointer;
+  padding:8px;border:none;background:none;z-index:200;
+}
+.hamburger span{
+  display:block;width:24px;height:2px;
+  background:var(--ink);border-radius:2px;
+  transition:all 0.3s ease;
+}
+.mobile-nav{
+  display:none;
+  position:fixed;inset:0;background:white;z-index:150;
+  flex-direction:column;padding:80px 32px 32px;
+  overflow-y:auto;
+}
+.mobile-nav.open{display:flex;}
+.mobile-nav a{
+  font-family:'Poppins',sans-serif;font-weight:800;
+  font-size:1.3rem;color:var(--ink);
+  padding:16px 0;border-bottom:1px solid #f0f0f0;
+  display:block;
+}
+.mobile-nav a:hover{color:var(--deep-blue);}
+.mobile-nav .mobile-section-label{
+  font-size:0.7rem;font-weight:700;letter-spacing:0.2em;
+  text-transform:uppercase;color:var(--deep-blue);
+  margin:24px 0 8px;
+}
+.mobile-nav .mobile-sub a{
+  font-size:1rem;font-weight:600;padding:12px 0 12px 16px;
+  color:var(--mid);border-bottom:1px solid #f8f8f8;
+}
+.mobile-close{
+  position:absolute;top:20px;right:20px;
+  font-size:1.5rem;cursor:pointer;
+  background:none;border:none;color:var(--ink);
+  font-family:'Poppins',sans-serif;font-weight:900;
+}
+@media(max-width:900px){
+  .hamburger{display:flex;}
+  .links{display:none !important;}
+  .nav-cta{display:none;}
+}
+
+</style>
+  <!-- META PIXEL — Arc Innovate -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1337977120778599');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1337977120778599&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- END META PIXEL -->
+  <link rel="canonical" href="https://www.arc-international-edu.com/en">
+<link rel="alternate" hreflang="th" href="https://www.arc-international-edu.com/">
+<link rel="alternate" hreflang="en" href="https://www.arc-international-edu.com/en">
+<link rel="alternate" hreflang="x-default" href="https://www.arc-international-edu.com/">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Arc Innovate","description":"Creative problem-solving academy for kids ages 4-14 in Bangkok, teaching design thinking, STEAM, and creative enrichment programs.","url":"https://www.arc-international-edu.com/en","telephone":"+66835193659","email":"arc.international.edu@gmail.com","areaServed":"Bangkok, Thailand","sameAs":["https://instagram.com/arc.innovate"]}
+</script>
+</head>
+<body id="top">
+
+<!-- NAV -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <img src="/arc-innovate-logo.png" alt="Arc Innovate">
+      Arc Innovate
+    </a>
+    <nav class="links">
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Programs ▾</span>
+        <div class="nav-dropdown-menu">
+          <a href="/arc-innovate/subjects/experimental-arts-and-design">🎨 Experimental Arts & Design</a>
+          <a href="/arc-innovate/subjects/young-innovators">✨ Young Innovators</a>
+          <a href="/arc-innovate/subjects/3d-printing">🖨️ 3D Printing</a>
+        </div>
+      </div>
+      <a href="#the-arc">The Arc</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="/arc-innovate/insights">Articles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="mailto:arc.international.edu@gmail.com" class="nav-cta">Get in Touch</a>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#programs" onclick="closeMobileNav()">Programs</a>
+  <div class="mobile-section-label">Our Programs</div>
+  <div class="mobile-sub">
+    <a href="/arc-innovate/subjects/experimental-arts-and-design" onclick="closeMobileNav()">🎨 Experimental Arts & Design</a>
+    <a href="/arc-innovate/subjects/young-innovators" onclick="closeMobileNav()">✨ Young Innovators</a>
+    <a href="/arc-innovate/subjects/3d-printing" onclick="closeMobileNav()">🖨️ 3D Printing</a>
+  </div>
+  <a href="#the-arc" onclick="closeMobileNav()">The Arc</a>
+  <a href="#gallery" onclick="closeMobileNav()">Gallery</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="/arc-innovate/insights" onclick="closeMobileNav()">Articles</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  <div style="margin-top:32px;">
+    <a href="https://lin.ee/TQPIVik" target="_blank" style="background:#00B900;color:white;padding:16px 28px;border-radius:999px;font-weight:800;text-align:center;display:block;">💬 Chat on Line</a>
+  </div>
+</div>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+const mobileClose = document.getElementById('mobileClose');
+function openMobileNav(){ mobileNav.classList.add('open'); document.body.style.overflow='hidden'; }
+function closeMobileNav(){ mobileNav.classList.remove('open'); document.body.style.overflow=''; }
+hamburger.addEventListener('click', openMobileNav);
+mobileClose.addEventListener('click', closeMobileNav);
+</script>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+  <div class="hero-copy">
+  <div class="hero-eyebrow">Creative and Design Thinking Academy • Ages 4–14</div>
+  <h1>See Problem. Shape Ideas. <em>Create Possibilities.</em></h1>
+  <p class="hero-sub">Kids learn to solve problems by solving real ones. Design Thinking, 3D Printing & STEAM programs that build the creative confidence your child needs for any future.</p>
+  <div class="hero-btns">
+    <a href="#programs" class="btn-primary">Explore Programs</a>
+    <a href="/" class="btn-secondary">ภาษาไทย</a>
+  </div>
+  </div>
+  <div class="hero-images">
+    <img src="/images/HERO-1.jpg" alt="Arc Innovate students creating">
+    <img src="/images/HERO-2.jpg" alt="Design thinking workshop">
+    <img src="/images/HERO-3.jpg" alt="3D printing session">
+    <img src="/images/HERO-4.jpg" alt="Kids building and making">
+  </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span>👧</span> Ages 4–14</div>
+      <div class="trust-item"><span>🧠</span> Design Thinking</div>
+    <div class="trust-item"><span>🏫</span> School ECA & Mobile Academy</div>
+    <div class="trust-item"><span>🖨️</span> 3D Printing Studio</div>
+    <div class="trust-item"><span>📍</span> Bangkok, Thailand</div>
+  </div>
+</div>
+
+<!-- THE ARC — 3 LEVELS -->
+<section class="section-alt" id="the-arc">
+  <div class="wrap">
+    <div class="section-label">The Arc — Your Child's Learning Journey</div>
+    <h2>One progression. Ages 4 to 14.</h2>
+    <p class="section-sub">The Arc is Arc Innovate's 3-level curriculum architecture. Clean age boundaries, the same Innovator Skill Map at every level — only the depth and complexity changes as children grow.</p>
+    <div class="arc-levels">
+      <a href="/arc-innovate/the-arc" style="text-decoration:none;color:inherit;"><div class="arc-level arc-level-1">
+        <div class="arc-level-badge">Level 1</div>
+        <h3>Maker</h3>
+        <div class="age">Ages 4–7</div>
+        <p>Sensory exploration, open-ended making, and "how might we fix this?" thinking. Curiosity-first, structure-light. Where the Design Thinking habit begins.</p>
+      </div></a>
+      <a href="/arc-innovate/the-arc" style="text-decoration:none;color:inherit;"><div class="arc-level arc-level-2">
+        <div class="arc-level-badge">Level 2</div>
+        <h3>Solver</h3>
+        <div class="age">Ages 7–10</div>
+        <p>Structured design projects with clear stages. Building, prototyping, 3D printing, and presenting real solutions to real problems. The heart of the Arc.</p>
+      </div></a>
+      <a href="/arc-innovate/the-arc" style="text-decoration:none;color:inherit;"><div class="arc-level arc-level-3">
+        <div class="arc-level-badge">Level 3</div>
+        <h3>Innovator</h3>
+        <div class="age">Ages 10–14</div>
+        <p>Full design thinking applied to complex real-world challenges — digital products, entrepreneurial ventures, and advanced maker projects.</p>
+      </div></a>
+    </div>
+  </div>
+</section>
+
+<div style="text-align:center;margin:48px 0;"><a href="/arc-innovate/design-thinking-guide" style="display:inline-block;background:linear-gradient(135deg,#2B6CB0,#63B3ED);color:white;padding:24px 56px;border-radius:999px;font-weight:800;font-size:1.4rem;text-decoration:none;box-shadow:0 8px 32px rgba(43,108,176,0.35);">Learn How Design Thinking Works →</a></div>
+
+<!-- PROGRAM LOGOS BANNER -->
+<section style="padding:40px 0;background:linear-gradient(135deg,#2B6CB0,#63B3ED);">
+  <div class="wrap" style="text-align:center;">
+    <img src="/images/program-logos-banner.png" alt="Arc Innovate Program Logos" style="max-width:100%;height:auto;display:block;margin:0 auto;">
+  </div>
+</section>
+
+<!-- PROGRAMS: OUR PROGRAM OFFERINGS -->
+<section class="section-alt" id="programs">
+  <div class="wrap">
+    <div class="section-label">Our Program</div>
+    <h2>Four Core Learning Tracks</h2>
+    <p class="section-sub">Each program is designed to build confidence, creativity, and real-world problem-solving skills. Choose one or combine multiple tracks for a comprehensive creative education.</p>
+    <div class="programs-grid">
+      <div class="program-card">
+        <div class="program-card-header card-blue">
+          <div class="badge">DESIGN • Ages 4–14</div>
+          <h3>Idea to Design</h3>
+          <p>From concept to execution. Learn the full design thinking process to turn creative ideas into real solutions.</p>
+        </div>
+        <img src="/programs/images/experimental-arts.jpg" alt="Idea to Design class Bangkok kids">
+        <div class="program-card-footer">
+          Explore <span>→</span>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card-header card-green">
+          <div class="badge">BUILD • Ages 7–14</div>
+          <h3>3D Printing</h3>
+          <p>Turn drawings into physical objects. Design and prototype with cutting-edge 3D printing technology.</p>
+        </div>
+        <img src="/programs/images/young-innovator.jpg" alt="3D Printing class Bangkok kids">
+        <div class="program-card-footer">
+          Explore <span>→</span>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card-header card-purple">
+          <div class="badge">CREATE • Ages 4–10</div>
+          <h3>Tech Toys & Tools</h3>
+          <p>Hands-on exploration of creative technology. Build, code, and make with innovative tools and gadgets.</p>
+        </div>
+        <img src="/programs/images/ux-ui-for-kids.jpg" alt="Tech Toys class Bangkok kids">
+        <div class="program-card-footer">
+          Explore <span>→</span>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card-header card-teal">
+          <div class="badge">CRAFT • Ages 4–12</div>
+          <h3>Craft Club</h3>
+          <p>Explore traditional and modern crafting techniques. Build skills, creativity, and showcase your handmade creations.</p>
+        </div>
+        <img src="/programs/images/fashion-design.jpg" alt="Craft Club class Bangkok kids">
+        <div class="program-card-footer">
+          Explore <span>→</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-label">Studio Moments</div>
+    <h2>What learning looks like here.</h2>
+    <div class="gallery-grid">
+      <img src="/images/gallery-1.jpg" alt="Arc Innovate kids design thinking class Bangkok">
+      <img src="/images/gallery-2.jpg" alt="Arc Innovate 3D printing workshop kids Bangkok">
+      <img src="/images/gallery-3.jpg" alt="Arc Innovate creative enrichment Bangkok">
+      <img src="/images/gallery-4.jpg" alt="Arc Innovate STEAM classes kids Bangkok">
+      <img src="/images/gallery-5.jpg" alt="Arc Innovate design workshop children Bangkok">
+      <img src="/images/gallery-6.jpg" alt="Arc Innovate student showcase Bangkok">
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section" id="partners">
+  <div class="wrap">
+    <div class="section-label">School & Venue Partnerships</div>
+    <h2>Bring Arc Innovate to your school.</h2>
+    <p class="section-sub">We partner with Bangkok international schools and community venues to deliver Arc Innovate programs as ECA electives, after-school activities, and holiday workshops. We bring everything — curriculum, materials, facilitation, and framework.</p>
+    <div class="partner-features">
+      <div class="partner-feat">
+        <div class="feat-icon">📦</div>
+        <div class="feat-text">
+          <h4>We bring everything</h4>
+          <p>Materials, tools, facilitator, and the full Arc curriculum. Your school provides the space and the students — we handle the rest.</p>
+        </div>
+      </div>
+      <div class="partner-feat">
+        <div class="feat-icon">🎯</div>
+        <div class="feat-text">
+          <h4>Curriculum-aligned</h4>
+          <p>Arc Innovate programs reinforce critical thinking, creativity, and collaboration — skills that improve performance across all academic subjects.</p>
+        </div>
+      </div>
+      <div class="partner-feat">
+        <div class="feat-icon">📊</div>
+        <div class="feat-text">
+          <h4>Parent-facing showcase</h4>
+          <p>Every term closes with a student showcase. Parents see the work, children build presentation skills, and schools see real evidence of learning.</p>
+        </div>
+      </div>
+      <div class="partner-feat">
+        <div class="feat-icon">🔧</div>
+        <div class="feat-text">
+          <h4>Flexible & modular</h4>
+          <p>Choose one subject or run the full Arc curriculum. Programs can be adapted for different age groups, session lengths, and school schedules.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:40px;text-align:center;">
+      <a href="mailto:arc.international.edu@gmail.com" style="display:inline-block;background:var(--deep-blue);color:white;padding:15px 36px;border-radius:999px;font-weight:700;font-size:0.95rem;">Request a Partnership Proposal →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section-alt" id="about">
+  <div class="wrap">
+    <div class="section-label">About Arc Innovate</div>
+    <h2>Built by a designer. Run by an educator.</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Arc Innovate was founded by Coach Anies — a product designer turned educator with 12+ years working with children at Bangkok international schools. After seeing firsthand how school curricula were preparing children for a world that no longer exists, she built Arc Innovate to fill the gap: a structured, design-thinking-led enrichment program that teaches children how to think, not just what to know.</p>
+        <p>Every program at Arc Innovate is rooted in the same framework used by the world's leading innovation companies — made accessible, playful, and genuinely age-appropriate for children from age 4.</p>
+      </div>
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="number">4–14</div>
+          <div class="label">Age range served</div>
+        </div>
+        <div class="about-stat">
+          <div class="number">6</div>
+          <div class="label">Active subjects</div>
+        </div>
+        <div class="about-stat">
+          <div class="number">Max 12</div>
+          <div class="label">Students per class</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Let's connect.</h2>
+        <p>Whether you're a parent looking to enroll your child, a school interested in a partnership, or a venue looking to host Arc Innovate — we'd love to hear from you. Line is the fastest way to reach us.</p>
+        <div class="contact-btns">
+          <a href="https://lin.ee/TQPIVik" class="btn-line" target="_blank">💬 Line @arc.innovate</a>
+          <a href="mailto:arc.international.edu@gmail.com" class="btn-email">✉️ Email Us</a>
+        </div>
+      </div>
+      <div class="contact-details">
+        <div class="contact-detail-row">
+          <strong>Line</strong>@arc.innovate
+        </div>
+        <div class="contact-detail-row">
+          <strong>Email</strong>arc.international.edu@gmail.com
+        </div>
+        <div class="contact-detail-row">
+          <strong>Location</strong>Bangkok, Thailand
+        </div>
+        <div class="contact-detail-row">
+          <strong>Programs</strong>Ages 4–14 • Max 12 per class
+        </div>
+        <div class="contact-detail-row">
+          <strong>Instagram</strong>@arc.innovate
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">
+    <img src="/arc-innovate-logo.png" alt="Arc Innovate">
+    <span class="footer-name">Arc Innovate</span>
+  </div>
+  <p>Bangkok's Creative Problem-Solving Academy for Kids Ages 4–14</p>
+  <p style="margin-top:8px;">© 2026 Arc Innovate · <a href="/">Back to Arc</a> · <a href="/arc-innovate/insights">Articles</a></p>
+</footer>
+
+<div class="fab-stack">
+  <a href="tel:+66835193659" class="fab-btn call">📞 Call Now</a>
+  <a href="https://instagram.com/arc.innovate" target="_blank" class="fab-btn instagram">📷 Instagram</a>
+  <a href="https://lin.ee/TQPIVik" target="_blank" class="fab-btn line">💬 Line@</a>
+</div>
+
+<script>
+document.querySelectorAll('.nav-dropdown').forEach(dd => {
+  const toggle = dd.querySelector('.nav-dropdown-toggle');
+  const menu = dd.querySelector('.nav-dropdown-menu');
+
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.style.display = 'none';
+    });
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown-menu').forEach(menu => {
+      menu.style.display = 'none';
+    });
+  }
+});
+</script>
+</body>
+</html>
