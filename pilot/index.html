@@ -208,25 +208,11 @@ section{padding:88px 0;}
   display:flex;align-items:center;justify-content:center;
   text-align:center;padding:32px;
 }
-.art-slot .slot-inner{color:var(--deep-blue);max-width:460px;}
+.art-slot .slot-inner{color:var(--deep-blue);max-width:520px;}
 .art-slot .slot-title{font-family:'Nunito',sans-serif;font-weight:800;font-size:1.05rem;margin-bottom:8px;}
 .art-slot .slot-meta{font-size:0.82rem;color:var(--ink-soft);line-height:1.7;}
-
-.journey-band{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.journey-photo{position:relative;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);}
-.journey-photo img{width:100%;height:340px;object-fit:cover;display:block;}
-.journey-photo-label{
-  position:absolute;left:0;right:0;bottom:0;padding:20px 22px 18px;
-  background:linear-gradient(0deg,rgba(26,22,20,0.82) 0%,rgba(26,22,20,0.05) 100%);
-  color:#fff;
-}
-.journey-photo-label span{
-  display:block;font-family:'Nunito',sans-serif;font-weight:900;font-size:0.75rem;
-  letter-spacing:0.12em;color:var(--fresh-green);margin-bottom:4px;
-}
-.journey-photo-label em{
-  display:block;font-style:normal;font-size:0.82rem;color:rgba(255,255,255,0.82);margin-top:2px;
-}
+.art-slot .slot-meta code{background:rgba(43,108,176,0.09);padding:2px 6px;border-radius:4px;}
+#journey-art{aspect-ratio:20/9;}
 
 /* ── 3 · MISSION ── */
 .mission{background:var(--tint);}
@@ -433,11 +419,14 @@ section{padding:88px 0;}
 .cd-item a{color:var(--fresh-green);}
 
 /* ── FOOTER ── */
-footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 0;text-align:center;font-size:0.86rem;}
+footer{
+  background:linear-gradient(150deg,var(--forest-green) 0%,#2E6E3B 60%,#245730 100%);
+  color:rgba(255,255,255,0.78);padding:48px 0;text-align:center;font-size:0.86rem;
+}
 .footer-logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:14px;}
 .footer-logo img{width:34px;height:34px;border-radius:50%;}
 .footer-name{font-family:'Nunito',sans-serif;font-weight:900;color:#fff;font-size:1rem;}
-footer a{color:var(--fresh-green);}
+footer a{color:#fff;text-decoration:underline;text-underline-offset:2px;}
 
 /* ── FLOATING CTA ── */
 .fab-stack{position:fixed;right:18px;bottom:18px;z-index:300;display:flex;flex-direction:column;gap:10px;}
@@ -456,7 +445,6 @@ footer a{color:var(--fresh-green);}
   .gallery-grid{grid-template-columns:repeat(2,1fr);}
   .gallery-grid img{height:220px;}
   .article-grid{grid-template-columns:repeat(2,1fr);}
-  .journey-photo img{height:260px;}
 }
 @media(max-width:860px){
   .nav-links,.nav-cta{display:none;}
@@ -467,8 +455,7 @@ footer a{color:var(--fresh-green);}
   .featured-left{padding:34px 26px;}
   .featured-right{padding:34px 26px;flex-direction:row;flex-wrap:wrap;gap:24px;}
   .fr-stat{flex:1 1 40%;}
-  .journey-band{grid-template-columns:1fr;gap:14px;}
-  .journey-photo img{height:220px;}
+  #journey-art{aspect-ratio:9/11;}
   .founder-inner{grid-template-columns:1fr;}
   #founder-art{max-width:340px;}
 }
@@ -575,19 +562,17 @@ footer a{color:var(--fresh-green);}
       <p>A child does not arrive able to solve a problem end to end. They grow into it — from making with their hands, to designing on purpose, to solving for someone else.</p>
     </div>
 
-    <!-- JOURNEY PHOTO BAND — real photos, stand-in for a future diagram -->
-    <div class="journey-band">
-      <div class="journey-photo">
-        <img src="/images/design-thinking-camp-photo-1.jpg" alt="Young Creators, ages 4 to 7, at Arc Innovate">
-        <div class="journey-photo-label"><span>01</span>Young Creators<em>Ages 4–7</em></div>
-      </div>
-      <div class="journey-photo">
-        <img src="/images/design-thinking-camp-photo-4.jpg" alt="Design Builders, ages 7 to 10, at Arc Innovate">
-        <div class="journey-photo-label"><span>02</span>Design Builders<em>Ages 7–10</em></div>
-      </div>
-      <div class="journey-photo">
-        <img src="/images/design-thinking-camp-photo-7.jpg" alt="Creative Innovators, ages 10 to 14, at Arc Innovate">
-        <div class="journey-photo-label"><span>03</span>Creative Innovators<em>Ages 10–14</em></div>
+    <!-- ART SLOT · ONE IMAGE, JOURNEY MAP / TIMELINE -->
+    <div class="art-slot" id="journey-art">
+      <div class="slot-inner">
+        <div class="slot-title">Journey map — one image</div>
+        <div class="slot-meta">
+          Export at <strong>2000 × 900 px</strong> (2× retina, displays 1000×450)<br>
+          Landscape, 20:9 · JPEG or PNG under 400 KB<br>
+          Upload to: <code>/images/journey-map.jpg</code> in your repo, then replace this block with:<br>
+          <code>&lt;img src="/images/journey-map.jpg" alt="The Arc learning journey, ages 4 to 14"&gt;</code><br><br>
+          On phones this crops to <strong>900 × 1100 px</strong> displayed — keep the key content centred so it survives the crop.
+        </div>
       </div>
     </div>
 
@@ -691,11 +676,12 @@ footer a{color:var(--fresh-green);}
   <div class="wrap founder-inner">
     <div class="art-slot" id="founder-art">
       <div class="slot-inner">
-        <div class="slot-title">Founder portrait</div>
+        <div class="slot-title">Coach portrait — one image</div>
         <div class="slot-meta">
           Export at <strong>960 × 1200 px</strong> (2× retina, displays 480×600)<br>
-          4:5 portrait · JPEG under 250 KB<br>
-          <code>&lt;img src="/images/founder.jpg" alt="Arc Innovate founder"&gt;</code>
+          Portrait, 4:5 · JPEG under 250 KB<br>
+          Upload to: <code>/images/founder.jpg</code> in your repo, then replace this block with:<br>
+          <code>&lt;img src="/images/founder.jpg" alt="Arc Innovate founder and lead coach"&gt;</code>
         </div>
       </div>
     </div>
