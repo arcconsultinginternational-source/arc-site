@@ -212,7 +212,8 @@ section{padding:88px 0;}
 .art-slot .slot-title{font-family:'Nunito',sans-serif;font-weight:800;font-size:1.05rem;margin-bottom:8px;}
 .art-slot .slot-meta{font-size:0.82rem;color:var(--ink-soft);line-height:1.7;}
 .art-slot .slot-meta code{background:rgba(43,108,176,0.09);padding:2px 6px;border-radius:4px;}
-#journey-art{aspect-ratio:20/9;}
+.journey-art-wrap{width:100%;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);}
+#journey-art{width:100%;aspect-ratio:20/9;object-fit:cover;display:block;}
 
 /* ── 3 · MISSION ── */
 .mission{background:var(--tint);}
@@ -339,7 +340,8 @@ section{padding:88px 0;}
 
 /* ── 8 · FOUNDER ── */
 .founder-inner{display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;align-items:center;}
-#founder-art{aspect-ratio:4/5;}
+.founder-art-wrap{width:100%;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);}
+#founder-art{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;}
 .founder-body h2{font-size:clamp(1.75rem,4vw,2.5rem);margin-bottom:20px;}
 .founder-body p{color:var(--ink-soft);margin-bottom:16px;font-size:1.02rem;}
 .founder-creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;}
@@ -457,7 +459,7 @@ footer a{color:#fff;text-decoration:underline;text-underline-offset:2px;}
   .fr-stat{flex:1 1 40%;}
   #journey-art{aspect-ratio:9/11;}
   .founder-inner{grid-template-columns:1fr;}
-  #founder-art{max-width:340px;}
+  .founder-art-wrap{max-width:340px;margin:0 auto;}
 }
 @media(max-width:640px){
   body{font-size:15px;}
@@ -562,18 +564,8 @@ footer a{color:#fff;text-decoration:underline;text-underline-offset:2px;}
       <p>A child does not arrive able to solve a problem end to end. They grow into it — from making with their hands, to designing on purpose, to solving for someone else.</p>
     </div>
 
-    <!-- ART SLOT · ONE IMAGE, JOURNEY MAP / TIMELINE -->
-    <div class="art-slot" id="journey-art">
-      <div class="slot-inner">
-        <div class="slot-title">Journey map — one image</div>
-        <div class="slot-meta">
-          Export at <strong>2000 × 900 px</strong> (2× retina, displays 1000×450)<br>
-          Landscape, 20:9 · JPEG or PNG under 400 KB<br>
-          Upload to: <code>/images/journey-map.jpg</code> in your repo, then replace this block with:<br>
-          <code>&lt;img src="/images/journey-map.jpg" alt="The Arc learning journey, ages 4 to 14"&gt;</code><br><br>
-          On phones this crops to <strong>900 × 1100 px</strong> displayed — keep the key content centred so it survives the crop.
-        </div>
-      </div>
+    <div class="journey-art-wrap">
+      <img src="/images/journey-map.jpg" alt="The Arc learning journey, ages 4 to 14" id="journey-art">
     </div>
 
   </div>
@@ -674,16 +666,8 @@ footer a{color:#fff;text-decoration:underline;text-underline-offset:2px;}
 <!-- ═══ 8 · FOUNDER ═══ -->
 <section class="founder" id="about">
   <div class="wrap founder-inner">
-    <div class="art-slot" id="founder-art">
-      <div class="slot-inner">
-        <div class="slot-title">Coach portrait — one image</div>
-        <div class="slot-meta">
-          Export at <strong>960 × 1200 px</strong> (2× retina, displays 480×600)<br>
-          Portrait, 4:5 · JPEG under 250 KB<br>
-          Upload to: <code>/images/founder.jpg</code> in your repo, then replace this block with:<br>
-          <code>&lt;img src="/images/founder.jpg" alt="Arc Innovate founder and lead coach"&gt;</code>
-        </div>
-      </div>
+    <div class="founder-art-wrap">
+      <img src="/images/founder.jpg" alt="Arc Innovate founder and lead coach" id="founder-art">
     </div>
     <div class="founder-body">
       <div class="eyebrow">Who runs it</div>
