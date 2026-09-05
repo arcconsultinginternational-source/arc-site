@@ -3,9 +3,14 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/th/:path*",
-      "destination": "/arc-innovate/th/:path*",
-      "permanent": false
+      "source": "/en",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/pilot",
+      "destination": "/",
+      "permanent": true
     },
     {
       "source": "/arc-innovate",
